@@ -1,4 +1,7 @@
+import Layout from '@/components/layout';
 import { getSortedProjectsData } from '../lib';
+import ProjectTile from '@/components/projectTile';
+import IndexSection from '@/components';
 
 
 export async function getStaticProps() {
@@ -12,16 +15,8 @@ export async function getStaticProps() {
 
 export default function Home({ allProjectsData }: any) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     {allProjectsData.map(({ id, date, title }: any) => (
-            <li key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
-            </li>
-          ))}
-    </main>
+    <Layout>
+     <IndexSection projects={allProjectsData} />
+    </Layout>
   )
 }

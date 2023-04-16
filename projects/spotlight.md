@@ -1,6 +1,7 @@
 ---
 title: 'Tailwind Portfolio Template'
 date: '2022-01-01'
+blurb: 'Replica of the TailwindUI portfolio template'
 ---
 
 # Personal Website Template

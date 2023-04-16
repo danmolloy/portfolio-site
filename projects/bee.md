@@ -1,6 +1,7 @@
 ---
 title: 'Spelling Bee'
 date: '2022-01-01'
+blurb: 'A replica of the New York Times word game'
 ---
 
 ## Overview
