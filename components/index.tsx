@@ -1,12 +1,17 @@
 import Image from "next/image";
 import ProjectTile from "./projectTile";
 
+export type ProjectProps = {
+  id: string
+  blurb: string
+  title: string
+  imgSrc: string
+  imgWidth: string
+  imgHeight: string
+}
+
 type IndexProps = {
-  projects: {
-    id: string
-    blurb: string
-    title: string
-  }[]
+  projects: ProjectProps[]
 }
 
 export default function IndexSection(props: IndexProps) {
@@ -25,9 +30,10 @@ export default function IndexSection(props: IndexProps) {
         <Image className="rounded-sm overflow-hidden" src={"/images/danHero.jpg"} alt="" width={833/2} height={768/2} />
       </div>
       <div>
-      {projects.map(({ id, blurb, title }: any) => (
-            <div key={id}>
-              <ProjectTile id={id} blurb={blurb} title={title} />
+        <h2>Projects</h2>
+      {projects.map((i) => (
+            <div key={i.id}>
+              <ProjectTile {...i} />
             </div>
           ))}
       </div>

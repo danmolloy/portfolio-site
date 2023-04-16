@@ -1,7 +1,10 @@
+import ContactForm from "@/components/contactForm";
+import Layout from "@/components/layout";
+
 export default function ContactPage() {
   return (
-    <h1>
-      Contact
-    </h1>
+    <Layout>
+      <ContactForm />
+    </Layout>
   )
 }

@@ -2,6 +2,9 @@
 title: 'Spelling Bee'
 date: '2022-01-01'
 blurb: 'A replica of the New York Times word game'
+imgSrc: '/images/bee.PNG'
+imgWidth: '750'
+imgHeight: '1334'
 ---
 
 ## Overview
