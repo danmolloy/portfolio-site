@@ -2,9 +2,9 @@
 title: 'Fixer a.k.a. GigFix'
 date: '2023-01-01'
 blurb: 'Automated booking of freelance musicians with an integrated calendar and directory'
-imgSrc: '/images/gigfix.PNG'
+imgSrc: '/images/gig-fix.PNG'
 imgWidth: '750'
-imgHeight: '1334'
+imgHeight: '1092'
 ---
 ## Overview
 For an orchestra manager, a.k.a a fixer, booking an ensemble of freelance musicians is a frequent, time consuming and tedious process. Fixer automates this work. It also assists them in managing their schedule and finding new players.

@@ -2,7 +2,7 @@
 title: 'Tailwind Portfolio Template'
 date: '2022-01-01'
 blurb: 'Replica of the TailwindUI portfolio template'
-imgSrc: '/images/spotlight.PNG'
+imgSrc: '/images/spotlight-hero.PNG'
 imgWidth: '750'
 imgHeight: '1334'
 ---

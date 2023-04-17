@@ -20,17 +20,17 @@ export default function IndexSection(props: IndexProps) {
     <div>
       <div className="flex flex-col items-center h-screen justify-evenly sm:flex-row">
         <div className="text-center">
-        <h1 className="text-3xl">
+        <h1 className="text-4xl">
           Daniel Molloy
         </h1>
-        <p className="text-xl">
+        <p className="text-2xl">
           Web Developer
         </p>
         </div>
-        <Image className="rounded-sm overflow-hidden" src={"/images/danHero.jpg"} alt="" width={833/2} height={768/2} />
+        <Image className=" px-4" src={"/images/danHero.jpg"} alt="" width={833/2} height={768/2} />
       </div>
-      <div>
-        <h2>Projects</h2>
+      <div className="px-2">
+        <h2 className="text-3xl">Projects</h2>
       {projects.map((i) => (
             <div key={i.id}>
               <ProjectTile {...i} />

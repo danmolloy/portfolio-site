@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 import { BsSun, BsMoon } from "react-icons/bs"
 
@@ -15,13 +16,15 @@ export default function Header() {
   }
 
   return (
-    <div className="dark:bg-zinc-900 flex flex-row justify-between w-full h-16 border-b shadow-sm items-center px-2">
-      <h1 className="">DM</h1>
+    <div className="dark:bg-zinc-900 flex flex-row justify-between w-full h-16 border-b items-center px-4">
+      <Link href="/">
+        <h1 className="text-emerald-500 hover:bg-emerald-50 p-1 rounded">DM</h1>
+      </Link>
       <button onClick={() => handleToggle()}>
-      <div className="dark:flex hidden text-emerald-500">
+      <div className="dark:flex hidden text-emerald-500 hover:text-emerald-400 p-2 rounded-full">
           <BsSun />
         </div>
-        <div className="dark:hidden">
+        <div className="dark:hidden text-emerald-500 hover:text-emerald-400 p-2 rounded-full">
           <BsMoon />
         </div>
       </button>
