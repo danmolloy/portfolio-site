@@ -16,9 +16,9 @@ export default function Header() {
   }
 
   return (
-    <div className="dark:bg-zinc-900 flex flex-row justify-between w-full h-16 border-b items-center px-4">
+    <div className="dark:bg-zinc-900 flex flex-row justify-between w-full h-16 border-b dark:border-b-zinc-700 items-center px-4">
       <Link href="/">
-        <h1 className="text-emerald-500 hover:bg-emerald-50 p-1 rounded">DM</h1>
+        <h1 className="text-emerald-500 dark:hover:bg-zinc-800 hover:bg-emerald-50 p-1 rounded">DM</h1>
       </Link>
       <button onClick={() => handleToggle()}>
       <div className="dark:flex hidden text-emerald-500 hover:text-emerald-400 p-2 rounded-full">
