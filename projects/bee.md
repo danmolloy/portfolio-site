@@ -5,14 +5,12 @@ blurb: 'A replica of the New York Times word game'
 imgSrc: '/images/spelling-bee.PNG'
 imgWidth: '750'
 imgHeight: '1092'
+demo: 'https://spelling-bee-danmolloy.vercel.app'
+code: 'https://github.com/danmolloy/spelling-bee'
 ---
-
+# Spelling Bee
 ## Overview
 I am a big fan of word games, in particular NYT's [Spelling Bee](https://www.nytimes.com/puzzles/spelling-bee). I enjoy playing it so much I created a replica. 
-
-<img src="./public/images/pangram.PNG" width="187" height="333" alt="screenshot of app"/>
-<img src="./public/images/foundWords.PNG" width="187" height="333" alt="screenshot of app"/>
-<img src="./public/images/notInList.PNG" width="187" height="333" alt="screenshot of app"/>
 
 ## Game Rules
 Very simply, each day a list of seven letters generate. The goal is to find as many words as you can which are at least four letters. There is one center letter which must be used in all words. Additionally, there is always at least one "pangram", a word which uses all letters at least once. 

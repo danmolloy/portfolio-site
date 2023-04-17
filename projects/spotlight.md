@@ -5,6 +5,8 @@ blurb: 'Replica of the TailwindUI portfolio template'
 imgSrc: '/images/spotlight-hero.PNG'
 imgWidth: '750'
 imgHeight: '1334'
+demo: 'https://portfolio-template-danmolloy.vercel.app/'
+code: 'https://github.com/danmolloy/portfolio-template'
 ---
 
 # Personal Website Template
