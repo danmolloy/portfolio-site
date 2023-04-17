@@ -70,27 +70,31 @@ export default function ContactForm() {
         })
       }}> 
     {(props) => (
-      <Form className="form">
+      <Form className=" flex flex-col">
+        <h1 className='px-2'>Contact</h1>
+        <div className=' px-2 py-4 flex flex-col md:flex-row'>
           <label htmlFor='name-input'>Name</label>
           <Field 
             id="name-input" 
-            className="form-input"
+            className="border border-zinc-400 rounded p-1 sm:w-1/2 md:w-1/3"
             type="text"
             name="name"/>
           <ErrorMessage name="name">
-            { msg => <div className="form-error">{msg}</div> }
+            { msg => <div className=" text-red-500 text-sm">{msg}</div> }
           </ErrorMessage>
-
+          </div>
+          <div className=' px-2 py-4 flex flex-col md:flex-row'>
           <label htmlFor='email-input' >Email</label>
           <Field
             id="email" 
-            className="form-input" 
+            className="border border-zinc-400 rounded p-1 sm:w-1/2 md:w-1/3"
             type="email"
             name="email"/>
           <ErrorMessage name="email">
-          { msg => <div className="form-error">{msg}</div> }
+          { msg => <div className=" text-red-500 text-sm">{msg}</div> }
           </ErrorMessage>
-
+          </div>
+          <div className=' px-2 py-4 flex flex-col md:flex-row'>
           <label htmlFor='msg-text' >Message</label>
           <Field 
             multiline
@@ -98,14 +102,18 @@ export default function ContactForm() {
             rows="4"
             component="textarea"
             id="msg-text" 
-            className="text-input" 
+            className="border border-zinc-400 rounded p-1 sm:w-1/2 md:w-1/3"
+ 
             type="textarea"
             name="message"/>
-            {props.values.message.length > 0 && <p className='self-start text-sm mx-2 opacity-40'>{`${props.values.message.length}/500`}</p>}
           <ErrorMessage name="message">
-            { msg => <div className="form-error">{msg}</div> }
+            { msg => <div className=" text-red-500 text-sm">{msg}</div> }
           </ErrorMessage>
-        <button id="submit-button" type='submit' className="submit-btn">Submit</button>
+          <div className='h-5'>
+            {props.values.message.length > 0 && <p className='self-start text-sm mx-2 opacity-40'>{`${props.values.message.length}/500`}</p>}
+            </div>
+          </div>
+        <button id="submit-button" type='submit' className="border w-24 py-1 m-2 self-end rounded text-emerald-500 border-emerald-500 dark:hover:bg-zinc-800 shadow hover:bg-emerald-50">Submit</button>
         <div>
         {sendStatus}
       </div>
