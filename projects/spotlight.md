@@ -5,11 +5,33 @@ blurb: 'Replica of the TailwindUI portfolio template'
 imgSrc: '/images/spotlight-hero.PNG'
 imgWidth: '750'
 imgHeight: '1334'
+imageGallery: [
+  {
+    id: 1,
+    imgSrc: '/images/spotlight-hero.PNG',
+    imgWidth: '750',
+    imgHeight: '1092',
+    title: "Hero Section"
+  },
+  {
+    id: 2,
+    imgSrc: '/images/spotlight-album.PNG',
+    imgWidth: '750',
+    imgHeight: '1092',
+    title: "Photo Album"
+  },
+  {
+    id: 3,
+    imgSrc: '/images/spotlight-menu.PNG',
+    imgWidth: '750',
+    imgHeight: '1092',
+    title: "Navigation Menu"
+  }
+  ]
 demo: 'https://portfolio-template-danmolloy.vercel.app/'
 code: 'https://github.com/danmolloy/portfolio-template'
 ---
 
-# Personal Website Template
 ## Overview
 As a musician, I've found myself making quite a few personal websites for colleagues. I'm a fan of TailwindUI's [Spotlight template](https://tailwindui.com/templates/spotlight) so decided to style a replica.
 

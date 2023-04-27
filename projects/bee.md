@@ -3,12 +3,41 @@ title: 'Spelling Bee'
 date: '2022-01-01'
 blurb: 'A replica of the New York Times word game'
 imgSrc: '/images/spelling-bee.PNG'
+imageGallery: [
+  {
+    id: 1,
+    imgSrc: '/images/spelling-bee.PNG',
+    imgWidth: '750',
+    imgHeight: '1092',
+    title: "Pangram confetti"
+  },
+   {
+    id: 2,
+    imgSrc: '/images/spelling-bee-list.PNG',
+    imgWidth: '750',
+    imgHeight: '1092',
+    title: "Found words"
+  },
+   {
+    id: 3,
+    imgSrc: '/images/spelling-bee-yoyo.PNG',
+    imgWidth: '750',
+    imgHeight: '1092',
+    title: "Game interface"
+  },
+   {
+    id: 4,
+    imgSrc: '/images/spelling-bee-menu.PNG',
+    imgWidth: '750',
+    imgHeight: '1092',
+    title: "Hints page"
+  }
+  ]
 imgWidth: '750'
 imgHeight: '1092'
 demo: 'https://spelling-bee-danmolloy.vercel.app'
 code: 'https://github.com/danmolloy/spelling-bee'
 ---
-# Spelling Bee
 ## Overview
 I am a big fan of word games, in particular NYT's [Spelling Bee](https://www.nytimes.com/puzzles/spelling-bee). I enjoy playing it so much I created a replica. 
 

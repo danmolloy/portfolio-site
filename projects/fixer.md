@@ -5,10 +5,39 @@ blurb: 'Automated booking of freelance musicians with an integrated calendar and
 imgSrc: '/images/gig-fix.PNG'
 imgWidth: '750'
 imgHeight: '1092'
+imageGallery: [
+  {
+    id: 1,
+    imgSrc: '/images/gig-fix.PNG',
+    imgWidth: '750',
+    imgHeight: '1092',
+    title: "Landing Page"
+  },
+  {
+    id: 2,
+    imgSrc: '/images/gig-fix-calendar.PNG',
+    imgWidth: '750',
+    imgHeight: '1092',
+    title: "Calendar Interface"
+  },
+  {
+    id: 3,
+    imgSrc: '/images/gig-fix-directory.PNG',
+    imgWidth: '750',
+    imgHeight: '1092',
+    title: "Player Directory"
+  },
+  {
+    id: 4,
+    imgSrc: '/images/gig-fix-profile.PNG',
+    imgWidth: '750',
+    imgHeight: '1092',
+    title: "User Profile"
+  },
+  ]
 demo: 'https://gig-fix-git-main-danmolloy.vercel.app/'
 code: 'https://github.com/danmolloy/fixer'
 ---
-# GigFix
 ## Overview
 For an orchestra manager, a.k.a a fixer, booking an ensemble of freelance musicians is a frequent, time consuming and tedious process. Fixer automates this work. It also assists them in managing their schedule and finding new players.
 
