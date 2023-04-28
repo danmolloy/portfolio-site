@@ -72,29 +72,29 @@ export default function ContactForm() {
     {(props) => (
       <Form className=" flex flex-col">
         <h1 className='px-2'>Contact</h1>
-        <div className=' px-2 py-4 flex flex-col md:flex-row'>
+        <div className=' px-2 py-4 flex flex-col '>
           <label htmlFor='name-input'>Name</label>
           <Field 
             id="name-input" 
-            className="border border-zinc-400 rounded p-1 sm:w-1/2 md:w-1/3"
+            className="border border-zinc-400 rounded p-1 "
             type="text"
             name="name"/>
           <ErrorMessage name="name">
             { msg => <div className=" text-red-500 text-sm">{msg}</div> }
           </ErrorMessage>
           </div>
-          <div className=' px-2 py-4 flex flex-col md:flex-row'>
+          <div className=' px-2 py-4 flex flex-col '>
           <label htmlFor='email-input' >Email</label>
           <Field
             id="email" 
-            className="border border-zinc-400 rounded p-1 sm:w-1/2 md:w-1/3"
+            className="border border-zinc-400 rounded p-1  "
             type="email"
             name="email"/>
           <ErrorMessage name="email">
           { msg => <div className=" text-red-500 text-sm">{msg}</div> }
           </ErrorMessage>
           </div>
-          <div className=' px-2 py-4 flex flex-col md:flex-row'>
+          <div className=' px-2 py-4 flex flex-col '>
           <label htmlFor='msg-text' >Message</label>
           <Field 
             multiline
@@ -102,7 +102,7 @@ export default function ContactForm() {
             rows="4"
             component="textarea"
             id="msg-text" 
-            className="border border-zinc-400 rounded p-1 sm:w-1/2 md:w-1/3"
+            className="border border-zinc-400 rounded p-1"
  
             type="textarea"
             name="message"/>
