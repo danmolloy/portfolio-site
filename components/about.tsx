@@ -10,23 +10,22 @@ const aboutData = {
   orchestras: [
     {
       name: "Academy of St Martin in the Fields",
-      favicon: "https://www.asmf.org/wp-content/themes/asmf/img/favicons/apple-touch-icon-57x57.png"
+      favicon: "/icons/asmf.png"
     },
-    {name: "BBC Symphony Orchestra", favicon: "https://static.files.bbci.co.uk/core/website/assets/static/icons/favicon/bbc/favicon-16.0752fabca02a44108b53.png"},
+    {name: "BBC Symphony Orchestra", favicon: "/icons/bbc.png"},
     {name: "City of London Sinfonia", favicon: "/icons/cls.png"},
     {name: "Cool Music Ltd", favicon: "/icons/cool-music.jpg"},
     {name: "English Chamber Orchestra", favicon: "/icons/eco.png"},
     {name: "Isobel Griffiths Ltd", favicon: "/icons/ig-ltd.png"},
-    {name: "London Chamber Orchestra"},
-    {name: "London Mozart Players"},
+    {name: "London Chamber Orchestra", favicon: "/icons/lco.png"},
+    {name: "London Mozart Players", favicon: "/icons/lmp.png"},
     {name: "London Sinfonietta", favicon: "/icons/london-sinfonietta.jpg"},
-    {name: "London Contemporary Orchestra"},
-    {name: "London Chamber Orchestra"},
+    {name: "London Contemporary Orchestra", favicon: "/icons/london-contemporary-orchestra.png"},
     {
       name: "London Symphony Orchestra",
-      favicon: "https://www.lso.co.uk/themes/childtheme/assets/images/favicon/apple-touch-icon.png"
+      favicon: "/icons/lso.png"
     },
-    {name: "Orchestra of the Swan"},
+    {name: "Orchestra of the Swan", favicon: "/icons/OOTS.png"},
     {name: "Oxford Philharmonic", favicon: "/icons/opo.png"},
     {name: "Queensland Symphony Orchestra", favicon: "/icons/qso.jpg"},
     {name: "Royal Philharmonic Orchestra", favicon: "/icons/rpo.jpg"},
