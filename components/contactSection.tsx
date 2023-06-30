@@ -16,7 +16,7 @@ export default function ContactSection() {
   const sendingMsg: any = (<div><h2 className="text-2xl">Message sending...</h2></div>)
 
   return (
-    <IndexDiv title="Contact">
+    <IndexDiv title="Contact" name="contact">
       <div className="flex flex-row w-full justify-between  h-[30rem]">
     <Formik    
     initialValues={{

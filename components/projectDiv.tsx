@@ -35,6 +35,7 @@ export default function ProjectDiv(props: ProjectDivProps) {
   const { title, overview, features, stack, githubLink, previewLink } = props;
   return (
     <IndexDiv title={title}>
+
       <div className="text-blue-600 flex flex-row w-1/2 items-center justify-evenly text-xs ">
         <a href={githubLink} target="_blank" className="hover:underline ">GitHub Repo</a>
         <a href={previewLink} target="_blank" className="hover:underline">Live Example</a>

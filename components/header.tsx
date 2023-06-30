@@ -14,9 +14,6 @@ export const menuItems: {title: string}[] = [
     title: "Spelling Bee",
   },
   {
-    title: "Personal Site",
-  },
-  {
     title: "Contact",
   },
 ]
