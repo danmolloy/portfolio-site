@@ -13,7 +13,7 @@ export default function Layout({ children }: LayoutProps) {
   
   return (
     <div className="dark:bg-zinc-900 dark:text-zinc-300 w-full min-h-screen bg-white flex flex-col items-center justify-between font-sans">
-      <Header showHeader={showHeader} setShowHeader={(i) => setShowHeader(i)} setShowMenu={() => setShowMenu(!showMenu)} showMenu={showMenu} home={true}/>
+      <Header showHeader={showHeader} setShowHeader={(i) => setShowHeader(i)} setShowMenu={() => setShowMenu(!showMenu)} showMenu={showMenu} />
       <Menu showMenu={showMenu} setShowHeader={i => setShowHeader(i)} setShowMenu={i => setShowMenu(i)} />
       <main className={showMenu ? "transition duration-500 blur-sm flex flex-col items-center" : "transition duration-500 flex flex-col items-center"}>
       {children}
