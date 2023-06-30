@@ -1,5 +1,5 @@
 ---
-title: 'Tailwind Portfolio Template'
+title: 'Personal Site'
 date: '2022-01-01'
 blurb: 'Replica of the TailwindUI portfolio template'
 imgSrc: '/images/spotlight-hero.PNG'

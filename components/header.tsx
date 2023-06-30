@@ -1,33 +1,80 @@
-import Link from "next/link"
-import React from "react"
-import { BsSun, BsMoon } from "react-icons/bs"
+import { useEffect, useState } from 'react'
+import { AiOutlineMenu } from 'react-icons/ai'
+import MenuIcon from './menuIcon'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
-export default function Header() {
+export const menuItems: {title: string}[] = [
+  {
+    title: "About",
+  },
+  {
+    title: "GigFix",
+  },
+  {
+    title: "Spelling Bee",
+  },
+  {
+    title: "Personal Site",
+  },
+  {
+    title: "Contact",
+  },
+]
 
-  const handleToggle = () => {
-    if (!localStorage.theme){
-      document.documentElement.classList.add('dark')
-      localStorage.setItem("theme", "dark")
-    } else {
-      document.documentElement.classList.remove('dark')
-      localStorage.removeItem("theme")
+type HeaderProps = {
+  showMenu: boolean
+  setShowMenu: () => void
+  setShowHeader: (arg: boolean) => void
+  showHeader: boolean
+}
+
+export default function Header(props: HeaderProps) {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const { showMenu, setShowMenu, setShowHeader, showHeader } = props;
+  //const [showHeader, setShowHeader] = useState(true)
+
+  useEffect(() => {
+    function handleScroll() {
+      const currentPosition = window.scrollY;
+      if (currentPosition > scrollPosition + 100) {
+        setScrollPosition(currentPosition);
+        setShowHeader(false)
+      } else if (currentPosition < scrollPosition - 5) {
+        setScrollPosition(currentPosition);
+        setShowHeader(true)
+      }
     }
-    
-  }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrollPosition]);
+
 
   return (
-    <div className="dark:bg-zinc-900 flex flex-row justify-between w-full h-16 border-b dark:border-b-zinc-700 items-center px-4">
-      <Link href="/">
-        <h1 className="text-emerald-500 dark:hover:bg-zinc-800 hover:bg-emerald-50 p-1 rounded">DM</h1>
-      </Link>
-      <button onClick={() => handleToggle()}>
-      <div className="dark:flex hidden text-emerald-500 hover:text-emerald-400 p-2 rounded-full">
-          <BsSun />
-        </div>
-        <div className="dark:hidden text-emerald-500 hover:text-emerald-400 p-2 rounded-full">
-          <BsMoon />
-        </div>
-      </button>
+    <div 
+    
+    className={!showHeader && scrollPosition < 750
+      ? "justify-between font-display -translate-y-full transition duration-1000  fixed z-30 h-16 w-screen top-0 flex flex-row-reverse md:flex-row items-center fill-zinc-300 text-zinc-100"  
+      : !showHeader
+      ? "justify-between font-display -translate-y-full transition duration-1000 bg-white fixed z-30 h-16 w-screen top-0 flex flex-row-reverse md:flex-row items-center  shadow fill-zinc-300 text-black"  
+      /* : scrollPosition < 750
+      ? "font-display  transition duration-500 ease-out fixed  z-30 h-16 w-screen top-0 flex flex-row  items-center justify-between  fill-zinc-300 text-zinc-100"
+ */      : "justify-between font-display transition duration-500 ease-out fixed  bg-white z-30 h-16 w-screen top-0 flex flex-row-reverse md:flex-row  items-center  shadow fill-zinc-300 text-black"}>
+{/*       <h1 className={showMenu ? "md:hidden p-2 text-black" : 'md:hidden p-2 '}>Daniel Molloy</h1>
+ */}      <div className='hidden md:flex w-screen  flex-row  justify-end pr-4'>
+        <button className=' p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400' onClick={() => scroll.scrollToTop({ smooth: true, duration: 500 })}>
+          Home
+        </button>
+      {menuItems.map(i => (
+        <Link onClick={() => setTimeout(() => setShowHeader(false), 750)} activeClass="active" to={i.title.toLowerCase()} spy={true} smooth={true} offset={50} duration={500}  key={i.title} className=' p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400'>
+          <p>{i.title}</p>
+        </Link>
+      ))}
+      </div>
+      <MenuIcon setShowMenu={() => setShowMenu()} showMenu={showMenu}/>
     </div>
   )
 }

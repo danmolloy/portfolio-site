@@ -98,7 +98,7 @@ export default function ContactForm() {
           <label htmlFor='msg-text' >Message</label>
           <Field 
             multiline
-            maxlength="500"
+            maxLength="500"
             rows="4"
             component="textarea"
             id="msg-text" 

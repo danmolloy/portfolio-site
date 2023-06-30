@@ -1,5 +1,5 @@
 ---
-title: 'Fixer a.k.a. GigFix'
+title: 'GigFix'
 date: '2023-01-01'
 blurb: 'Automated booking of freelance musicians with an integrated calendar and directory'
 imgSrc: '/images/gig-fix.PNG'
