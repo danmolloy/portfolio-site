@@ -1,6 +1,7 @@
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 
 export default function ContactForm() {
   const [sendStatus, setSendStatus] = useState<any>(null)
