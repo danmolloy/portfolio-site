@@ -35,15 +35,16 @@ export default function ProjectDiv(props: ProjectDivProps) {
   const [selectedTab, setSelectedTab] = useState<number>(0)
   const { title, overview, features, stack, githubLink, previewLink } = props;
   return (
+    
     <IndexDiv title={title}>
-      <div className="w-full flex flex-row  mb-6 ">
+      <div className="w-full flex flex-row mb-6">
         <button className={selectedTab === 0 ? "custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 " : "py-2 my-2 mx-4 hover:text-zinc-400"} onClick={() => setSelectedTab(0)}>Overview</button>
         <button className={selectedTab === 1 ? "custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 " : "py-2 my-2 mx-4 hover:text-zinc-400" } onClick={() => setSelectedTab(1)}>Features</button>
-        <button className={selectedTab === 2 ? "custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400" : "py-2 my-2 mx-4 hover:text-zinc-400"} onClick={() => setSelectedTab(2)}>Stack</button>
+        <button className={selectedTab === 2 ? "ld:hidden custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400" : "lg:hidden py-2 my-2 mx-4 hover:text-zinc-400"} onClick={() => setSelectedTab(2)}>Stack</button>
       </div>
       {selectedTab === 0 
       ? <div className="flex flex-col lg:flex-row items-center lg:justify-between w-full text-start lg:items-start">
-        <div className="lg:w-full flex flex-col ">
+        <div className="lg:w-full flex flex-col">
         <div className="text-blue-600 flex flex-row w-full sm:w-1/2 items-center justify-evenly text-xs ">
         <a href={githubLink} target="_blank" className="hover:underline flex flex-row items-center">
           <FaLaptopCode />
@@ -58,8 +59,17 @@ export default function ProjectDiv(props: ProjectDivProps) {
           </p>
         </a>
       </div>
+      <div className="flex flex-col justify-evenly ">
         <div className=" py-4  text-zinc-500">
           <p>{overview.blurb}</p>
+        </div>
+        <div className="hidden mt-12 text-zinc-500 lg:flex flex-row flex-wrap text-start w-2/3">
+          {stack.stackArr.map(i => (
+            <p className="m-2  text-start"  key={i}>
+              {i}
+            </p>
+          ))}
+        </div>
         </div>
         </div>
         <div className="border  rounded overflow-hidden  py-4">

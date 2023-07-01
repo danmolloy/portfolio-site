@@ -118,13 +118,19 @@ export default function IndexSection(props: IndexProps) {
         <Image className=" " src={"/images/danHero.jpg"} alt="" width={833/2} height={768/2} />
         </div>
       </div>
-      <AboutSection />
+      <div className="w-[95vw] m-2 flex flex-col items-center  min-h-[80vh] lg:w-2/3"> 
+        <AboutSection />
+
+      </div>
       {projectsArr.map((i) => (
-            <div key={i.id} className="w-screen flex flex-col items-center  min-h-[80vh]">
+            <div key={i.id} className="w-[95vw] m-2 flex flex-col items-center  min-h-[80vh] border rounded shadow-sm lg:w-2/3">
               <ProjectDiv {...i} />
             </div>
           ))}
-      <ContactSection />
+          <div className="w-[95vw] m-2 flex flex-col items-center  min-h-[80vh] lg:w-2/3">
+          <ContactSection />
+
+          </div>
     </div>
   )
 }
