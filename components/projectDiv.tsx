@@ -1,6 +1,7 @@
 import Image from "next/image";
 import IndexDiv from "./indexDiv";
 import { useState } from "react";
+import { FaLaptopCode, FaLink } from "react-icons/fa"
 
 export type ProjectDivProps = {
   id: number
@@ -35,18 +36,27 @@ export default function ProjectDiv(props: ProjectDivProps) {
   const { title, overview, features, stack, githubLink, previewLink } = props;
   return (
     <IndexDiv title={title}>
-
-      <div className="text-blue-600 flex flex-row w-1/2 items-center justify-evenly text-xs ">
-        <a href={githubLink} target="_blank" className="hover:underline ">GitHub Repo</a>
-        <a href={previewLink} target="_blank" className="hover:underline">Live Example</a>
-      </div>
       <div className="w-full flex flex-row  mb-6 ">
         <button className={selectedTab === 0 ? " border-b border-blue-500  py-2 px-2 m-2 " : "py-2 px-2 m-2"} onClick={() => setSelectedTab(0)}>Overview</button>
-        <button className={selectedTab === 1 ? " border-b border-blue-500  py-2 px-2 m-2" : "py-2 px-2 m-2" } onClick={() => setSelectedTab(1)}>Features</button>
+        <button className={selectedTab === 1 ? " border-b border-blue-500  py-2 px-2 m-2 bg-gradient" : "py-2 px-2 m-2" } onClick={() => setSelectedTab(1)}>Features</button>
         <button className={selectedTab === 2 ? " border-b border-blue-500  py-2 px-2 m-2" : "py-2 px-2 m-2"} onClick={() => setSelectedTab(2)}>Stack</button>
       </div>
       {selectedTab === 0 
       ? <div className="flex flex-col lg:flex-row items-center lg:justify-between w-full text-start">
+        <div className="text-blue-600 flex flex-row w-full sm:w-1/2 items-center justify-evenly text-xs ">
+        <a href={githubLink} target="_blank" className="hover:underline flex flex-row items-center">
+          <FaLaptopCode />
+          <p className="ml-1">
+            View GitHub
+          </p>
+        </a>
+        <a href={previewLink} target="_blank" className="hover:underline flex flex-row items-center">
+          <FaLink />
+          <p className="ml-1">
+            Live Example
+          </p>
+        </a>
+      </div>
         <div className=" py-4 lg:w-1/3 text-zinc-500">
           <p>{overview.blurb}</p>
         </div>
@@ -66,9 +76,9 @@ export default function ProjectDiv(props: ProjectDivProps) {
         </div>
       </div>
       : <div className="flex  lg:flex-row lg:justify-between flex-col w-full items-center">
-        <div className=" py-4 text-zinc-500">
+        <div className=" py-4 text-zinc-500  flex flex-row lg:flex-col flex-wrap items-center justify-center">
           {stack.stackArr.map(i => (
-            <p className="mb-2  text-start"  key={i}>
+            <p className="m-2  text-start"  key={i}>
               {i}
             </p>
           ))}

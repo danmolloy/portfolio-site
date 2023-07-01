@@ -8,10 +8,10 @@ export const menuItems: {title: string}[] = [
     title: "About",
   },
   {
-    title: "GigFix",
+    title: "Spelling Bee",
   },
   {
-    title: "Spelling Bee",
+    title: "GigFix",
   },
   {
     title: "Contact",
@@ -33,10 +33,10 @@ export default function Header(props: HeaderProps) {
   useEffect(() => {
     function handleScroll() {
       const currentPosition = window.scrollY;
-      if (currentPosition > scrollPosition + 100) {
+      if (currentPosition > scrollPosition + 25) {
         setScrollPosition(currentPosition);
         setShowHeader(false)
-      } else if (currentPosition < scrollPosition - 5) {
+      } else if (currentPosition < scrollPosition - 50) {
         setScrollPosition(currentPosition);
         setShowHeader(true)
       }
@@ -54,12 +54,12 @@ export default function Header(props: HeaderProps) {
     <div 
     
     className={!showHeader && scrollPosition < 750
-      ? "justify-between font-display -translate-y-full transition duration-1000  fixed z-30 h-16 w-screen top-0 flex flex-row-reverse md:flex-row items-center fill-zinc-300 text-zinc-100"  
+      ? "justify-between font-display -translate-y-full transition duration-1000  fixed z-30 h-14 w-screen top-0 flex flex-row-reverse md:flex-row items-center fill-zinc-300 text-zinc-100"  
       : !showHeader
-      ? "justify-between font-display -translate-y-full transition duration-1000 bg-white fixed z-30 h-16 w-screen top-0 flex flex-row-reverse md:flex-row items-center  shadow fill-zinc-300 text-black"  
+      ? "justify-between font-display -translate-y-full transition duration-500 bg-white fixed z-30 h-14 w-screen top-0 flex flex-row-reverse md:flex-row items-center  shadow fill-zinc-300 text-black"  
       /* : scrollPosition < 750
       ? "font-display  transition duration-500 ease-out fixed  z-30 h-16 w-screen top-0 flex flex-row  items-center justify-between  fill-zinc-300 text-zinc-100"
- */      : "justify-between font-display transition duration-500 ease-out fixed  bg-white z-30 h-16 w-screen top-0 flex flex-row-reverse md:flex-row  items-center  shadow fill-zinc-300 text-black"}>
+ */      : "justify-between font-display transition duration-500 ease-out fixed  bg-white z-30 h-14 w-screen top-0 flex flex-row-reverse md:flex-row  items-center  shadow fill-zinc-300 text-black"}>
 {/*       <h1 className={showMenu ? "md:hidden p-2 text-black" : 'md:hidden p-2 '}>Daniel Molloy</h1>
  */}      <div className='hidden md:flex w-screen  flex-row  justify-end pr-4'>
         <button className=' p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400' onClick={() => scroll.scrollToTop({ smooth: true, duration: 500 })}>
