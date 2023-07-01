@@ -106,7 +106,7 @@ export default function IndexSection(props: IndexProps) {
   return (
     <div className="dark:bg-zinc-900 dark:text-zinc-300  w-screen flex flex-col items-center">
       <div className="flex flex-col items-center h-screen justify-evenly sm:flex-row font-display w-screen">
-        <div className="text-center mt-2">
+        <div className="text-center my-3">
         <h1 className="text-3xl">
           Daniel Molloy
         </h1>
@@ -114,7 +114,7 @@ export default function IndexSection(props: IndexProps) {
           Web Developer / Musician
         </p>
         </div>
-        <div className="rounded-lg overflow-hidden m-4">
+        <div className="rounded-lg overflow-hidden mx-4">
         <Image className=" " src={"/images/danHero.jpg"} alt="" width={833/2} height={768/2} />
         </div>
       </div>

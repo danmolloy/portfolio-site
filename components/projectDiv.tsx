@@ -37,9 +37,9 @@ export default function ProjectDiv(props: ProjectDivProps) {
   return (
     <IndexDiv title={title}>
       <div className="w-full flex flex-row  mb-6 ">
-        <button className={selectedTab === 0 ? "custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 active:text-zinc-500 " : "py-2 my-2 mx-4 hover:text-zinc-400 active:text-zinc-500"} onClick={() => setSelectedTab(0)}>Overview</button>
-        <button className={selectedTab === 1 ? "custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 active:text-zinc-500 " : "py-2 my-2 mx-4 hover:text-zinc-400 active:text-zinc-500" } onClick={() => setSelectedTab(1)}>Features</button>
-        <button className={selectedTab === 2 ? "custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 active:text-zinc-500" : "py-2 my-2 mx-4 hover:text-zinc-400 active:text-zinc-500"} onClick={() => setSelectedTab(2)}>Stack</button>
+        <button className={selectedTab === 0 ? "custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 " : "py-2 my-2 mx-4 hover:text-zinc-400"} onClick={() => setSelectedTab(0)}>Overview</button>
+        <button className={selectedTab === 1 ? "custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 " : "py-2 my-2 mx-4 hover:text-zinc-400" } onClick={() => setSelectedTab(1)}>Features</button>
+        <button className={selectedTab === 2 ? "custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400" : "py-2 my-2 mx-4 hover:text-zinc-400"} onClick={() => setSelectedTab(2)}>Stack</button>
       </div>
       {selectedTab === 0 
       ? <div className="flex flex-col lg:flex-row items-center lg:justify-between w-full text-start lg:items-start">
