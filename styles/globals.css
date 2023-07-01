@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-border-gradient {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #ffffff, rgb(59 130 246), #ffffff);
+ }

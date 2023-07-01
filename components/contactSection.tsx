@@ -66,7 +66,7 @@ export default function ContactSection() {
           <label htmlFor='name-input' className="form-label">Name</label>
           <Field 
             id="name-input" 
-            className="text-black border border-black rounded-md w-full p-1"
+            className="text-black border border-zinc-400 rounded-md w-full p-1"
             type="text"
             name="name"/>
             <div className="h-6">
@@ -79,7 +79,7 @@ export default function ContactSection() {
           <label htmlFor='email-input' className="form-label">Email</label>
           <Field
             id="email" 
-            className="text-black border border-black rounded-md w-full p-1" 
+            className="text-black border border-zinc-400 rounded-md w-full p-1" 
             type="email"
             name="email"/>
             <div className="h-6">
@@ -96,7 +96,7 @@ export default function ContactSection() {
           rows="4"
           component="textarea"
             id="msg-text" 
-            className=" text-black border border-black rounded-md w-full p-1"
+            className=" text-black border border-zinc-400 rounded-md w-full p-1"
             type="textarea"
             name="message"/>
             <div className="h-6">

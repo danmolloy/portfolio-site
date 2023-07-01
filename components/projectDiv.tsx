@@ -37,12 +37,13 @@ export default function ProjectDiv(props: ProjectDivProps) {
   return (
     <IndexDiv title={title}>
       <div className="w-full flex flex-row  mb-6 ">
-        <button className={selectedTab === 0 ? " border-b border-blue-500  py-2 px-2 m-2 " : "py-2 px-2 m-2"} onClick={() => setSelectedTab(0)}>Overview</button>
-        <button className={selectedTab === 1 ? " border-b border-blue-500  py-2 px-2 m-2 bg-gradient" : "py-2 px-2 m-2" } onClick={() => setSelectedTab(1)}>Features</button>
-        <button className={selectedTab === 2 ? " border-b border-blue-500  py-2 px-2 m-2" : "py-2 px-2 m-2"} onClick={() => setSelectedTab(2)}>Stack</button>
+        <button className={selectedTab === 0 ? "custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 active:text-zinc-500 " : "py-2 my-2 mx-4 hover:text-zinc-400 active:text-zinc-500"} onClick={() => setSelectedTab(0)}>Overview</button>
+        <button className={selectedTab === 1 ? "custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 active:text-zinc-500 " : "py-2 my-2 mx-4 hover:text-zinc-400 active:text-zinc-500" } onClick={() => setSelectedTab(1)}>Features</button>
+        <button className={selectedTab === 2 ? "custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 active:text-zinc-500" : "py-2 my-2 mx-4 hover:text-zinc-400 active:text-zinc-500"} onClick={() => setSelectedTab(2)}>Stack</button>
       </div>
       {selectedTab === 0 
-      ? <div className="flex flex-col lg:flex-row items-center lg:justify-between w-full text-start">
+      ? <div className="flex flex-col lg:flex-row items-center lg:justify-between w-full text-start lg:items-start">
+        <div className="lg:w-full flex flex-col ">
         <div className="text-blue-600 flex flex-row w-full sm:w-1/2 items-center justify-evenly text-xs ">
         <a href={githubLink} target="_blank" className="hover:underline flex flex-row items-center">
           <FaLaptopCode />
@@ -57,8 +58,9 @@ export default function ProjectDiv(props: ProjectDivProps) {
           </p>
         </a>
       </div>
-        <div className=" py-4 lg:w-1/3 text-zinc-500">
+        <div className=" py-4  text-zinc-500">
           <p>{overview.blurb}</p>
+        </div>
         </div>
         <div className="border  rounded overflow-hidden  py-4">
         <Image className="py-4" alt={overview.imgAlt} src={overview.imgSrc} width={Number(overview.imgWidth)/4} height={Number(overview.imgHeight)/4} />
