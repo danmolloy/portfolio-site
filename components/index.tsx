@@ -97,7 +97,44 @@ const projectsArr: ProjectDivProps[] = [
       imgHeight: '1092',
       imgAlt: "GigFix player directory"
     },
-
+  },
+  {
+    id: 3,
+    title: "MyJournal",
+    previewLink: 'https://dan-journal-41929ffb093c.herokuapp.com/',
+    githubLink: 'https://github.com/danmolloy/django-journal',
+    overview: {
+      blurb: "A journalling app built with Django",
+      imgSrc: '/images/myjournal-index.PNG',
+      imgWidth: '1440',
+      imgHeight: '796',
+      imgAlt: "Index View"
+    },
+    features: {
+      featuresArr: [
+        "Django Auth",
+        "",
+        "Intuitive calendar interface",
+        "Social network user profiles",
+      ],
+      imgSrc: '/images/myjournal-detail.PNG',
+      imgWidth: '1440',
+      imgHeight: '796',
+      imgAlt: "Entry Detail View"
+    },
+    stack: {
+      stackArr: [
+        "Python",
+        "Django",
+        "Django Templates",
+        "Django Auth",
+        "PostgresQL",
+      ],
+      imgSrc: '/images/myjournal-edit.PNG',
+      imgWidth: '1440',
+      imgHeight: '796',
+      imgAlt: "Edit Entry View"
+    },
   }
 ]
 

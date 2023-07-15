@@ -72,8 +72,8 @@ export default function ProjectDiv(props: ProjectDivProps) {
         </div>
         </div>
         </div>
-        <div className="border  rounded overflow-hidden  py-4">
-        <Image className="py-4" alt={overview.imgAlt} src={overview.imgSrc} width={Number(overview.imgWidth)/4} height={Number(overview.imgHeight)/4} />
+        <div className="border  rounded overflow-hidden  my-4">
+        <Image className="" alt={overview.imgAlt} src={overview.imgSrc} width={Number(overview.imgWidth)/4} height={Number(overview.imgHeight)/4} />
         </div>
       </div>
       : selectedTab === 1
@@ -83,8 +83,8 @@ export default function ProjectDiv(props: ProjectDivProps) {
           <p className="mb-2" key={i}>{i}</p>
         ))}
         </div>
-        <div className="border  rounded overflow-hidden  py-4">
-          <Image className="py-4" alt={features.imgAlt} src={features.imgSrc} width={Number(features.imgWidth)/4} height={Number(features.imgHeight)/4} />
+        <div className="border  rounded overflow-hidden  my-4">
+          <Image className="" alt={features.imgAlt} src={features.imgSrc} width={Number(features.imgWidth)/4} height={Number(features.imgHeight)/4} />
         </div>
       </div>
       : <div className="flex  lg:flex-row lg:justify-between flex-col w-full items-center">
@@ -95,7 +95,7 @@ export default function ProjectDiv(props: ProjectDivProps) {
             </p>
           ))}
         </div>
-        <div className="border  rounded overflow-hidden  py-4">
+        <div className="border  rounded overflow-hidden  my-4">
         <Image className=" " alt={stack.imgAlt} src={stack.imgSrc} width={Number(stack.imgWidth)/4} height={Number(stack.imgHeight)/4} />
         </div>
       </div>}
