@@ -4,6 +4,7 @@ import ContactSection from "./contactSection";
 import AboutSection from "./about";
 import IndexDiv from "./indexDiv";
 import ProjectDiv, { ProjectDivProps } from "./projectDiv";
+import ProjectsSection from "./projectsSection";
 
 export type ProjectProps = {
   id: string
@@ -126,9 +127,9 @@ const projectsArr: ProjectDivProps[] = [
       stackArr: [
         "Python",
         "Django",
-        "Django Templates",
-        "Django Auth",
-        "PostgresQL",
+        "Django-Templates",
+        "Django-Auth",
+        "PostgreSQL",
       ],
       imgSrc: '/images/myjournal-edit.PNG',
       imgWidth: '1440',
@@ -138,8 +139,17 @@ const projectsArr: ProjectDivProps[] = [
   }
 ]
 
+
 export default function IndexSection(props: IndexProps) {
   const { projects} = props;
+
+  let stackArray: any = [];
+  projectsArr.forEach(i => (
+    stackArray.push(...i.stack.stackArr)
+  ))
+  stackArray = Array.from(new Set(stackArray));
+
+
   return (
     <div className="dark:bg-zinc-900 dark:text-zinc-300  w-screen flex flex-col items-center">
       <div className="flex flex-col items-center h-screen justify-evenly sm:flex-row font-display w-screen">
@@ -159,12 +169,8 @@ export default function IndexSection(props: IndexProps) {
         <AboutSection />
 
       </div>
-      {projectsArr.map((i) => (
-            <div key={i.id} className="w-[95vw] m-2 flex flex-col items-center  min-h-[80vh] border rounded shadow-sm lg:w-2/3">
-              <ProjectDiv {...i} />
-            </div>
-          ))}
-          <div className="w-[95vw] m-2 flex flex-col items-center  min-h-[80vh] lg:w-2/3">
+      <ProjectsSection stackArray={stackArray} projectsArr={projectsArr} />
+      <div className="w-[95vw] m-2 flex flex-col items-center  min-h-[80vh] lg:w-2/3">
           <ContactSection />
 
           </div>

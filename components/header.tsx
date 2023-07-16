@@ -8,10 +8,7 @@ export const menuItems: {title: string}[] = [
     title: "About",
   },
   {
-    title: "Spelling Bee",
-  },
-  {
-    title: "GigFix",
+    title: "Projects",
   },
   {
     title: "Contact",
