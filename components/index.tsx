@@ -102,7 +102,7 @@ const projectsArr: ProjectDivProps[] = [
   {
     id: 3,
     title: "MyJournal",
-    previewLink: 'https://dan-journal-41929ffb093c.herokuapp.com/',
+    previewLink: 'https://django-journal-production.up.railway.app/',
     githubLink: 'https://github.com/danmolloy/django-journal',
     overview: {
       blurb: "A journalling app built with Django",
