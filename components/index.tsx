@@ -118,7 +118,7 @@ const projectsArr: ProjectDivProps[] = [
         "Intuitive calendar interface",
         "Social network user profiles",
       ],
-      imgSrc: '/images/myjournal-detail.PNG',
+      imgSrc: '/images/myjournal-detail.png',
       imgWidth: '1440',
       imgHeight: '796',
       imgAlt: "Entry Detail View"
@@ -131,7 +131,7 @@ const projectsArr: ProjectDivProps[] = [
         "Django-Auth",
         "PostgreSQL",
       ],
-      imgSrc: '/images/myjournal-edit.PNG',
+      imgSrc: '/images/myjournal-edit.png',
       imgWidth: '1440',
       imgHeight: '796',
       imgAlt: "Edit Entry View"
