@@ -106,17 +106,17 @@ const projectsArr: ProjectDivProps[] = [
     githubLink: 'https://github.com/danmolloy/django-journal',
     overview: {
       blurb: "A journalling app built with Django",
-      imgSrc: '/images/myjournal-index.PNG',
+      imgSrc: '/images/myjournal-index.png',
       imgWidth: '1440',
       imgHeight: '796',
       imgAlt: "Index View"
     },
     features: {
       featuresArr: [
-        "Django Auth",
-        "",
-        "Intuitive calendar interface",
-        "Social network user profiles",
+        "Authorization and Authentication",
+        "Create, edit and delete journal entries",
+        "View all entries page",
+        "View entry detail page"
       ],
       imgSrc: '/images/myjournal-detail.png',
       imgWidth: '1440',
