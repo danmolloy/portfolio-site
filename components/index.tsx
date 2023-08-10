@@ -21,6 +21,44 @@ type IndexProps = {
 
 const projectsArr: ProjectDivProps[] = [
   {
+    id: 0,
+    title: "Musician Website",
+    previewLink: 'https://www.fionakellyflute.com/',
+    githubLink: 'https://github.com/danmolloy/fio-kelly',
+    overview: {
+      blurb: "A stylish personal website for a musician.",
+      imgSrc: '/images/fk-landing.png',
+      imgWidth: '870',
+      imgHeight: '480',
+      imgAlt: "Hero section of website"
+    },
+    features: {
+      featuresArr: [
+        "Responsive design",
+        "Disappearing header on scroll",
+        "Nodemailer contact form"
+      ],
+      imgSrc: '/images/fk-albums.png',
+      imgWidth: '870',
+      imgHeight: '480',
+      imgAlt: "Array of album covers"
+    },
+    stack: {
+      stackArr: [
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "Nodemailer",
+        "Formik & Yup",
+        "React Spring"
+      ],
+      imgSrc: '/images/fk-contact.png',
+      imgWidth: '870',
+      imgHeight: '480',
+      imgAlt: "Contact section and footer"
+    }
+  },
+  {
     id: 1,
     title: "Spelling Bee",
     previewLink: 'https://spelling-bee-danmolloy.vercel.app',
