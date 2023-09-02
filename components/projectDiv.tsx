@@ -45,14 +45,14 @@ export default function ProjectDiv(props: ProjectDivProps) {
       {selectedTab === 0 
       ? <div className="flex flex-col lg:flex-row items-center lg:justify-between w-full text-start lg:items-start">
         <div className="lg:w-full flex flex-col">
-        <div className="text-blue-600 flex flex-row w-full sm:w-1/2 items-center justify-evenly text-xs ">
-        <a href={githubLink} target="_blank" className="hover:underline flex flex-row items-center">
+        <div className="text-blue-600 flex flex-col sm:flex-row w-full sm:w-1/2 items-center justify-evenly text-xs ">
+        <a href={githubLink} target="_blank" className="m-1 hover:underline flex flex-row items-center">
           <FaLaptopCode />
           <p className="ml-1">
             View GitHub
           </p>
         </a>
-        <a href={previewLink} target="_blank" className="hover:underline flex flex-row items-center">
+        <a href={previewLink} target="_blank" className="m-1 hover:underline flex flex-row items-center">
           <FaLink />
           <p className="ml-1">
             Live Example

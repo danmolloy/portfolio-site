@@ -21,6 +21,41 @@ type IndexProps = {
 
 const projectsArr: ProjectDivProps[] = [
   {
+    id: 4,
+    title: "TaskTrek",
+    previewLink: "/",
+    githubLink: "https://github.com/danmolloy/routinee",
+    overview: {
+      blurb: "A habit tracking app for ios.",
+      imgWidth: "750",
+      imgHeight: "1334",
+      imgSrc: '/images/tasktrek-home.PNG',
+      imgAlt: "App home page of TaskTrek"
+
+    },
+    features: {
+      featuresArr: [
+        "Track daily tasks with gitHub-style heat chart",
+        "Attractive, animated UI"
+      ],
+      imgWidth: "750",
+      imgHeight: "1334",
+      imgSrc: '/images/tasktrek-detail.PNG',
+      imgAlt: "TaskTrek activity detail page featuring github-style heat chart"
+    },
+    stack: {
+      stackArr: [
+        "ReactNative",
+        "TypeScript",
+        "Expo"
+      ],
+      imgWidth: "750",
+      imgHeight: "1334",
+      imgSrc: '/images/tasktrek-help.PNG',
+      imgAlt: "TaskTrek help page featuring encouraging words"
+    }
+  },
+  {
     id: 0,
     title: "Musician Website",
     previewLink: 'https://www.fionakellyflute.com/',
@@ -48,9 +83,6 @@ const projectsArr: ProjectDivProps[] = [
         "Next.js",
         "TypeScript",
         "TailwindCSS",
-        "Nodemailer",
-        "Formik & Yup",
-        "React Spring"
       ],
       imgSrc: '/images/fk-contact.png',
       imgWidth: '870',
@@ -166,7 +198,6 @@ const projectsArr: ProjectDivProps[] = [
         "Python",
         "Django",
         "Django-Templates",
-        "Django-Auth",
         "PostgreSQL",
       ],
       imgSrc: '/images/myjournal-edit.png',
