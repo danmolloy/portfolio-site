@@ -23,7 +23,7 @@ const projectsArr: ProjectDivProps[] = [
   {
     id: 4,
     title: "TaskTrek",
-    previewLink: "/",
+    previewLink: "https://apps.apple.com/gb/app/tasktrek/id6462425051",
     githubLink: "https://github.com/danmolloy/routinee",
     overview: {
       blurb: "A habit tracking app for ios.",
@@ -47,6 +47,7 @@ const projectsArr: ProjectDivProps[] = [
       stackArr: [
         "ReactNative",
         "TypeScript",
+        "Jest",
         "Expo"
       ],
       imgWidth: "750",
