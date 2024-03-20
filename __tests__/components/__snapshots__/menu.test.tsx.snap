@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> matches snapshot 1`] = `
+<div
+  class=" ease-in -translate-y-full transition duration-500 opacity-90 rounded-bl flex flex-col z-20 bg-white fixed w-screen  min-h-screen right-0 shadow text-2xl"
+  data-testid="menu"
+>
+  <div
+    class="flex flex-col w-full justify-evenly  font-display mt-16"
+  >
+    <button
+      class="py-4 m-4 flex flex-col text-black  items-center justify-center hover:text-orange-500 active:text-amber-400"
+    >
+      Home
+    </button>
+    <div />
+    <div />
+    <div />
+  </div>
+</div>
+`;

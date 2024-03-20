@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { ProjectProps } from "."
-import ProjectDiv, { ProjectDivProps } from "./projectDiv";
+import ProjectDiv from "./projectDiv";
 import { Element } from "react-scroll";
+import { ProjectDivProps, projectsBlurb } from "@/lib/projects";
 
-type ProjectsSectionProps = {
+export type ProjectsSectionProps = {
   stackArray: string[]
   projectsArr: ProjectDivProps[]
 }
@@ -21,11 +21,12 @@ export default function ProjectsSection(props: ProjectsSectionProps) {
   }
 
   return (
-    <Element name="projects" className="w-[95vw] py-12 m-2 flex flex-col items-center  min-h-[80vh]  lg:w-2/3">
-      <div className="flex flex-row w-full px-12 py-4 text-sm  items-center">
+    <Element data-testid="projects-section" name="projects" className="w-[95vw] py-12 m-2 flex flex-col items-center  min-h-[80vh]  lg:w-2/3">
+      <div className="flex flex-col w-full px-12 py-4 text-sm items-center">
       <h1 className="font-display ">Projects</h1>
+      <p className="my-4 text-zinc-500">{projectsBlurb}</p>
       </div>
-      <div className=" flex flex-row flex-wrap items-center justify-center sm:w-2/3">
+      <div data-testid="filters-arr" className="dark:bg-zinc-800 rounded flex flex-row flex-wrap items-center justify-center sm:w-2/3">
         {stackArray.map((i: string) => (
           <button onClick={() => handleStackBtn(i)} 
           className={selectedStack === i 
@@ -36,15 +37,11 @@ export default function ProjectsSection(props: ProjectsSectionProps) {
       </div>
       {selectedStack === ""
       ? projectsArr.map((i) => (
-          <div key={i.id} className="w-full m-2 flex flex-col items-center  min-h-[80vh] border rounded shadow-sm lg:w-2/3">
-            <ProjectDiv {...i} />
-          </div>
+          <ProjectDiv key={i.id} {...i} />
         ))
-      : projectsArr.filter(i => i.stack.stackArr.includes(selectedStack)).map((i) => (
-            <div key={i.id} className="w-[95vw] m-2 flex flex-col items-center  min-h-[80vh] border rounded shadow-sm lg:w-2/3">
-              <ProjectDiv {...i} />
-            </div>
-          ))}
+      : projectsArr.filter(i => i.stack.includes(selectedStack)).map((i) => (
+          <ProjectDiv key={i.id}  {...i} />
+        ))}
     </Element>
   )
 }

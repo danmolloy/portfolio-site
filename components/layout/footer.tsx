@@ -4,7 +4,7 @@ import { animateScroll as scroll } from 'react-scroll'
 
 export default function Footer() {
   return (
-    <div className="w-full h-20 dark:bg-zinc-900 flex sm:flex-row flex-col sm:justify-between p-2 items-center border-t">
+    <div data-testid="footer" className="w-full h-20 dark:bg-gray-900 flex sm:flex-row flex-col sm:justify-between p-2 items-center border-t dark:border-t-zinc-600">
       <button className='hover:underline font-display text-sm font-light hover:cursor-pointer active:text-zinc-400 m-1 ' onClick={() => scroll.scrollToTop({ smooth: true, duration: 750 })}>
         Back to top
       </button>

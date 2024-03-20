@@ -1,19 +1,20 @@
-import IndexSection from "./indexDiv";
+import IndexSection from "../indexDiv";
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from "next/image";
-import IndexDiv from "./indexDiv";
+import IndexDiv from "../indexDiv";
+import axios from "axios";
 
-export default function ContactSection() {
-  const [sendStatus, setSendStatus] = useState(null)
+export default function Section() {
+  const [sendStatus, setSendStatus] = useState<"success"|"sending"|"err"|null>(null)
 
-  const sendFail: any = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please <a href='mailto:fiokelly@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
+  const sendFail = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please <a href='mailto:fiokelly@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
 
-  const sendSuccess: any = (<div><h2 className="text-2xl">Message recieved!</h2><p>I will get back to you as soon as possible.</p></div>)
+  const sendSuccess = (<div><h2 className="text-2xl">Message recieved!</h2><p>I will get back to you as soon as possible.</p></div>)
 
-  const sendingMsg: any = (<div><h2 className="text-2xl">Message sending...</h2></div>)
+  const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
 
   return (
     <IndexDiv title="Contact" name="contact">
@@ -27,46 +28,37 @@ export default function ContactSection() {
     validationSchema={Yup.object({
       name: Yup.string()
         .max(30, 'Must be 30 characters or less')
-        .required('Required'),
+        .required('name required'),
       email: Yup.string()
         .email('Invalid email address')
-        .required('Required'),
+        .required('email required'),
       message: Yup.string()
         .max(500, 'Must be 200 characters or less')
-        .required('Required')
+        .required('message required')
     })}
     onSubmit={async (values, actions ) => {
-      console.log('Sending')
-      setSendStatus(sendingMsg)
+      setSendStatus("sending")
       await new Promise(resolve => setTimeout(resolve, 1000))
-        
-      fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json, text/plain, */*',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(values)
-      }).then((res) => {
+      axios.post("/api/contact", values)
+      .then((res) => {
         console.log('Response received')
-
         if (res.status === 200) {
-          setSendStatus(sendSuccess)
+          setSendStatus("success")
           actions.setSubmitting(false)
           actions.resetForm()
         } else {
-          setSendStatus(sendFail)
+          setSendStatus("err")
         }
         })
       }}> 
       {(props) => (
-      <Form className="font-sans flex flex-col w-screen lg:w-1/2 ">
+      <Form data-testid="contact-form" className="font-sans flex flex-col w-screen lg:w-1/2 ">
 
           <div className="flex flex-col m-2">
-          <label htmlFor='name-input' className="form-label">Name</label>
+          <label htmlFor='name-input' className="form-label dark:text-zinc-400">Name</label>
           <Field 
             id="name-input" 
-            className="text-black border border-zinc-400 rounded-md w-full p-1"
+            className="text-black border border-zinc-400 rounded-md w-full p-1 dark:bg-zinc-300"
             type="text"
             name="name"/>
             <div className="h-6">
@@ -76,10 +68,10 @@ export default function ContactSection() {
           </div>
           </div>
           <div className="flex flex-col m-2">
-          <label htmlFor='email-input' className="form-label">Email</label>
+          <label htmlFor='email' className="form-label dark:text-zinc-400">Email</label>
           <Field
             id="email" 
-            className="text-black border border-zinc-400 rounded-md w-full p-1" 
+            className="text-black border border-zinc-400 rounded-md w-full p-1 dark:bg-zinc-300" 
             type="email"
             name="email"/>
             <div className="h-6">
@@ -89,14 +81,14 @@ export default function ContactSection() {
           </div>
           </div>
           <div className="flex flex-col m-2 mb-0">
-          <label htmlFor='msg-text' className="form-label">Message</label>
+          <label htmlFor='msg-text' className="form-label dark:text-zinc-400">Message</label>
           <Field 
           multiline="6"
           maxLength="500"
           rows="4"
           component="textarea"
             id="msg-text" 
-            className=" text-black border border-zinc-400 rounded-md w-full p-1"
+            className=" text-black border border-zinc-400 rounded-md w-full p-1 dark:bg-zinc-300"
             type="textarea"
             name="message"/>
             <div className="h-6">
@@ -107,15 +99,18 @@ export default function ContactSection() {
           </ErrorMessage>
           </div>
           </div>
-        <button id="submit-button" type='submit' className="hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end">Submit</button>
+        <button id="submit-button" type='submit' className="hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end dark:bg-gray-800 dark:hover:text-yellow-300 dark:hover:border-yellow-300">Submit</button>
         <div>
-        {sendStatus}
+        {sendStatus === "sending" 
+        ? sendingMsg
+        : sendStatus === "err" 
+        ? sendFail
+        : sendStatus === "success" 
+        ? sendSuccess
+        : null}
       </div>
       </Form> )}
     </Formik>
-    <div className="hidden lg:flex mx-12">
-{/*       <Image alt="Fiona profile photo with flute" src={"/images/fiona-profile.jpg"} width="325" height="425" />
- */}    </div>
     </div>
     </IndexDiv>
   )

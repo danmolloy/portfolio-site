@@ -1,0 +1,1573 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> matches snapshot 1`] = `
+<div
+  class="dark:bg-zinc-900 dark:text-zinc-300 w-full min-h-screen bg-white flex flex-col items-center justify-between font-sans"
+  data-testid="layout"
+>
+  <div
+    class="justify-between font-display transition duration-500 ease-out fixed  bg-white z-30 h-14 w-screen top-0 flex flex-row-reverse md:flex-row  items-center  shadow fill-zinc-300 text-black"
+    data-testid="header"
+  >
+    <div
+      class="hidden md:flex w-screen  flex-row  justify-end pr-4"
+    >
+      <button
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+        data-testid="home-btn"
+      >
+        Home
+      </button>
+      <a
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+      >
+        <p>
+          About
+        </p>
+      </a>
+      <a
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+      >
+        <p>
+          Projects
+        </p>
+      </a>
+      <a
+        class=" p-4 m-2 text-lg font-light hover:cursor-pointer active:text-zinc-400"
+      >
+        <p>
+          Contact
+        </p>
+      </a>
+    </div>
+    <button
+      class="fill-black m-2 hover:fill-orange-500 active:fill-orange-400  md:hidden "
+      data-testid="menu-icon"
+    >
+      <svg
+        class="m-2"
+        height="22"
+        width="30"
+      >
+        <rect
+          height="2"
+          rx="2"
+          style="transform: scaleX(1) translate(0px, 0px) rotate(0deg);"
+          width="30"
+        />
+        <rect
+          height="2"
+          rx="2"
+          style="opacity: 1;"
+          width="30"
+          y="8"
+        />
+        <rect
+          height="2"
+          rx="2"
+          style="transform: scaleX(1) translate(0px, 0px) rotate(0deg);"
+          width="30"
+          y="17"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    class=" ease-in -translate-y-full transition duration-500 opacity-90 rounded-bl flex flex-col z-20 bg-white fixed w-screen  min-h-screen right-0 shadow text-2xl"
+    data-testid="menu"
+  >
+    <div
+      class="flex flex-col w-full justify-evenly  font-display mt-16"
+    >
+      <button
+        class="py-4 m-4 flex flex-col text-black  items-center justify-center hover:text-orange-500 active:text-amber-400"
+      >
+        Home
+      </button>
+      <a>
+        <div
+          class="hover:cursor-pointer py-4 m-4 flex flex-col text-black  items-center justify-center hover:text-orange-500 active:text-amber-400 "
+        >
+          About
+        </div>
+      </a>
+      <a>
+        <div
+          class="hover:cursor-pointer py-4 m-4 flex flex-col text-black  items-center justify-center hover:text-orange-500 active:text-amber-400 "
+        >
+          Projects
+        </div>
+      </a>
+      <a>
+        <div
+          class="hover:cursor-pointer py-4 m-4 flex flex-col text-black  items-center justify-center hover:text-orange-500 active:text-amber-400 "
+        >
+          Contact
+        </div>
+      </a>
+    </div>
+  </div>
+  <main
+    class="transition duration-500 flex flex-col items-center"
+  >
+    <div
+      class="dark:bg-zinc-900 dark:text-zinc-300  w-screen flex flex-col items-center"
+      data-testid="index-section"
+    >
+      <div
+        class="flex flex-col items-center h-screen justify-evenly sm:flex-row font-display w-screen"
+        data-testid="hero-section"
+      >
+        <div
+          class="text-center my-3"
+        >
+          <h1
+            class="text-3xl"
+          >
+            Daniel Molloy
+          </h1>
+          <p
+            class="text-xl"
+          >
+            Web Developer / Musician
+          </p>
+        </div>
+        <div
+          class="rounded-lg overflow-hidden mx-4"
+        >
+          <img
+            alt=""
+            class=" "
+            data-nimg="1"
+            decoding="async"
+            height="384"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2FdanHero.jpg&w=1080&q=75"
+            srcset="/_next/image?url=%2Fimages%2FdanHero.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2FdanHero.jpg&w=1080&q=75 2x"
+            style="color: transparent;"
+            width="416.5"
+          />
+        </div>
+      </div>
+      <div
+        class="w-[95vw] m-2 flex flex-col items-center  min-h-[80vh] lg:w-2/3"
+      >
+        <div
+          class=" p-12 text-sm flex flex-col items-center w-full "
+          data-testid="index-div"
+        >
+          <div
+            class="flex flex-row w-full"
+          >
+            <h1
+              class="font-display my-4"
+            >
+              About
+            </h1>
+          </div>
+          <div>
+            <p
+              class="text-zinc-500 mb-6 tracking-wider"
+            >
+              I have spent my whole professional life working as a classical double bassist, and regularly perform with some of the finest ensembles in the world. I frequently work in the renowned Abbey Road Studios with the top session musicians in UK, recording soundtracks for award winning films and television series.
+            </p>
+            <p
+              class="text-zinc-500 mb-6 tracking-wider"
+            >
+              I have enjoyed writing code for the past four years as a recreational activity and am looking to make it a career.
+            </p>
+            <p
+              class="text-zinc-500 mb-6 tracking-wider"
+            >
+              Born in Brisbane, I have lived in London for 9 years.
+            </p>
+          </div>
+          <div
+            class="w-5/6 m-2 flex flex-col items-center p-2"
+          >
+            <p
+              class="p-2"
+            >
+              Orchestras I perform for:
+            </p>
+            <ul
+              class=" h-28 w-[90vw] md:w-full overflow-auto p-1 rounded border "
+            >
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="Academy of St Martin in the Fields favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Fasmf.png&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Fasmf.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fasmf.png&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="Academy of St Martin in the Fields-logo"
+                  width="25"
+                />
+                <p>
+                  Academy of St Martin in the Fields
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="BBC Symphony Orchestra favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Fbbc.png&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Fbbc.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fbbc.png&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="BBC Symphony Orchestra-logo"
+                  width="25"
+                />
+                <p>
+                  BBC Symphony Orchestra
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="City of London Sinfonia favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Fcls.png&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Fcls.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fcls.png&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="City of London Sinfonia-logo"
+                  width="25"
+                />
+                <p>
+                  City of London Sinfonia
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="Cool Music Ltd favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Fcool-music.jpg&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Fcool-music.jpg&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fcool-music.jpg&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="Cool Music Ltd-logo"
+                  width="25"
+                />
+                <p>
+                  Cool Music Ltd
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="English Chamber Orchestra favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Feco.png&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Feco.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2Feco.png&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="English Chamber Orchestra-logo"
+                  width="25"
+                />
+                <p>
+                  English Chamber Orchestra
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="Isobel Griffiths Ltd favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Fig-ltd.png&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Fig-ltd.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fig-ltd.png&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="Isobel Griffiths Ltd-logo"
+                  width="25"
+                />
+                <p>
+                  Isobel Griffiths Ltd
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="London Chamber Orchestra favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Flco.png&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Flco.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2Flco.png&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="London Chamber Orchestra-logo"
+                  width="25"
+                />
+                <p>
+                  London Chamber Orchestra
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="London Mozart Players favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Flmp.png&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Flmp.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2Flmp.png&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="London Mozart Players-logo"
+                  width="25"
+                />
+                <p>
+                  London Mozart Players
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="London Sinfonietta favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Flondon-sinfonietta.jpg&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Flondon-sinfonietta.jpg&w=32&q=75 1x, /_next/image?url=%2Ficons%2Flondon-sinfonietta.jpg&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="London Sinfonietta-logo"
+                  width="25"
+                />
+                <p>
+                  London Sinfonietta
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="London Contemporary Orchestra favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Flondon-contemporary-orchestra.png&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Flondon-contemporary-orchestra.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2Flondon-contemporary-orchestra.png&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="London Contemporary Orchestra-logo"
+                  width="25"
+                />
+                <p>
+                  London Contemporary Orchestra
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="London Symphony Orchestra favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Flso.png&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Flso.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2Flso.png&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="London Symphony Orchestra-logo"
+                  width="25"
+                />
+                <p>
+                  London Symphony Orchestra
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="Orchestra of the Swan favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2FOOTS.png&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2FOOTS.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2FOOTS.png&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="Orchestra of the Swan-logo"
+                  width="25"
+                />
+                <p>
+                  Orchestra of the Swan
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="Oxford Philharmonic favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Fopo.png&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Fopo.png&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fopo.png&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="Oxford Philharmonic-logo"
+                  width="25"
+                />
+                <p>
+                  Oxford Philharmonic
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="Queensland Symphony Orchestra favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Fqso.jpg&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Fqso.jpg&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fqso.jpg&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="Queensland Symphony Orchestra-logo"
+                  width="25"
+                />
+                <p>
+                  Queensland Symphony Orchestra
+                </p>
+              </li>
+              <li
+                class="p-2 flex flex-row items-center bg-white text-zinc-500"
+              >
+                <img
+                  alt="Royal Philharmonic Orchestra favicon"
+                  class="mr-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="25"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Frpo.jpg&w=64&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Frpo.jpg&w=32&q=75 1x, /_next/image?url=%2Ficons%2Frpo.jpg&w=64&q=75 2x"
+                  style="color: transparent;"
+                  title="Royal Philharmonic Orchestra-logo"
+                  width="25"
+                />
+                <p>
+                  Royal Philharmonic Orchestra
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-[95vw] py-12 m-2 flex flex-col items-center  min-h-[80vh]  lg:w-2/3"
+        data-testid="projects-section"
+      >
+        <div
+          class="flex flex-col w-full px-12 py-4 text-sm items-center"
+        >
+          <h1
+            class="font-display "
+          >
+            Projects
+          </h1>
+          <p>
+            All projects are built with Test-Driven Development, RESTful API Integration, responsive mobile-first design and W3C Accessibility.
+          </p>
+        </div>
+        <div
+          class=" flex flex-row flex-wrap items-center justify-center sm:w-2/3"
+          data-testid="filters-arr"
+        >
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            React Native
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            TypeScript
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            Jest
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            Expo
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            Next.js
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            TailwindCSS
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            Node.js
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            Prisma
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            PostgreSQL
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            Twilio
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            Formik
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            Python
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            Django
+          </button>
+          <button
+            class="transition ease-out duration-300 text-blue-500 text-sm rounded m-1 hover:text-blue-700 active:text-blue-800 "
+          >
+            Django-Templates
+          </button>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center my-8 outline"
+          data-testid="project-div"
+        >
+          <div
+            data-testid="project-header"
+          >
+            <h2>
+              TaskTrek
+            </h2>
+            <a
+              class="m-1 ml-2 hover:underline flex flex-row items-center"
+              data-testid="github-link"
+              href="https://github.com/danmolloy/routinee"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 640 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"
+                />
+              </svg>
+              <p
+                class="ml-1"
+              >
+                View GitHub
+              </p>
+            </a>
+            <a
+              class="m-1 hover:underline flex flex-row items-center"
+              data-testid="example-link"
+              href="https://apps.apple.com/gb/app/tasktrek/id6462425051"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                />
+              </svg>
+              <p
+                class="ml-1"
+              >
+                Live Example
+              </p>
+            </a>
+            <div
+              class="w-full flex flex-row mb-6"
+            >
+              <button
+                class="custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 "
+                data-testid="overview-btn"
+              >
+                Overview
+              </button>
+              <button
+                class="py-2 my-2 mx-4 hover:text-zinc-400"
+              >
+                Features
+              </button>
+            </div>
+          </div>
+          <div
+            data-testid="project-text"
+          >
+            <div
+              class=""
+              data-testid="overview-tab"
+            >
+              <div>
+                <p>
+                  I enjoy learning new skills and am keen on maintaining habits which help achieve larger goals. TaskTrek helps the user log their daily habits with additional data (i.e. duration, count, hashtags) and view an overall pattern across a week, month or year. I created TaskTrek for my own use and eventually released it on the App Store.
+                </p>
+                <p>
+                  TaskTrek is built with React Native, TypeScript, Expo, Jest. Additionally, I used a few RN community packages to a lesser extent.
+                </p>
+              </div>
+              <div>
+                <p
+                  class=""
+                >
+                  React Native
+                </p>
+                <p
+                  class=""
+                >
+                  TypeScript
+                </p>
+                <p
+                  class=""
+                >
+                  Jest
+                </p>
+                <p
+                  class=""
+                >
+                  Expo
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class=" m-4 h-[1334px]  flex flex-row items-center justify-center"
+            data-testid="project-images"
+          >
+            <button
+              class="opacity-30 transition-opacity duration-500 text-xl hover:text-amber-500"
+              data-testid="left-chevron"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                />
+              </svg>
+            </button>
+            <img
+              alt="App home page of TaskTrek"
+              class="mx-16 fade-in transition-opacity duration-200"
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="333.5"
+              src="/_next/image?url=%2Fimages%2Ftasktrek-home.PNG&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2Ftasktrek-home.PNG&w=256&q=75 1x, /_next/image?url=%2Fimages%2Ftasktrek-home.PNG&w=384&q=75 2x"
+              style="color: transparent;"
+              width="187.5"
+            />
+            <button
+              class="opacity-100 transition-opacity duration-700 text-xl hover:text-amber-500"
+              data-testid="right-chevron"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center my-8 outline"
+          data-testid="project-div"
+        >
+          <div
+            data-testid="project-header"
+          >
+            <h2>
+              Musician Website
+            </h2>
+            <a
+              class="m-1 ml-2 hover:underline flex flex-row items-center"
+              data-testid="github-link"
+              href="https://github.com/danmolloy/fio-kelly"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 640 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"
+                />
+              </svg>
+              <p
+                class="ml-1"
+              >
+                View GitHub
+              </p>
+            </a>
+            <a
+              class="m-1 hover:underline flex flex-row items-center"
+              data-testid="example-link"
+              href="https://www.fionakellyflute.com/"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                />
+              </svg>
+              <p
+                class="ml-1"
+              >
+                Live Example
+              </p>
+            </a>
+            <div
+              class="w-full flex flex-row mb-6"
+            >
+              <button
+                class="custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 "
+                data-testid="overview-btn"
+              >
+                Overview
+              </button>
+              <button
+                class="py-2 my-2 mx-4 hover:text-zinc-400"
+              >
+                Features
+              </button>
+            </div>
+          </div>
+          <div
+            data-testid="project-text"
+          >
+            <div
+              class=""
+              data-testid="overview-tab"
+            >
+              <div>
+                <p>
+                  I was approached by a colleague to create a website for prospective students, potential employers and concert organisers. The musician wanted a site that was modern and attractive, but largely gave me freedom to design the interface. I worked closely with them to create a design they were pleased with. It's not the most technical project in my portfolio but very practical.
+                </p>
+                <p>
+                  This site was built with NextJS, TypeScript and TailwindCSS. The contact form was built using NodeMailer, Formik and Yup validation.
+                </p>
+              </div>
+              <div>
+                <p
+                  class=""
+                >
+                  Next.js
+                </p>
+                <p
+                  class=""
+                >
+                  TypeScript
+                </p>
+                <p
+                  class=""
+                >
+                  TailwindCSS
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class=" m-4 h-[480px]  flex flex-row items-center justify-center"
+            data-testid="project-images"
+          >
+            <button
+              class="opacity-30 transition-opacity duration-500 text-xl hover:text-amber-500"
+              data-testid="left-chevron"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                />
+              </svg>
+            </button>
+            <img
+              alt="Hero section of website"
+              class="mx-16 fade-in transition-opacity duration-200"
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="120"
+              src="/_next/image?url=%2Fimages%2Ffk-landing.png&w=640&q=75"
+              srcset="/_next/image?url=%2Fimages%2Ffk-landing.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Ffk-landing.png&w=640&q=75 2x"
+              style="color: transparent;"
+              width="217.5"
+            />
+            <button
+              class="opacity-100 transition-opacity duration-700 text-xl hover:text-amber-500"
+              data-testid="right-chevron"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center my-8 outline"
+          data-testid="project-div"
+        >
+          <div
+            data-testid="project-header"
+          >
+            <h2>
+              Spelling Bee
+            </h2>
+            <a
+              class="m-1 ml-2 hover:underline flex flex-row items-center"
+              data-testid="github-link"
+              href="https://github.com/danmolloy/spelling-bee"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 640 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"
+                />
+              </svg>
+              <p
+                class="ml-1"
+              >
+                View GitHub
+              </p>
+            </a>
+            <a
+              class="m-1 hover:underline flex flex-row items-center"
+              data-testid="example-link"
+              href="https://spelling-bee-danmolloy.vercel.app"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                />
+              </svg>
+              <p
+                class="ml-1"
+              >
+                Live Example
+              </p>
+            </a>
+            <div
+              class="w-full flex flex-row mb-6"
+            >
+              <button
+                class="custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 "
+                data-testid="overview-btn"
+              >
+                Overview
+              </button>
+              <button
+                class="py-2 my-2 mx-4 hover:text-zinc-400"
+              >
+                Features
+              </button>
+            </div>
+          </div>
+          <div
+            data-testid="project-text"
+          >
+            <div
+              class=""
+              data-testid="overview-tab"
+            >
+              <div>
+                <p>
+                  I&apos;m a great fan of NYT's Spelling Bee word game and decided to replicate the game. The site fetches the original game data from the source code and saves your answers to local storage, allowing you to continue gameplay throughout the day. I&apos;ve tried my best to capture the playful character of the game using CSS animation and styling. Additionally, there is a dynamic table of hints.
+                </p>
+                <p>
+                  Spelling Bee is built with NextJS, TypeScript, TailwindCSS (as well as vanilla CSS) and Jest. For the data fetching, I use NextJS API routes.
+                </p>
+              </div>
+              <div>
+                <p
+                  class=""
+                >
+                  Next.js
+                </p>
+                <p
+                  class=""
+                >
+                  TypeScript
+                </p>
+                <p
+                  class=""
+                >
+                  TailwindCSS
+                </p>
+                <p
+                  class=""
+                >
+                  Jest
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class=" m-4 h-[1092px]  flex flex-row items-center justify-center"
+            data-testid="project-images"
+          >
+            <button
+              class="opacity-30 transition-opacity duration-500 text-xl hover:text-amber-500"
+              data-testid="left-chevron"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                />
+              </svg>
+            </button>
+            <img
+              alt="Spelling Bee screenshot with pangram confetti"
+              class="mx-16 fade-in transition-opacity duration-200"
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="273"
+              src="/_next/image?url=%2Fimages%2Fspelling-bee.PNG&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2Fspelling-bee.PNG&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fspelling-bee.PNG&w=384&q=75 2x"
+              style="color: transparent;"
+              width="187.5"
+            />
+            <button
+              class="opacity-100 transition-opacity duration-700 text-xl hover:text-amber-500"
+              data-testid="right-chevron"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center my-8 outline"
+          data-testid="project-div"
+        >
+          <div
+            data-testid="project-header"
+          >
+            <h2>
+              GigFix
+            </h2>
+            <a
+              class="m-1 ml-2 hover:underline flex flex-row items-center"
+              data-testid="github-link"
+              href="https://github.com/danmolloy/fixer"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 640 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"
+                />
+              </svg>
+              <p
+                class="ml-1"
+              >
+                View GitHub
+              </p>
+            </a>
+            <a
+              class="m-1 hover:underline flex flex-row items-center"
+              data-testid="example-link"
+              href="https://gig-fix-git-main-danmolloy.vercel.app/"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                />
+              </svg>
+              <p
+                class="ml-1"
+              >
+                Live Example
+              </p>
+            </a>
+            <div
+              class="w-full flex flex-row mb-6"
+            >
+              <button
+                class="custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 "
+                data-testid="overview-btn"
+              >
+                Overview
+              </button>
+              <button
+                class="py-2 my-2 mx-4 hover:text-zinc-400"
+              >
+                Features
+              </button>
+            </div>
+          </div>
+          <div
+            data-testid="project-text"
+          >
+            <div
+              class=""
+              data-testid="overview-tab"
+            >
+              <div>
+                <p>
+                  Orchestras often need to book a large number of freelancers in a very short space of time. Additionally, they must relay dynamic information to all relative musicians. GigFix address this workflow issue, saving orchestras large amounts of time and money. For the freelance musicians, it offers a directory where they can be connected with orchestras with whom they’ve not worked. I’m hoping to eventually release GigFix for public use.
+                </p>
+                <p>
+                  GIgFix is built primarily with NextJS, TypeScript, Formik,  Prisma (with PostgresQL), Twilio, TailwindCSS and Jest.
+                </p>
+              </div>
+              <div>
+                <p
+                  class=""
+                >
+                  Next.js
+                </p>
+                <p
+                  class=""
+                >
+                  TypeScript
+                </p>
+                <p
+                  class=""
+                >
+                  Node.js
+                </p>
+                <p
+                  class=""
+                >
+                  TailwindCSS
+                </p>
+                <p
+                  class=""
+                >
+                  Jest
+                </p>
+                <p
+                  class=""
+                >
+                  Prisma
+                </p>
+                <p
+                  class=""
+                >
+                  PostgreSQL
+                </p>
+                <p
+                  class=""
+                >
+                  Twilio
+                </p>
+                <p
+                  class=""
+                >
+                  Formik
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class=" m-4 h-[1092px]  flex flex-row items-center justify-center"
+            data-testid="project-images"
+          >
+            <button
+              class="opacity-30 transition-opacity duration-500 text-xl hover:text-amber-500"
+              data-testid="left-chevron"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                />
+              </svg>
+            </button>
+            <img
+              alt="GigFix landing page"
+              class="mx-16 fade-in transition-opacity duration-200"
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="273"
+              src="/_next/image?url=%2Fimages%2Fgig-fix.PNG&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2Fgig-fix.PNG&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fgig-fix.PNG&w=384&q=75 2x"
+              style="color: transparent;"
+              width="187.5"
+            />
+            <button
+              class="opacity-100 transition-opacity duration-700 text-xl hover:text-amber-500"
+              data-testid="right-chevron"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center my-8 outline"
+          data-testid="project-div"
+        >
+          <div
+            data-testid="project-header"
+          >
+            <h2>
+              MyJournal
+            </h2>
+            <a
+              class="m-1 ml-2 hover:underline flex flex-row items-center"
+              data-testid="github-link"
+              href="https://github.com/danmolloy/django-journal"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 640 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"
+                />
+              </svg>
+              <p
+                class="ml-1"
+              >
+                View GitHub
+              </p>
+            </a>
+            <a
+              class="m-1 hover:underline flex flex-row items-center"
+              data-testid="example-link"
+              href="https://django-journal-production.up.railway.app/"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+                />
+              </svg>
+              <p
+                class="ml-1"
+              >
+                Live Example
+              </p>
+            </a>
+            <div
+              class="w-full flex flex-row mb-6"
+            >
+              <button
+                class="custom-border-gradient border-b border-blue-500  py-2 my-2 mx-4 hover:text-zinc-400 "
+                data-testid="overview-btn"
+              >
+                Overview
+              </button>
+              <button
+                class="py-2 my-2 mx-4 hover:text-zinc-400"
+              >
+                Features
+              </button>
+            </div>
+          </div>
+          <div
+            data-testid="project-text"
+          >
+            <div
+              class=""
+              data-testid="overview-tab"
+            >
+              <div>
+                <p>
+                  My journal is a basic journalling web app, created as a personal learning tool when I was studying Django and Python. Very simply, users create an account and create journal entries which are only visible to themselves.
+                </p>
+                <p>
+                  MyJournal is built with Python and Django. It connects to a SQLite3 database and uses Django packages such as Django Auth.
+                </p>
+              </div>
+              <div>
+                <p
+                  class=""
+                >
+                  Python
+                </p>
+                <p
+                  class=""
+                >
+                  Django
+                </p>
+                <p
+                  class=""
+                >
+                  Django-Templates
+                </p>
+                <p
+                  class=""
+                >
+                  PostgreSQL
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class=" m-4 h-[796px]  flex flex-row items-center justify-center"
+            data-testid="project-images"
+          >
+            <button
+              class="opacity-30 transition-opacity duration-500 text-xl hover:text-amber-500"
+              data-testid="left-chevron"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                />
+              </svg>
+            </button>
+            <img
+              alt="Index View"
+              class="mx-16 fade-in transition-opacity duration-200"
+              data-nimg="1"
+              decoding="async"
+              fetchpriority="high"
+              height="199"
+              src="/_next/image?url=%2Fimages%2Fmyjournal-index.png&w=750&q=75"
+              srcset="/_next/image?url=%2Fimages%2Fmyjournal-index.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fmyjournal-index.png&w=750&q=75 2x"
+              style="color: transparent;"
+              width="360"
+            />
+            <button
+              class="opacity-100 transition-opacity duration-700 text-xl hover:text-amber-500"
+              data-testid="right-chevron"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-[95vw] m-2 flex flex-col items-center  min-h-[80vh] lg:w-2/3"
+      >
+        <div
+          class=" p-12 text-sm flex flex-col items-center w-full "
+          data-testid="index-div"
+        >
+          <div
+            class="flex flex-row w-full"
+          >
+            <h1
+              class="font-display my-4"
+            >
+              Contact
+            </h1>
+          </div>
+          <div
+            class="flex flex-row w-full justify-between  h-[30rem]"
+          >
+            <form
+              action="#"
+              class="font-sans flex flex-col w-screen lg:w-1/2 "
+              data-testid="contact-form"
+            >
+              <div
+                class="flex flex-col m-2"
+              >
+                <label
+                  class="form-label"
+                  for="name-input"
+                >
+                  Name
+                </label>
+                <input
+                  class="text-black border border-zinc-400 rounded-md w-full p-1"
+                  id="name-input"
+                  name="name"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="h-6"
+                />
+              </div>
+              <div
+                class="flex flex-col m-2"
+              >
+                <label
+                  class="form-label"
+                  for="email"
+                >
+                  Email
+                </label>
+                <input
+                  class="text-black border border-zinc-400 rounded-md w-full p-1"
+                  id="email"
+                  name="email"
+                  type="email"
+                  value=""
+                />
+                <div
+                  class="h-6"
+                />
+              </div>
+              <div
+                class="flex flex-col m-2 mb-0"
+              >
+                <label
+                  class="form-label"
+                  for="msg-text"
+                >
+                  Message
+                </label>
+                <textarea
+                  class=" text-black border border-zinc-400 rounded-md w-full p-1"
+                  id="msg-text"
+                  maxlength="500"
+                  multiline="6"
+                  name="message"
+                  rows="4"
+                  type="textarea"
+                />
+                <div
+                  class="h-6"
+                />
+              </div>
+              <button
+                class="hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end"
+                id="submit-button"
+                type="submit"
+              >
+                Submit
+              </button>
+              <div />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div
+    class="w-full h-20 dark:bg-zinc-900 flex sm:flex-row flex-col sm:justify-between p-2 items-center border-t"
+    data-testid="footer"
+  >
+    <button
+      class="hover:underline font-display text-sm font-light hover:cursor-pointer active:text-zinc-400 m-1 "
+    >
+      Back to top
+    </button>
+    <p
+      class="text-sm text-zinc-400 font-display"
+    >
+      Designed and built by Daniel Molloy
+    </p>
+  </div>
+</div>
+`;

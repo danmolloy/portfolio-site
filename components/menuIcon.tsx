@@ -1,6 +1,6 @@
 import { useSpring, animated } from 'react-spring';
 
-type MenuIconProps = {
+export type MenuIconProps = {
   showMenu: boolean
   setShowMenu: () => void
 }
@@ -15,7 +15,7 @@ export default function MenuIcon(props: MenuIconProps) {
 
 
   return (
-      <button className={`${"fill-black"} m-2 hover:fill-orange-500 active:fill-orange-400  md:hidden `} onClick={() => setShowMenu()}>
+      <button data-testid="menu-icon" className={`${"fill-black"} m-2 hover:fill-orange-500 active:fill-orange-400  md:hidden dark:fill-zinc-400 dark:hover:fill-yellow-300`} onClick={() => setShowMenu()}>
         <svg width="30" height="22" className='m-2' >
           <animated.rect style={props1} width="30" height="2" rx="2" />
           <animated.rect style={props2} y="8" width="30" height="2" rx="2"/>

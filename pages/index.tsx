@@ -1,9 +1,7 @@
 import Layout from '@/components/layout';
-import { getSortedProjectsData } from '../lib';
-import ProjectTile from '@/components/projectTile';
 import IndexSection from '@/components';
 
-
+/* 
 export async function getStaticProps() {
   const allProjectsData = getSortedProjectsData();
   return {
@@ -11,12 +9,12 @@ export async function getStaticProps() {
       allProjectsData,
     },
   };
-}
+} */
 
-export default function Home({ allProjectsData }: any) {
+export default function Home() {
   return (
     <Layout>
-     <IndexSection projects={allProjectsData} />
+     <IndexSection />
     </Layout>
   )
 }
