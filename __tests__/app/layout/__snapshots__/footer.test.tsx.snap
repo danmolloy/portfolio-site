@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> matches snapshot 1`] = `
+<div
+  class="w-full h-20 dark:bg-gray-900 flex sm:flex-row flex-col sm:justify-between p-2 items-center border-t dark:border-t-zinc-600"
+  data-testid="footer"
+>
+  <a
+    class=" hover:underline text-sm font-light hover:cursor-pointer active:text-zinc-400 m-1 "
+    href="/"
+  >
+    Back to top
+  </a>
+  <p
+    class="text-sm  text-zinc-500 dark:text-zinc-400"
+  >
+    Designed and built by Daniel Molloy
+  </p>
+</div>
+`;

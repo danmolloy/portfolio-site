@@ -1,0 +1,613 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProjectsSection /> matches snapshot 1`] = `
+<section
+  class="w-[95vw] py-12 m-2 flex flex-col items-center  min-h-[80vh]  lg:w-2/3"
+  data-testid="projects-section"
+>
+  <div
+    class="flex flex-col w-full px-12 py-4 text-sm items-center"
+  >
+    <h2
+      class=" "
+    >
+      Projects
+    </h2>
+    <p
+      class="my-4 text-zinc-500 dark:text-zinc-400"
+    >
+      All projects are built with Test-Driven Development, RESTful API Integration, responsive mobile-first design and W3C Accessibility.
+    </p>
+  </div>
+  <div
+    class="flex flex-col justify-center items-center my-8 border dark:border-zinc-700 p-4 rounded shadow w-full"
+    data-testid="project-5"
+  >
+    <div
+      class="flex flex-row justify-between items-center w-full"
+    >
+      <h3>
+        Band Website
+      </h3>
+      <div
+        class="flex flex-col"
+      >
+        <a
+          class="m-1 ml-2  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="github-link"
+          href="https://github.com/danmolloy/firkin"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 640 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            View GitHub
+          </p>
+        </a>
+        <a
+          class="m-1 flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="example-link"
+          href="https:/thebigfirkinband.com/"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            Live Example
+          </p>
+        </a>
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center md:flex-row md:justify-between my-2"
+    >
+      <div
+        class="transition duration-700 md:w-1/2"
+        data-testid="project-text"
+      >
+        <p
+          class="pb-4"
+        >
+          A band's website with an google calendar integration, Stripe checkout, attractive UI, WCAG 2.0 accessibility, robust contact form and responsive design. Built using NextJS 14, TypeScript, Tailwind CSS, and Formik.
+        </p>
+        <a
+          class="m-1 ml-2  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="github-link"
+          href="https://github.com/danmolloy/firkin"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            View Readme
+          </p>
+        </a>
+      </div>
+      <img
+        alt="Landing page of The Big Firkin Band website"
+        class="m-4"
+        data-nimg="1"
+        decoding="async"
+        height="283"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Ffirkin.jpeg&w=384&q=75"
+        srcset="/_next/image?url=%2Fimages%2Ffirkin.jpeg&w=256&q=75 1x, /_next/image?url=%2Fimages%2Ffirkin.jpeg&w=384&q=75 2x"
+        style="color: transparent;"
+        title="Landing page of The Big Firkin Band website"
+        width="187"
+      />
+    </div>
+  </div>
+  <div
+    class="flex flex-col justify-center items-center my-8 border dark:border-zinc-700 p-4 rounded shadow w-full"
+    data-testid="project-1"
+  >
+    <div
+      class="flex flex-row justify-between items-center w-full"
+    >
+      <h3>
+        Spelling Bee
+      </h3>
+      <div
+        class="flex flex-col"
+      >
+        <a
+          class="m-1 ml-2  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="github-link"
+          href="https://github.com/danmolloy/spelling-bee"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 640 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            View GitHub
+          </p>
+        </a>
+        <a
+          class="m-1 flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="example-link"
+          href="https://spelling-bee-danmolloy.vercel.app"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            Live Example
+          </p>
+        </a>
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center md:flex-row md:justify-between my-2"
+    >
+      <div
+        class="transition duration-700 md:w-1/2"
+        data-testid="project-text"
+      >
+        <p
+          class="pb-4"
+        >
+          An interactive game UX with data fetching, WCAG 2.0 accessibility, keyboard event listeners and dynamic hints. Built with NextJS 14, TypeScript, Tailwind CSS and Jest.
+        </p>
+        <a
+          class="m-1 ml-2  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="github-link"
+          href="https://github.com/danmolloy/spelling-bee"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            View Readme
+          </p>
+        </a>
+      </div>
+      <img
+        alt="Spelling Bee screenshot with pangram confetti"
+        class="m-4"
+        data-nimg="1"
+        decoding="async"
+        height="273"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Fspelling-bee.PNG&w=384&q=75"
+        srcset="/_next/image?url=%2Fimages%2Fspelling-bee.PNG&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fspelling-bee.PNG&w=384&q=75 2x"
+        style="color: transparent;"
+        title="Spelling Bee screenshot with pangram confetti"
+        width="187.5"
+      />
+    </div>
+  </div>
+  <div
+    class="flex flex-col justify-center items-center my-8 border dark:border-zinc-700 p-4 rounded shadow w-full"
+    data-testid="project-2"
+  >
+    <div
+      class="flex flex-row justify-between items-center w-full"
+    >
+      <h3>
+        GigFix
+      </h3>
+      <div
+        class="flex flex-col"
+      >
+        <a
+          class="m-1 ml-2  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="github-link"
+          href="https://github.com/danmolloy/fixer"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 640 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            View GitHub
+          </p>
+        </a>
+        <a
+          class="m-1 flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="example-link"
+          href="https://gig-fix-git-main-danmolloy.vercel.app/"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            Live Example
+          </p>
+        </a>
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center md:flex-row md:justify-between my-2"
+    >
+      <div
+        class="transition duration-700 md:w-1/2"
+        data-testid="project-text"
+      >
+        <p
+          class="pb-4"
+        >
+          A large personal project featuring CRUD operations on a relational database, authentication & authorization, WCAG 2.0 accessibility and an attractive UI. Built with NextJS, TypeScript, Formik,  Prisma (with PostgresQL), Twilio, TailwindCSS and Jest.
+        </p>
+        <a
+          class="m-1 ml-2  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="github-link"
+          href="https://github.com/danmolloy/fixer"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            View Readme
+          </p>
+        </a>
+      </div>
+      <img
+        alt="GigFix landing page"
+        class="m-4"
+        data-nimg="1"
+        decoding="async"
+        height="273"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Fgig-fix.PNG&w=384&q=75"
+        srcset="/_next/image?url=%2Fimages%2Fgig-fix.PNG&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fgig-fix.PNG&w=384&q=75 2x"
+        style="color: transparent;"
+        title="GigFix landing page"
+        width="187.5"
+      />
+    </div>
+  </div>
+  <div
+    class="flex flex-col justify-center items-center my-8 border dark:border-zinc-700 p-4 rounded shadow w-full"
+    data-testid="project-6"
+  >
+    <div
+      class="flex flex-row justify-between items-center w-full"
+    >
+      <h3>
+        RESTful|CMS
+      </h3>
+      <div
+        class="flex flex-col"
+      >
+        <a
+          class="m-1 ml-2  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="github-link"
+          href="https://github.com/danmolloy/RESTfulCMS"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 640 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            View GitHub
+          </p>
+        </a>
+        <a
+          class="m-1 flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="example-link"
+          href="https://restfulcms-production.up.railway.app/"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            Live Example
+          </p>
+        </a>
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center md:flex-row md:justify-between my-2"
+    >
+      <div
+        class="transition duration-700 md:w-1/2"
+        data-testid="project-text"
+      >
+        <p
+          class="pb-4"
+        >
+          A blogging CMS complete with an API endpoint, authorization and authentication, a variety of views and CRUD operations. Built with Django, PostgresQL and CSS.
+        </p>
+        <a
+          class="m-1 ml-2  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="github-link"
+          href="https://github.com/danmolloy/RESTfulCMS"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            View Readme
+          </p>
+        </a>
+      </div>
+      <img
+        alt="Index View of Restful CMS website"
+        class="m-4"
+        data-nimg="1"
+        decoding="async"
+        height="317.5"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Frestful-cms.png&w=828&q=75"
+        srcset="/_next/image?url=%2Fimages%2Frestful-cms.png&w=640&q=75 1x, /_next/image?url=%2Fimages%2Frestful-cms.png&w=828&q=75 2x"
+        style="color: transparent;"
+        title="Index View of Restful CMS website"
+        width="386.5"
+      />
+    </div>
+  </div>
+  <div
+    class="flex flex-col justify-center items-center my-8 border dark:border-zinc-700 p-4 rounded shadow w-full"
+    data-testid="project-4"
+  >
+    <div
+      class="flex flex-row justify-between items-center w-full"
+    >
+      <h3>
+        TaskTrek
+      </h3>
+      <div
+        class="flex flex-col"
+      >
+        <a
+          class="m-1 ml-2  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="github-link"
+          href="https://github.com/danmolloy/routinee"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 640 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            View GitHub
+          </p>
+        </a>
+        <a
+          class="m-1 flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="example-link"
+          href="https://apps.apple.com/gb/app/tasktrek/id6462425051"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            Live Example
+          </p>
+        </a>
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center md:flex-row md:justify-between my-2"
+    >
+      <div
+        class="transition duration-700 md:w-1/2"
+        data-testid="project-text"
+      >
+        <p
+          class="pb-4"
+        >
+          A habit tracking app available in the app store. CRUD operations, attractive UI and a variety of data rendering built using React Native, TypeScript, Expo and Jest.
+        </p>
+        <a
+          class="m-1 ml-2  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300"
+          data-testid="github-link"
+          href="https://github.com/danmolloy/routinee"
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+            />
+          </svg>
+          <p
+            class="ml-1 dark:hover:text-yellow-300"
+          >
+            View Readme
+          </p>
+        </a>
+      </div>
+      <img
+        alt="TaskTrek activity detail page featuring github-style heat chart"
+        class="m-4"
+        data-nimg="1"
+        decoding="async"
+        height="333.5"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Ftasktrek-detail.PNG&w=384&q=75"
+        srcset="/_next/image?url=%2Fimages%2Ftasktrek-detail.PNG&w=256&q=75 1x, /_next/image?url=%2Fimages%2Ftasktrek-detail.PNG&w=384&q=75 2x"
+        style="color: transparent;"
+        title="TaskTrek activity detail page featuring github-style heat chart"
+        width="187.5"
+      />
+    </div>
+  </div>
+</section>
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToggleSwitch /> matches snapshot 1`] = `
+<div
+  class="hover:cursor-pointer flex flex-row flex-wrap items-center  my-2 mx-4"
+  data-testid="toggle-switch"
+>
+  <div
+    class=" overflow-y-visible w-8 h-4 flex flex-row items-center rounded-full bg-zinc-50 border"
+  >
+    <div
+      class=" -ml-2 bg-zinc-100 border shadow w-5 h-5 rounded-full transition-all duration-500"
+    />
+  </div>
+      
+</div>
+`;
