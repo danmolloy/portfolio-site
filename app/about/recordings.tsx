@@ -2,7 +2,6 @@ import { Recording } from "@/lib/soundtracks"
 import Image from "next/image";
 import { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { Element, Button, animateScroll, Link } from "react-scroll";
 
 
 export type RecordingsProps = {
