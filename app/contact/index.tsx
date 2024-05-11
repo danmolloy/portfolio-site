@@ -9,7 +9,7 @@ import axios from "axios";
 export default function Section() {
   const [sendStatus, setSendStatus] = useState<"success"|"sending"|"err"|null>(null)
 
-  const sendFail = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please <a href='mailto:fiokelly@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
+  const sendFail = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please try again or <a href='mailto:danielmolloy_6@icloud.com' className='text-blue-500'>send an email</a>.</p></div>)
 
   const sendSuccess = (<div><h2 className="text-2xl">Message recieved!</h2><p>I will get back to you as soon as possible.</p></div>)
 
@@ -46,8 +46,12 @@ export default function Section() {
           actions.setSubmitting(false)
           actions.resetForm()
         } else {
+          actions.setSubmitting(false)
           setSendStatus("err")
         }
+        }).catch(e => {
+          actions.setSubmitting(false)
+          setSendStatus("err")
         })
       }}> 
       {(props) => (
@@ -98,7 +102,7 @@ export default function Section() {
           </ErrorMessage>
           </div>
           </div>
-        <button disabled={props.isSubmitting || sendStatus === "sending"} id="submit-button" type='submit' className=" disabled:opacity-30 hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end dark:bg-gray-900 dark:hover:text-yellow-300 dark:hover:border-yellow-300">Submit</button>
+        <button disabled={props.isSubmitting || (sendStatus === "sending")} id="submit-button" type='submit' className=" disabled:opacity-30 hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end dark:bg-gray-900 dark:hover:text-yellow-300 dark:hover:border-yellow-300">Submit</button>
         <div>
         {sendStatus === "sending" 
         ? sendingMsg
