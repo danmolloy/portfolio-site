@@ -51,7 +51,7 @@ export const projectsArr: ProjectDivProps[] = [
       imgAlt: "Spelling Bee screenshot with pangram confetti"},
       blurb: "An interactive game UX with data fetching, WCAG 2.0 accessibility, keyboard event listeners and dynamic hints. Built with NextJS 14, TypeScript, Tailwind CSS and Jest.",
 },
-  {
+  /* {
     id: 2,
     title: "GigFix",
     previewLink: 'https://gig-fix-git-main-danmolloy.vercel.app/',
@@ -62,7 +62,7 @@ export const projectsArr: ProjectDivProps[] = [
       imgAlt: "GigFix landing page"},
       blurb: "A large personal project featuring CRUD operations on a relational database, authentication & authorization, WCAG 2.0 accessibility and an attractive UI. Built with NextJS, TypeScript, Formik,  Prisma (with PostgresQL), Twilio, TailwindCSS and Jest."
     
-  },
+  }, */
   {
     id: 6,
     title: "RESTful|CMS",

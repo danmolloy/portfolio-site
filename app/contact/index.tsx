@@ -16,7 +16,7 @@ export default function Section() {
   const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
 
   return (
-    <section className="flex flex-col w-full justify-between  h-[30rem]">
+    <section className="flex flex-col w-screen justify-between h-[30rem]">
       <h1>Contact</h1>
     <Formik    
     initialValues={{
@@ -55,7 +55,7 @@ export default function Section() {
         })
       }}> 
       {(props) => (
-      <Form data-testid="contact-form" className=" flex flex-col w-screen lg:w-1/2 ">
+      <Form data-testid="contact-form" className=" flex flex-col w-[95vw] self-center lg:w-1/2 ">
 
           <div className="flex flex-col m-2">
           <label htmlFor='name-input' className="form-label dark:text-zinc-400">Name</label>
