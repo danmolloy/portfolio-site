@@ -12,7 +12,7 @@ export type ProjectDivProps = {
   blurb: string,
 }
 
-export const projectsBlurb = "All projects are built with Test-Driven Development, RESTful API Integration, responsive mobile-first design and W3C Accessibility."
+export const projectsBlurb = "All projects are built with Test-Driven Development, RESTful API Integration, responsive mobile-first design and WCAG 2.0 Accessibility."
 
 
 export const projectsArr: ProjectDivProps[] = [
@@ -26,7 +26,7 @@ export const projectsArr: ProjectDivProps[] = [
       imgWidth: '748',
       imgHeight: '1132',
       imgAlt: "Landing page of The Big Firkin Band website"},
-    blurb: "A band's website with an google calendar integration, Stripe checkout, attractive UI, WCAG 2.0 accessibility, robust contact form and responsive design. Built using NextJS 14, TypeScript, Tailwind CSS, and Formik.",
+    blurb: "A band's website with google calendar integration, Stripe checkout, attractive UI, WCAG 2.0 accessibility, robust contact form and responsive design. Built using NextJS 14, TypeScript, Tailwind CSS, and Formik.",
   },
   /* {
     id: 0,
