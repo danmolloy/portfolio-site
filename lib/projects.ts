@@ -2,6 +2,7 @@ export type ProjectDivProps = {
   id: number
   title: string
   githubLink: string
+  npmLink?: string
   previewLink: string
   image: {
     imgSrc: string
@@ -17,7 +18,7 @@ export const projectsBlurb = "All projects are built with Test-Driven Developmen
 
 export const projectsArr: ProjectDivProps[] = [
   {
-    id: 5,
+    id: 0,
     title: "Band Website",
     previewLink: 'https:/thebigfirkinband.com/',
     githubLink: 'https://github.com/danmolloy/firkin',
@@ -28,20 +29,21 @@ export const projectsArr: ProjectDivProps[] = [
       imgAlt: "Landing page of The Big Firkin Band website"},
     blurb: "A band's website with google calendar integration, Stripe checkout, attractive UI, WCAG 2.0 accessibility, robust contact form and responsive design. Built using NextJS 14, TypeScript, Tailwind CSS, and Formik.",
   },
-  /* {
-    id: 0,
-    title: "Musician Website",
-    previewLink: 'https://www.fionakellyflute.com/',
-    githubLink: 'https://github.com/danmolloy/fio-kelly',
-    image:
-      {imgSrc: '/images/fk-landing.png',
-      imgWidth: '870',
-      imgHeight: '480',
-      imgAlt: "Hero section of website"},
-    blurb: "A musicians website with an attractive UI, WCAG 2.0 accessibility, robust contact form and responsive design. Built using NextJS 14, TypeScript, Tailwind CSS, and Formik.",
-  }, */
   {
     id: 1,
+    title: "React Diary",
+    previewLink: 'https://react-diary-example.vercel.app/',
+    npmLink: "https://www.npmjs.com/package/react-diary",
+    githubLink: 'https://github.com/danmolloy/react-diary',
+    image:
+      {imgSrc: '/images/react-diary.png',
+      imgWidth: '1132',
+      imgHeight: '748',
+      imgAlt: "Example of MonthCalendar component."},
+    blurb: "A react component library, simplifying scheduling events in calendars.",
+  },
+  {
+    id: 2,
     title: "Spelling Bee",
     previewLink: 'https://spelling-bee-danmolloy.vercel.app',
     githubLink: 'https://github.com/danmolloy/spelling-bee',
@@ -51,20 +53,8 @@ export const projectsArr: ProjectDivProps[] = [
       imgAlt: "Spelling Bee screenshot with pangram confetti"},
       blurb: "An interactive game UX with data fetching, WCAG 2.0 accessibility, keyboard event listeners and dynamic hints. Built with NextJS 14, TypeScript, Tailwind CSS and Jest.",
 },
-  /* {
-    id: 2,
-    title: "GigFix",
-    previewLink: 'https://gig-fix-git-main-danmolloy.vercel.app/',
-    githubLink: 'https://github.com/danmolloy/fixer',
-    image: {imgSrc: '/images/gig-fix.PNG',
-      imgWidth: '750',
-      imgHeight: '1092',
-      imgAlt: "GigFix landing page"},
-      blurb: "A large personal project featuring CRUD operations on a relational database, authentication & authorization, WCAG 2.0 accessibility and an attractive UI. Built with NextJS, TypeScript, Formik,  Prisma (with PostgresQL), Twilio, TailwindCSS and Jest."
-    
-  }, */
   {
-    id: 6,
+    id: 3,
     title: "RESTful|CMS",
     previewLink: 'https://restfulcms-production.up.railway.app/',
     githubLink: 'https://github.com/danmolloy/RESTfulCMS',
@@ -87,6 +77,30 @@ export const projectsArr: ProjectDivProps[] = [
       imgSrc: '/images/tasktrek-detail.PNG',
       imgAlt: "TaskTrek activity detail page featuring github-style heat chart"},
   },
+    /* {
+    id: 0,
+    title: "Musician Website",
+    previewLink: 'https://www.fionakellyflute.com/',
+    githubLink: 'https://github.com/danmolloy/fio-kelly',
+    image:
+      {imgSrc: '/images/fk-landing.png',
+      imgWidth: '870',
+      imgHeight: '480',
+      imgAlt: "Hero section of website"},
+    blurb: "A musicians website with an attractive UI, WCAG 2.0 accessibility, robust contact form and responsive design. Built using NextJS 14, TypeScript, Tailwind CSS, and Formik.",
+  }, */
+    /* {
+    id: 2,
+    title: "GigFix",
+    previewLink: 'https://gig-fix-git-main-danmolloy.vercel.app/',
+    githubLink: 'https://github.com/danmolloy/fixer',
+    image: {imgSrc: '/images/gig-fix.PNG',
+      imgWidth: '750',
+      imgHeight: '1092',
+      imgAlt: "GigFix landing page"},
+      blurb: "A large personal project featuring CRUD operations on a relational database, authentication & authorization, WCAG 2.0 accessibility and an attractive UI. Built with NextJS, TypeScript, Formik,  Prisma (with PostgresQL), Twilio, TailwindCSS and Jest."
+    
+  }, */
   /* {
     id: 3,
     title: "MyJournal",

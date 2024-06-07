@@ -1,5 +1,5 @@
 import { projectsArr, projectsBlurb } from "@/lib/projects";
-import { FaLaptopCode, FaLink } from "react-icons/fa";
+import { FaGithub, FaLaptopCode, FaLink, FaNpm } from "react-icons/fa";
 import Image from "next/image";
 
 
@@ -14,19 +14,25 @@ export default function Projects() {
       
       {projectsArr.map((i) => (
           <div key={i.id} data-testid={`project-${i.id}`} className="flex flex-col justify-center items-center my-8 border dark:border-zinc-700 p-4 rounded shadow w-full">
-          <div className="flex flex-row justify-between items-center w-full">
+          <div className="flex lg:flex-row flex-col justify-between items-start w-full">
           <h3>{i.title}</h3>
-          <div className="flex flex-col">
-            <a data-testid="github-link" href={i.githubLink} target="_blank" className="m-1 ml-2  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300">
-              <FaLaptopCode />
-              <p className="ml-1 dark:hover:text-yellow-300">
-                View GitHub
+          <div className="flex flex-row justify-start  ">
+            <a data-testid="github-link" href={i.githubLink} target="_blank" className="m-1  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300">
+              <FaGithub size={14} color="black"/>
+              <p className="ml-1 dark:hover:text-yellow-300 hover:underline">
+                GitHub
               </p>
             </a>
+            {i.npmLink && <a data-testid="npm-link" href={i.npmLink} target="_blank" className="m-1  flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300">
+              <FaNpm size={16} color="black"/>
+              <p className="ml-1 dark:hover:text-yellow-300 hover:underline">
+                NPM
+              </p>
+            </a>}
             <a data-testid="example-link" href={i.previewLink} target="_blank" className="m-1 flex flex-row items-center text-sm hover:text-blue-500 dark:hover:text-yellow-300">
-              <FaLink />
-              <p className="ml-1 dark:hover:text-yellow-300">
-                Live Example
+              <FaLink size={12} color="black"/>
+              <p className="ml-1 dark:hover:text-yellow-300 hover:underline">
+                Preview
               </p>
             </a>
             </div>

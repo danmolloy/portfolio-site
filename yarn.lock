@@ -1445,6 +1445,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/luxon@npm:^3":
+  version: 3.4.2
+  resolution: "@types/luxon@npm:3.4.2"
+  checksum: 10c0/d835467de3daf7e17ba78b50bb5a14efd94272439ca067990d71332a54b311544459c69623eddd243b511b28d70194c9591a9ee8cf9c038962c965f991affd7e
+  languageName: node
+  linkType: hard
+
 "@types/mdast@npm:^3.0.0":
   version: 3.0.11
   resolution: "@types/mdast@npm:3.0.11"
@@ -5362,6 +5369,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"luxon@npm:^3.4.4":
+  version: 3.4.4
+  resolution: "luxon@npm:3.4.4"
+  checksum: 10c0/02e26a0b039c11fd5b75e1d734c8f0332c95510f6a514a9a0991023e43fb233884da02d7f966823ffb230632a733fc86d4a4b1e63c3fbe00058b8ee0f8c728af
+  languageName: node
+  linkType: hard
+
 "lz-string@npm:^1.5.0":
   version: 1.5.0
   resolution: "lz-string@npm:1.5.0"
@@ -6440,6 +6454,7 @@ __metadata:
     "@testing-library/jest-dom": "npm:^6.4.5"
     "@testing-library/react": "npm:^15.0.7"
     "@types/jest": "npm:^29.5.12"
+    "@types/luxon": "npm:^3"
     "@types/node": "npm:18.15.11"
     "@types/react": "npm:18.0.35"
     "@types/react-dom": "npm:18.0.11"
@@ -6452,10 +6467,12 @@ __metadata:
     gray-matter: "npm:^4.0.3"
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
+    luxon: "npm:^3.4.4"
     next: "npm:^14.2.3"
     nodemailer: "npm:^6.9.1"
     postcss: "npm:8.4.21"
     react: "npm:^18.3.1"
+    react-diary: "npm:^1.0.11"
     react-dom: "npm:^18.3.1"
     react-icons: "npm:^5.0.1"
     react-spring: "npm:^9.7.2"
@@ -6715,6 +6732,18 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: 10c0/900a93d3cdae3acd7d16f642c29a642aea32c2026446151f0778c62ac089d4b8e6c986811076e1ae180a694cedf077d453a11b58ff0a865629a4f82ab558e102
+  languageName: node
+  linkType: hard
+
+"react-diary@npm:^1.0.11":
+  version: 1.0.11
+  resolution: "react-diary@npm:1.0.11"
+  dependencies:
+    "@types/luxon": "npm:^3"
+    luxon: "npm:^3.4.4"
+  peerDependencies:
+    react: ^18.3.1
+  checksum: 10c0/79d465d804519ba37e38b29e0f2d21daac0b25646aaea6d8b1d0a419d24efe7bd2203c144b349ba9d147fa3240767098d7ebbcc2d38399d457b0e0bca709d4c4
   languageName: node
   linkType: hard
 
