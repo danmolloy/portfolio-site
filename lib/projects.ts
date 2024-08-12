@@ -19,18 +19,32 @@ export const projectsBlurb = "All projects are built with Test-Driven Developmen
 export const projectsArr: ProjectDivProps[] = [
   {
     id: 0,
-    title: "Band Website",
-    previewLink: 'https:/thebigfirkinband.com/',
-    githubLink: 'https://github.com/danmolloy/firkin',
-    image:
-      {imgSrc: '/images/firkin.jpeg',
-      imgWidth: '748',
-      imgHeight: '1132',
-      imgAlt: "Landing page of The Big Firkin Band website"},
-    blurb: "A band's website with google calendar integration, Stripe checkout, attractive UI, WCAG 2.0 accessibility, robust contact form and responsive design. Built using NextJS 14, TypeScript, Tailwind CSS, and Formik.",
+    title: "GigFix",
+    previewLink: "https://gig-fix.vercel.app/",
+    githubLink: "https://github.com/danmolloy/fixer",
+    image: {
+      imgSrc: '/images/gigfix.png',
+      imgWidth: "1223",
+      imgHeight: "784",
+      imgAlt: "GigFix landing page"
+    },
+    blurb: "GigFix is a specialized communications tool designed to streamline the process of managing gig information for orchestras. It enhances communication between orchestra management and musicians by automating musician booking, centralizing gig information and promptly relaying updated information to the relevant parties."
   },
   {
     id: 1,
+    title: "Band Website",
+    previewLink: 'https:/thebigfirkinband.com/',
+    githubLink: 'https://github.com/danmolloy/firkin',
+    image: {
+      imgSrc: '/images/firkin.jpeg',
+      imgWidth: '748',
+      imgHeight: '1132',
+      imgAlt: "Landing page of The Big Firkin Band website"
+    },
+      blurb: "A band's website with google calendar integration, Stripe checkout, attractive UI, WCAG 2.0 accessibility, robust contact form and responsive design. Built using NextJS 14, TypeScript, Tailwind CSS, and Formik.",
+  },
+  {
+    id: 2,
     title: "React Diary",
     previewLink: 'https://react-diary-example.vercel.app/',
     npmLink: "https://www.npmjs.com/package/react-diary",
@@ -43,7 +57,7 @@ export const projectsArr: ProjectDivProps[] = [
     blurb: "A react component library, simplifying scheduling events in calendars.",
   },
   {
-    id: 2,
+    id: 3,
     title: "Spelling Bee",
     previewLink: 'https://spelling-bee-danmolloy.vercel.app',
     githubLink: 'https://github.com/danmolloy/spelling-bee',
@@ -54,7 +68,7 @@ export const projectsArr: ProjectDivProps[] = [
       blurb: "An interactive game UX with data fetching, WCAG 2.0 accessibility, keyboard event listeners and dynamic hints. Built with NextJS 14, TypeScript, Tailwind CSS and Jest.",
 },
   {
-    id: 3,
+    id: 4,
     title: "RESTful|CMS",
     previewLink: 'https://restfulcms-production.up.railway.app/',
     githubLink: 'https://github.com/danmolloy/RESTfulCMS',
@@ -66,7 +80,7 @@ export const projectsArr: ProjectDivProps[] = [
       blurb: "A blogging CMS complete with an API endpoint, authorization and authentication, a variety of views and CRUD operations. Built with Django, PostgresQL and CSS."
   },
   {
-    id: 4,
+    id: 5,
     title: "TaskTrek",
     previewLink: "https://apps.apple.com/gb/app/tasktrek/id6462425051",
     githubLink: "https://github.com/danmolloy/routinee",

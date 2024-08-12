@@ -17,7 +17,7 @@ export default function Section() {
 
   return (
     <section className="flex flex-col w-screen justify-between h-[30rem]">
-      <h1>Contact</h1>
+      <h1 className='self-center'>Contact</h1>
     <Formik    
     initialValues={{
       name: '',
