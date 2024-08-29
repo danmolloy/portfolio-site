@@ -14,8 +14,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [ 'var(--font-raleway)', ...defaultTheme.fontFamily.sans],
-        display: ['var(--font-inconsolata)',...defaultTheme.fontFamily.sans]
+        sans: [ 'var(--font-poppins)', ...defaultTheme.fontFamily.sans],
+        display: ['var(--font-poppins)',...defaultTheme.fontFamily.sans]
             },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
