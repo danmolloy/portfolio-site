@@ -12,7 +12,7 @@ exports[`<Footer /> matches snapshot 1`] = `
     Back to top
   </a>
   <p
-    class="text-sm  text-zinc-500 dark:text-zinc-400"
+    class="text-sm  text-zinc-800"
   >
     Designed and built by Daniel Molloy
   </p>

@@ -19,7 +19,7 @@ export default function Ensembles(props: EnsembleProps) {
       <div className=" flex flex-row flex-wrap justify-center w-full my-4 transition-all">
         {showAll 
         ? ensembles.map(i => (
-          <div className=" text-zinc-500 dark:text-zinc-400 flex shadow-sm flex-row p-2 m-1 border rounded items-center w-72 dark:border-zinc-700" key={i.favicon}>
+          <div className=" text-zinc-800 dark:text-zinc-400 flex shadow-sm flex-row p-2 m-1 border rounded items-center w-72 dark:border-zinc-700" key={i.favicon}>
             <Image title={`${i.name}-logo`} alt={`${i.name} favicon`} src={i.favicon} height={25} width={25} className="mr-2"/>
             <p>{i.name}</p>
           </div>

@@ -7,15 +7,17 @@ import { FaChevronDown, FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Page() {
   return (
     <div data-testid="index-section" className="w-screen flex flex-col items-center">
-    <section data-testid="hero-section" className="  flex flex-col items-center h-screen justify-start w-screen">
-      <div className="text-start self-start mt-24 mx-12">
-        <h1 className="text-3xl font-display">
+      <div className="w-36 h-24 outline top-0 left-0 mt-36 mr-24 fixed bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] blur-3xl" />
+      <div className="w-36 h-36 outline bottom-0 mb-24 ml-48 fixed bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] blur-3xl" />
+    <section data-testid="hero-section" className="  flex flex-col items-center h-screen  w-screen">
+      <div className=" text-center mt-36 mx-12 font-medium">
+        <h1 className="text-4xl ">
           Daniel Molloy
         </h1>
-        <p className="text-xl">
+        <p className="text-2xl">
           Web Developer
         </p>
-        <div className="flex flex-row">
+        <div className="flex flex-row justify-center">
           <Link className="text-lg m-1 hover:text-gray-600" href={'https://github.com/danmolloy/'}>
             <FaGithub />        
           </Link>

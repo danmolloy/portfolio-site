@@ -55,13 +55,13 @@ export default function Section() {
         })
       }}> 
       {(props) => (
-      <Form data-testid="contact-form" className=" flex flex-col w-[95vw] self-center lg:w-1/2 ">
+      <Form data-testid="contact-form" className="z-10  flex flex-col w-[95vw] self-center lg:w-1/2 ">
 
           <div className="flex flex-col m-2">
           <label htmlFor='name-input' className="form-label dark:text-zinc-400">Name</label>
           <Field 
             id="name-input" 
-            className="text-black border border-zinc-400 rounded-md w-full p-1 dark:bg-zinc-300"
+            className=" text-black border border-zinc-400 rounded-md w-full p-1 dark:bg-zinc-300"
             type="text"
             name="name"/>
             <div className="h-6">
@@ -102,7 +102,7 @@ export default function Section() {
           </ErrorMessage>
           </div>
           </div>
-        <button disabled={props.isSubmitting || (sendStatus === "sending")} id="submit-button" type='submit' className=" disabled:opacity-30 hover:bg-blue-50 border shadow-sm border-blue-500 text-blue-500 m-2 p-1 w-24 rounded self-end dark:bg-gray-900 dark:hover:text-yellow-300 dark:hover:border-yellow-300">Submit</button>
+        <button disabled={props.isSubmitting || (sendStatus === "sending")} id="submit-button" type='submit' className=" disabled:opacity-30 hover:bg-gray-50 shadow-sm bg-white  border border-zinc-400 m-2 p-1 w-24 rounded self-end  ">Submit</button>
         <div>
         {sendStatus === "sending" 
         ? sendingMsg

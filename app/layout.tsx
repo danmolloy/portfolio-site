@@ -2,9 +2,9 @@ import { Metadata } from 'next'
 import Header from './layout/header'
 import Footer from './layout/footer'
 import "./globals.css";
-import { Inconsolata, Raleway, Poiret_One, Poppins } from 'next/font/google'
+import { Inconsolata, Raleway, Poiret_One, Poppins, Rubik } from 'next/font/google'
 
-const poppins = Poppins({weight: "400", subsets: ['latin'], variable: "--font-poppins"})
+const rubik = Rubik({weight: "400", subsets: ['latin'], variable: "--font-rubik"})
 //const poiretOne = Poiret_One({weight: '400', subsets: ["latin"], variable:"--font-poiret"})
 const inconsolata = Inconsolata({subsets: ["latin"], variable:"--font-inconsolata"})
 
@@ -22,10 +22,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={rubik.variable}>
       <body>
       
-    <div data-testid="layout" className={`${poppins.variable} w-full min-h-screen bg-white flex flex-col items-center justify-between font-sans`}>
+    <div data-testid="layout" className={` w-full min-h-screen bg-white flex flex-col items-center justify-between font-sans`}>
       <Header />
       <main className={` flex flex-col items-center`}>
       {children}
