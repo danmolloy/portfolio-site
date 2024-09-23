@@ -45,6 +45,18 @@ export const projectsArr: ProjectDivProps[] = [
   },
   {
     id: 2,
+    title: "TaskTrek",
+    previewLink: "https://apps.apple.com/gb/app/tasktrek/id6462425051",
+    githubLink: "https://github.com/danmolloy/routinee",
+    blurb: "A habit tracking app available in the app store. CRUD operations, attractive UI and a variety of data rendering built using React Native, TypeScript, Expo and Jest.",
+    image: 
+      {imgWidth: "750",
+      imgHeight: "1334",
+      imgSrc: '/images/tasktrek-detail.PNG',
+      imgAlt: "TaskTrek activity detail page featuring github-style heat chart"},
+  },
+  {
+    id: 3,
     title: "React Diary",
     previewLink: 'https://react-diary-example.vercel.app/',
     npmLink: "https://www.npmjs.com/package/react-diary",
@@ -54,19 +66,8 @@ export const projectsArr: ProjectDivProps[] = [
       imgWidth: '1132',
       imgHeight: '748',
       imgAlt: "Example of MonthCalendar component."},
-    blurb: "A react component library, simplifying scheduling events in calendars.",
+    blurb: "A react component library available on NPM. Simplifies scheduling events in calendars on a variety of screen sizes.",
   },
-  {
-    id: 3,
-    title: "Spelling Bee",
-    previewLink: 'https://spelling-bee-danmolloy.vercel.app',
-    githubLink: 'https://github.com/danmolloy/spelling-bee',
-    image: {imgSrc: '/images/spelling-bee.PNG',
-      imgWidth: '750',
-      imgHeight: '1092',
-      imgAlt: "Spelling Bee screenshot with pangram confetti"},
-      blurb: "An interactive game UX with data fetching, WCAG 2.0 accessibility, keyboard event listeners and dynamic hints. Built with NextJS 14, TypeScript, Tailwind CSS and Jest.",
-},
   {
     id: 4,
     title: "RESTful|CMS",
@@ -79,18 +80,18 @@ export const projectsArr: ProjectDivProps[] = [
       imgAlt: "Index View of Restful CMS website"},
       blurb: "A blogging CMS complete with an API endpoint, authorization and authentication, a variety of views and CRUD operations. Built with Django, PostgresQL and CSS."
   },
-  {
+  /* {
     id: 5,
-    title: "TaskTrek",
-    previewLink: "https://apps.apple.com/gb/app/tasktrek/id6462425051",
-    githubLink: "https://github.com/danmolloy/routinee",
-    blurb: "A habit tracking app available in the app store. CRUD operations, attractive UI and a variety of data rendering built using React Native, TypeScript, Expo and Jest.",
-    image: 
-      {imgWidth: "750",
-      imgHeight: "1334",
-      imgSrc: '/images/tasktrek-detail.PNG',
-      imgAlt: "TaskTrek activity detail page featuring github-style heat chart"},
-  },
+    title: "Spelling Bee",
+    previewLink: 'https://spelling-bee-danmolloy.vercel.app',
+    githubLink: 'https://github.com/danmolloy/spelling-bee',
+    image: {imgSrc: '/images/spelling-bee.PNG',
+      imgWidth: '750',
+      imgHeight: '1092',
+      imgAlt: "Spelling Bee screenshot with pangram confetti"},
+      blurb: "An interactive game UX with data fetching, WCAG 2.0 accessibility, keyboard event listeners and dynamic hints. Built with NextJS 14, TypeScript, Tailwind CSS and Jest.",
+}, */
+  
     /* {
     id: 0,
     title: "Musician Website",
