@@ -3,6 +3,7 @@ import Header from './layout/header'
 import Footer from './layout/footer'
 import "./globals.css";
 import { Inconsolata, Raleway, Poiret_One, Poppins, Rubik } from 'next/font/google'
+import { Analytics } from "@vercel/analytics/react";
 
 const rubik = Rubik({weight: "400", subsets: ['latin'], variable: "--font-rubik"})
 //const poiretOne = Poiret_One({weight: '400', subsets: ["latin"], variable:"--font-poiret"})
@@ -34,6 +35,7 @@ export default function RootLayout({
     </div>
   
       </body>
+      <Analytics />
     </html>
   )
 }
