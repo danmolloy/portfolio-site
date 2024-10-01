@@ -10,7 +10,6 @@ export default function Footer() {
         Back to top
       </Link>
       <p className="text-sm  text-zinc-800 dark:text-zinc-400">Designed and built by Daniel Molloy</p>
-
     </div>
   )
 }

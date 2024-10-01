@@ -21,7 +21,7 @@ export default function Page() {
           <Link className="text-lg m-1 hover:text-gray-600" href={'https://github.com/danmolloy/'}>
             <FaGithub />        
           </Link>
-          <Link className="text-lg m-1 hover:text-gray-600" href={'https://uk.linkedin.com/'}>
+          <Link className="text-lg m-1 hover:text-gray-600" href={'https://www.linkedin.com/in/daniel-molloy-8b517032b/'}>
             <FaLinkedin />
           </Link>
 

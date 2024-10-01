@@ -70,6 +70,19 @@ export const projectsArr: ProjectDivProps[] = [
   },
   {
     id: 4,
+    title: "Task Manager",
+    previewLink: "https://taskhandle.azurewebsites.net/",
+    githubLink: "https://github.com/danmolloy/taskManagement",
+    image: {
+      imgSrc: "/images/taskManagement.png",
+      imgWidth: "600",
+      imgHeight: "700",
+      imgAlt: "Home screen of TaskManagement site",
+    },
+    blurb: "A simple task management app developed as a learning exercise in C# and ASP.NET. It provides users with a platform to manage their tasks efficiently and securely."
+  },
+  {
+    id: 5,
     title: "RESTful|CMS",
     previewLink: 'https://restfulcms-production.up.railway.app/',
     githubLink: 'https://github.com/danmolloy/RESTfulCMS',
