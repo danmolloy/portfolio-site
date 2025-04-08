@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from "react"
+import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 
 export default function ToggleSwitch() {
 
@@ -34,7 +35,11 @@ export default function ToggleSwitch() {
     <div className={darkMode ? "bg-blue-500 overflow-y-visible w-8 h-4 flex flex-row items-center  rounded-full transition duration-300" : " overflow-y-visible w-8 h-4 flex flex-row items-center rounded-full bg-zinc-50 border"}>
       <div className={darkMode ? "bg-zinc-100 border shadow w-5 h-5 rounded-full translate-x-full transition-all duration-300" : " -ml-2 bg-zinc-100 border shadow w-5 h-5 rounded-full transition-all duration-500"} />
     </div>
-{/*     <p className={toggled ? "text-sm text-zinc-800 m-3" : "text-sm text-zinc-400 m-3"}>{label}</p>
- */}    </div>
+     <div className={"m-3 text-yellow-800"}>
+      {darkMode 
+      ? <IoMoonOutline />
+      : <IoSunnyOutline />}
+     </div>
+     </div>
   )
 }

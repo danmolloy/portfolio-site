@@ -41,7 +41,7 @@ export default function Section() {
       axios.post("/api", values)
       .then((res) => {
         console.log('Response received')
-        if (res.status === 200) {
+        if (res.status === 201) {
           setSendStatus("success")
           actions.setSubmitting(false)
           actions.resetForm()

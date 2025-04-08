@@ -14,7 +14,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [ 'var(--font-rubik)', ...defaultTheme.fontFamily.sans],
+        sans: [ 'var(--font-quicksand)', ...defaultTheme.fontFamily.sans],
+        serif: [ 'var(--font-noto-serif)', ...defaultTheme.fontFamily.serif],
         display: ['var(--font-poppins)',...defaultTheme.fontFamily.sans]
             },
       backgroundImage: {

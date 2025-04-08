@@ -10,6 +10,8 @@
     "test": "jest --watch"
   },
   "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "@sentry/nextjs": "^9.11.0",
     "@types/node": "18.15.11",
     "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
@@ -21,7 +23,7 @@
     "formik": "^2.2.9",
     "gray-matter": "^4.0.3",
     "luxon": "^3.4.4",
-    "next": "^14.2.3",
+    "next": "^15.2.4",
     "nodemailer": "^6.9.1",
     "postcss": "8.4.21",
     "react": "^18.3.1",
