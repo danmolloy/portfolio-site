@@ -216,7 +216,7 @@ export const projectsArr: ProjectDivProps[] = [
   {
     id: 4,
     title: "Task Manager",
-    previewLink: "https://taskhandle.azurewebsites.net/",
+    //previewLink: "https://taskhandle.azurewebsites.net/",
     githubLink: "https://github.com/danmolloy/taskManagement",
     images: [{
       imgSrc: "/images/taskManagement.png",
