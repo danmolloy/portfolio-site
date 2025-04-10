@@ -15,20 +15,20 @@ export default function Project(props: {
 
   
   return (
-    <div key={project.id} data-testid={`project-${project.id}`} className="flex flex-col  w-full m-2 my-4 border border-slate-400 rounded-lg ">
+    <div key={project.id} data-testid={`project-${project.id}`} className="flex flex-col  w-full  my-4 border border-slate-400 rounded-lg ">
     <div className="flex flex-row justify-between">
         <h2 className="m-3 text-2xl ">{project.title}</h2>
-        <div className="flex flex-row">
-        {project.npmLink &&<Link href={project.npmLink} className="flex flex-row hover:text-blue-600 hover:underline p-1 m-1 w-32 items-center justify-start">
-          <FaNpm size={24} /><p className="ml-1 text-sm">NPM</p>
+        <div className="flex flex-col md:flex-row m-1">
+        {project.npmLink &&<Link href={project.npmLink} className="flex flex-row hover:text-blue-600 hover:underline   w-32 items-center justify-start">
+          <FaNpm size={24} /><p className="m-1 text-sm">NPM</p>
         </Link>}
-        {project.appStoreLink &&<Link href={project.appStoreLink} className="flex flex-row hover:text-blue-600 hover:underline p-1 m-1 w-32 items-center justify-start">
-          <FaApple /><p className="ml-1 text-sm">App Store</p>
+        {project.appStoreLink &&<Link href={project.appStoreLink} className="flex flex-row hover:text-blue-600 hover:underline   w-32 items-center justify-start">
+          <FaApple /><p className="m-1 text-sm">App Store</p>
         </Link>}
-          <Link href={project.githubLink} className="flex flex-row hover:text-blue-600 hover:underline p-1 m-1 w-32 items-center justify-start">
-          <FaGithub /><p className="ml-1 text-sm">Github</p></Link>
-          {project.previewLink && <Link  href={project.previewLink} className="flex flex-row hover:text-blue-600 hover:underline p-1 m-1 w-32 items-center justify-start">
-            <FaLink /><p className="ml-1 text-sm">Live Example</p>
+          <Link href={project.githubLink} className="flex flex-row hover:text-blue-600 hover:underline   w-32 items-center justify-start">
+          <FaGithub /><p className="m-1 text-sm">Github</p></Link>
+          {project.previewLink && <Link  href={project.previewLink} className="flex flex-row hover:text-blue-600 hover:underline   w-32 items-center justify-start">
+            <FaLink /><p className="m-1 text-sm">Live Example</p>
           </Link>}
         </div>
         </div>
@@ -47,6 +47,7 @@ export default function Project(props: {
       </div>
       <div className="md:w-1/2 p-2 relative flex flex-col items-center justify-center">
           <Image  className=" shadow m-2 rounded-md overflow-hidden" src={project.images[imgIndex].imgSrc} height={Number(project.images[imgIndex].imgHeight)/2} width={Number(project.images[imgIndex].imgWidth)/2}  alt={project.images[imgIndex].imgAlt} />
+          <p className="m-1 p-1 ">{project.images[imgIndex].imgAlt}</p>
         {project.images.length > 1 && <div className="flex flex-row w-full items-center justify-center mb-4">
           <button onClick={() => setImgIndex(imgIndex - 1)} disabled={imgIndex === 0} className="text-lg p-2 mx-4 border rounded text-center disabled:opacity-35">
             <BsChevronLeft />

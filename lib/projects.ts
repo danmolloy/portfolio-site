@@ -41,40 +41,40 @@ export const projectsArr: ProjectDivProps[] = [
       imgSrc: '/images/gig-fix.PNG',
       imgWidth: '750',
       imgHeight: '1092',
-      imgAlt: "GigFix landing page"
+      imgAlt: "Gigfix landing page"
     },
     {
       imgSrc: '/images/gigfix-signin.png',
       imgWidth: '1400',
       imgHeight: '760',
-      imgAlt: "GigFix sign in"
+      imgAlt: "Sign in page"
     },
     {
       imgSrc: '/images/gigfix-calendar.png',
       imgWidth: '1400',
       imgHeight: '760',
-      imgAlt: "GigFix calendar"
+      imgAlt: "Calendar view"
     },
     {
       imgSrc: '/images/gigfix-diary.png',
       imgWidth: '1400',
       imgHeight: '760',
-      imgAlt: "GigFix calendar"
+      imgAlt: "Address book view"
     },
     {
       imgSrc: '/images/gigfix-event.png',
       imgWidth: '1400',
       imgHeight: '760',
-      imgAlt: "GigFix event"
+      imgAlt: "Event overview"
     },
     {
       imgSrc: '/images/gigfix-instrument.png',
       imgWidth: '1400',
       imgHeight: '760',
-      imgAlt: "GigFix instrument fixing"
+      imgAlt: "Instrument fixing"
     },
   ],
-    blurb: "GigFix is a specialized communications tool designed to streamline the process of managing gig information for orchestras. It enhances communication between orchestra management and musicians by automating musician booking, centralizing gig information and promptly relaying updated information to the relevant parties.",
+    blurb: "GigFix is a specialized communications tool designed to streamline the process of managing gig information for orchestras. It enhances communication between orchestra management and musicians by automating musician booking, centralizing gig information and promptly relaying updated information to the relevant parties. This project continues to be developed and I hope to eventually release it for commercial use",
     stack: ["NextJS", "TypeScript", "Tailwind CSS", "Formik & Yup", "Auth.js", "Prisma & PostgresQL", "Twilio SMS & SendGrid", "Stripe", "Jest, React Testing Library & Playwright"],
     userFeatures: [
       {
@@ -164,7 +164,7 @@ export const projectsArr: ProjectDivProps[] = [
       imgSrc: '/images/firkin.png',
       imgWidth: '628',
       imgHeight: '780',
-      imgAlt: "Landing page of The Big Firkin Band website"
+      imgAlt: "Hero section"
     }],
     stack: ["NextJS", "Jest", "Tailwind CSS", "Formik & Yup", "Twilio", "Mailchimp"],
       blurb: "A modern, high-performance band website featuring Google Calendar integration and a Stripe-powered checkout for donations. The site boasts an attractive, responsive UI with a robust contact form built using Formik, Yup validation, and Twilio SendGrid, alongside a Mailchimp-powered newsletter signup. Optimized SEO ensures better search rankings, while Next.js performance enhancements—including Server-Side Rendering, lazy-loaded images, and next/font—keep the site fast and efficient. Thoroughly tested with Jest and React Testing Library, it delivers a seamless user experience, with Sentry integrated for real-time error monitoring. Designed to meet WCAG 2.0 accessibility standards, the site ensures inclusivity for all users.",
@@ -176,21 +176,21 @@ export const projectsArr: ProjectDivProps[] = [
     title: "TaskTrek",
     appStoreLink: "https://apps.apple.com/gb/app/tasktrek/id6462425051",
     githubLink: "https://github.com/danmolloy/routinee",
-    blurb: "A habit tracking app available in the app store. CRUD operations, attractive UI and a variety of data rendering built using React Native. It has been mildly successful, being downloaded over 500 times since late 2023.",
+    blurb: "A habit tracking app available in the app store. CRUD operations, attractive UI and a variety of data rendering built using React Native. It was built as a personal exercise in creating native apps. It has been mildly successful, being downloaded over 500 times since late 2023.",
     images: 
       [
         {imgWidth: "584",
         imgHeight: "1272",
         imgSrc: '/images/taskTrek-home.PNG',
-        imgAlt: "TaskTrek home screen"},
+        imgAlt: "Home screen"},
         {imgWidth: "584",
           imgHeight: "1272",
           imgSrc: '/images/taskTrek-activity.PNG',
-          imgAlt: "TaskTrek activity detail page featuring github-style heat chart"},
+          imgAlt: "Activity detail view"},
           {imgWidth: "584",
             imgHeight: "1272",
             imgSrc: '/images/taskTrek-about.PNG',
-            imgAlt: "TaskTrek about screen"}
+            imgAlt: "About screen"}
       ],
     stack: ["React Native", "Expo", "TypeScript", "Formik", "Jest"],
   },
@@ -204,11 +204,11 @@ export const projectsArr: ProjectDivProps[] = [
       [{imgSrc: '/images/react-diary.png',
       imgWidth: '1132',
       imgHeight: '748',
-      imgAlt: "Example of MonthCalendar component."},
+      imgAlt: "MonthCalendar component."},
       {imgSrc: '/images/diary-datepicker.png',
         imgWidth: '800',
         imgHeight: '800',
-        imgAlt: "Example of DatePicker component."}
+        imgAlt: "DatePicker component."}
     ],
     blurb: "Unable to find a suitable calendar library for Gigfix, I built this component library for NPM. Simplifies scheduling events in calendars on a variety of screen sizes. It's proved to be more popular than expected with over 1600 downloads since it's release in April 2024.",
     stack: [ "Vite", "Storybook", "TypeScript", "Tailwind CSS", "Jest"]
@@ -222,7 +222,7 @@ export const projectsArr: ProjectDivProps[] = [
       imgSrc: "/images/taskManagement.png",
       imgWidth: "600",
       imgHeight: "700",
-      imgAlt: "Home screen of TaskManagement site",
+      imgAlt: "Home screen",
     }],
     stack: ["C#", "ASP.NET", "Entity Framework Core"], 
     blurb: "A simple task management app developed as a personal learning exercise in C# and ASP.NET. It provides users with a platform to manage their tasks efficiently and securely. Features include user auth and CRUD operations."
@@ -236,7 +236,7 @@ export const projectsArr: ProjectDivProps[] = [
       imgSrc: '/images/restful-cms.png',
       imgWidth: '1546',
       imgHeight: '1270',
-      imgAlt: "Index View of Restful CMS website"}],
+      imgAlt: "Index View"}],
       stack: ["Django", "Python", "CSS", "PostgresQL"],
       blurb: "A basic blogging CMS complete with an API endpoint, authorization and authentication, a variety of views and CRUD operations. Built with Django, PostgresQL and vanilla CSS, this was prodominantly a learning exercise in Django."
   },

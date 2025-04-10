@@ -27,12 +27,22 @@ export default function Page() {
         </div>
 
       </div>
-      <Image className="hidden dark:block bottom-32 absolute md:bottom-0" src={'/skyline-night.png'} height={3394/2} width={8633/2} alt="Brisbane city skyline"/>
-      <Image className="block dark:hidden bottom-32 absolute md:bottom-0" src={'/skyline-day.png'} height={3394/2} width={8633/2} alt="Brisbane city skyline"/>
-      {/* <div className="absolute bottom-4">
-
-    <FaChevronDown />
-      </div> */}
+      <div className="w-screen overflow-hidden absolute bottom-24 md:bottom-0">
+  <Image
+    className="hidden dark:block mx-auto"
+    src={'/skyline-night.png'}
+    height={3394 / 2}
+    width={8633 / 2}
+    alt="Brisbane city skyline"
+  />
+  <Image
+    className="block dark:hidden mx-auto"
+    src={'/skyline-day.png'}
+    height={3394 / 2}
+    width={8633 / 2}
+    alt="Brisbane city skyline"
+  />
+</div>
     </section>
      <Projects />
 

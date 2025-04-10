@@ -16,7 +16,7 @@ export default function Section() {
   const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
 
   return (
-    <section className="flex flex-col w-screen justify-between h-[30rem]">
+    <section className="flex flex-col w-screen justify-between ">
       <h1 className='self-center'>Contact</h1>
     <Formik    
     initialValues={{
@@ -102,7 +102,7 @@ export default function Section() {
           </ErrorMessage>
           </div>
           </div>
-        <button disabled={props.isSubmitting || (sendStatus === "sending")} id="submit-button" type='submit' className=" disabled:opacity-30 hover:bg-gray-50 shadow-sm bg-white  border border-zinc-400 m-2 p-1 w-24 rounded self-end  ">Submit</button>
+        <button disabled={props.isSubmitting || (sendStatus === "sending")} id="submit-button" type='submit' className=" disabled:opacity-30 hover:bg-gray-50 shadow-sm   border border-zinc-400 m-2 p-1 w-24 rounded self-end  ">Submit</button>
         <div>
         {sendStatus === "sending" 
         ? sendingMsg
@@ -114,6 +114,9 @@ export default function Section() {
       </div>
       </Form> )}
     </Formik>
+     <Image className="hidden dark:block -mb-2" src={'/ibis-dark.png'} height={600/2} width={600/2} alt="Ibis standing on a bin"/>
+          <Image className="block dark:hidden -mb-2" src={'/ibis-light.png'} height={600/2} width={600/2} alt="Ibis standing on a bin"/>
+    
     </section>
   )
 }
