@@ -1,4 +1,3 @@
-'use server'
 import Link from "next/link";
 import AboutSection from "./about";
 import ContactSection from "./contact"
