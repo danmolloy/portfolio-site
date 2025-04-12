@@ -1,3 +1,4 @@
+'use server'
 import Link from "next/link";
 import AboutSection from "./about";
 import ContactSection from "./contact"
@@ -5,7 +6,7 @@ import Projects from "./projects";
 import { FaChevronDown, FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 
-export default function Page() {
+export default async function Page() {
   return (
     <div data-testid="index-section" className="w-screen flex flex-col items-center ">
     <section data-testid="hero-section" className="  flex flex-col items-center h-screen  w-screen">
@@ -29,6 +30,7 @@ export default function Page() {
       </div>
       <div className="w-screen overflow-hidden absolute bottom-24 md:bottom-0">
   <Image
+    priority={true}
     className="hidden dark:block mx-auto"
     src={'/skyline-night.png'}
     height={3394 / 2}
@@ -36,6 +38,7 @@ export default function Page() {
     alt="Brisbane city skyline"
   />
   <Image
+    priority={true}
     className="block dark:hidden mx-auto"
     src={'/skyline-day.png'}
     height={3394 / 2}
