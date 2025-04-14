@@ -181,15 +181,15 @@ export const projectsArr: ProjectDivProps[] = [
       [
         {imgWidth: "584",
         imgHeight: "1272",
-        imgSrc: '/images/taskTrek-home.PNG',
+        imgSrc: '/images/taskTrek-home.png',
         imgAlt: "Home screen"},
         {imgWidth: "584",
           imgHeight: "1272",
-          imgSrc: '/images/taskTrek-activity.PNG',
+          imgSrc: '/images/taskTrek-activity.png',
           imgAlt: "Activity detail view"},
           {imgWidth: "584",
             imgHeight: "1272",
-            imgSrc: '/images/taskTrek-about.PNG',
+            imgSrc: '/images/taskTrek-about.png',
             imgAlt: "About screen"}
       ],
     stack: ["React Native", "Expo", "TypeScript", "Formik", "Jest"],
