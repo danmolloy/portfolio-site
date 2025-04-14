@@ -162,11 +162,11 @@ export const projectsArr: ProjectDivProps[] = [
     githubLink: 'https://github.com/danmolloy/firkin',
     images: [{
       imgSrc: '/images/firkin.png',
-      imgWidth: '628',
+      imgWidth: '510',
       imgHeight: '780',
       imgAlt: "Hero section"
     }],
-    stack: ["NextJS", "Jest", "Tailwind CSS", "Formik & Yup", "Twilio", "Mailchimp"],
+    stack: ["NextJS", "Figma", "Jest", "Tailwind CSS", "Formik & Yup", "Twilio", "Mailchimp"],
       blurb: "A modern, high-performance band website featuring Google Calendar integration and a Stripe-powered checkout for donations. The site boasts an attractive, responsive UI with a robust contact form built using Formik, Yup validation, and Twilio SendGrid, alongside a Mailchimp-powered newsletter signup. Optimized SEO ensures better search rankings, while Next.js performance enhancements—including Server-Side Rendering, lazy-loaded images, and next/font—keep the site fast and efficient. Thoroughly tested with Jest and React Testing Library, it delivers a seamless user experience, with Sentry integrated for real-time error monitoring. Designed to meet WCAG 2.0 accessibility standards, the site ensures inclusivity for all users.",
       
   },
