@@ -75,7 +75,7 @@ export const projectsArr: ProjectDivProps[] = [
     },
   ],
     blurb: "GigFix is a specialized communications tool designed to streamline the process of managing gig information for orchestras. It enhances communication between orchestra management and musicians by automating musician booking, centralizing gig information and promptly relaying updated information to the relevant parties. This project continues to be developed and I hope to eventually release it for commercial use",
-    stack: ["NextJS", "TypeScript", "Tailwind CSS", "Formik & Yup", "Auth.js", "Prisma & PostgresQL", "Twilio SMS & SendGrid", "Stripe", "Jest, React Testing Library & Playwright"],
+    stack: ["NextJS", "TypeScript", "Node.js","Tailwind CSS", "Formik & Yup", "Auth.js", "Prisma & PostgresQL", "Twilio SMS & SendGrid", "Stripe", "Jest, React Testing Library & Playwright"],
     userFeatures: [
       {
         id: 0,
