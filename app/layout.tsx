@@ -4,11 +4,13 @@ import Footer from './layout/footer'
 import "./globals.css";
 import { Inconsolata, Raleway, Poiret_One, Poppins, Rubik, Noto_Serif_JP, Crimson_Text, PT_Serif, Quicksand } from 'next/font/google'
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google"
 
 const quicksand = Quicksand({weight: "400", subsets: ['latin'], variable: "--font-quicksand"})
 //const poiretOne = Poiret_One({weight: '400', subsets: ["latin"], variable:"--font-poiret"})
 const notoSerif = PT_Serif({weight: '400',subsets: ["latin"], variable:"--font-noto-serif"})
 
+const measurementID = process.env.MEASUREMENT_ID!;
  
 export const metadata: Metadata = {
   title: 'Daniel Molloy | Developer',
@@ -35,6 +37,8 @@ export default function RootLayout({
     </div>
   
       </body>
+            <GoogleAnalytics gaId={measurementID} />
+
       <Analytics />
     </html>
   )
