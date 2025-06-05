@@ -40,14 +40,12 @@ export default async function ProjectPage({
           <FaGithub /><p className="mx-1 text-xs">Github repo</p></Link>
         </div>
       </div>
-      <div className="h-1/2 overflow-scroll flex flex-col items-center justify-center">
-      <div className="flex flex-row overflow-scroll my-4"> 
+      <div className="h-1/2 overflow-scroll flex flex-row md:items-center md:justify-center">
         {selectedProject.images.map(i => ( 
           <div key={i.imgSrc} className="relative m-1 flex-shrink-0 h-[400px] w-[225px] outline outline-zinc-700">
           <Image src={i.imgSrc} fill={true} alt={i.imgAlt}/>
           </div>
         ))}
-      </div>
       </div>
       <div className="mt-12 pb-[50vh] text-sm font-light md:mx-24">
        

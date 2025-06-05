@@ -41,8 +41,8 @@ export default function ProjectTile({project, index}: {project: ProjectDivProps,
           <p className="self-end font-light">[{index}]</p>
            <div >
             <h2  className="font-medium text-lg">{project.title.toUpperCase()}</h2>
-            <p className="font-normal">{project.soundBite}</p>
-          </div> 
+{/*             <p className="font-normal">{project.soundBite}</p>
+ */}          </div> 
         </div>
       </Link>
   )

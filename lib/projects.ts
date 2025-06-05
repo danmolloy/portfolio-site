@@ -52,27 +52,27 @@ export const projectsArr: ProjectDivProps[] = [
     githubLink: "https://github.com/danmolloy/fio-kelly",
     images: [
       {
-        imgSrc: "/images/fio-kelly/hero.gif",
+        imgSrc: "/images/fio-kelly/fk-hero.png",
         imgWidth: "375",
         imgHeight: "667",
         imgAlt: "Landing Section"
       },
       {
-        imgSrc: "/images/fio-kelly/menu.gif",
+        imgSrc: "/images/fio-kelly/fk-menu.png",
         imgWidth: "375",
         imgHeight: "667",
         imgAlt: "Menu"
       },
        
       {
-        imgSrc: "/images/fio-kelly/gallery.gif",
+        imgSrc: "/images/fio-kelly/fk-photos.png",
         imgWidth: "375",
         imgHeight: "667",
         imgAlt: "Gallery Section"
       },
 
       {
-        imgSrc: "/images/fio-kelly/recordings.gif",
+        imgSrc: "/images/fio-kelly/fk-albums.png",
         imgWidth: "375",
         imgHeight: "667",
         imgAlt: "Recordings Section"
@@ -95,7 +95,7 @@ export const projectsArr: ProjectDivProps[] = [
     githubLink: 'https://github.com/danmolloy/firkin',
     images: [
       {
-      imgSrc: '/images/firkin/opening.gif',
+      imgSrc: '/images/firkin/firkin.png',
       imgWidth: "375",
       imgHeight: "667",
       imgAlt: "Hero section"
@@ -107,10 +107,16 @@ export const projectsArr: ProjectDivProps[] = [
       imgAlt: "Calendar section"
     },
     {
-      imgSrc: '/images/firkin/gallery.gif',
+      imgSrc: '/images/firkin/gallery.png',
       imgWidth: "375",
       imgHeight: "667",
       imgAlt: "Gallery section"
+    },
+    {
+      imgSrc: '/images/firkin/about.png',
+      imgWidth: "375",
+      imgHeight: "667",
+      imgAlt: "About section"
     },
     {
       imgSrc: '/images/firkin/menu.png',
@@ -152,7 +158,7 @@ export const projectsArr: ProjectDivProps[] = [
     stack: ["NextJS", "TypeScript", "Node.js","Tailwind CSS", "Formik & Yup", "Auth.js", "Prisma & PostgresQL", "Twilio SMS & SendGrid", "Stripe", "Jest, React Testing Library & Playwright"],
       blurb: "GigFix is a purpose-built communication platform designed to streamline orchestral gig management. It enables orchestras to automate musician booking, centralize event information, and deliver real-time updates via email and SMS. Built with NextJS, TypeScript, and a robust PostgresQL backend, it supports team accounts, a musician address book, flexible bookings, and metered billing via Stripe. Features include a responsive event calendar, thorough form validation, efficient data display, and high test coverage with Jest. The platform integrates Twilio and SendGrid for messaging, and supports server-side rendering for performance. This project is not currently under development, however plans are being made to utilise it in a similar project.",
 thumb: {
-      src: "/images/gig-fix-thumb.png",
+      src: "/images/gigfix/gig-fix-thumb.png",
       imgWidth: '600',
       imgHeight: '600',
       imgAlt: "GigFix landing page"

@@ -21,7 +21,7 @@ export default function Hero() {
 
 
   return (
-    <section data-testid="hero-section" className="pt-36 pb-16 px-2 flex flex-col items-start justify-between h-screen  w-screen">
+    <section data-testid="hero-section" className="pt-36 pb-24 px-2 flex flex-col items-start justify-between h-screen  w-screen">
             {/* <div className=" h-[44px]  overflow-hidden relative w-full" >
               <div ref={scrollRef} className="absolute -top-[56px]">
 
