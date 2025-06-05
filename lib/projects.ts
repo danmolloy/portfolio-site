@@ -5,7 +5,13 @@ export type ProjectDivProps = {
   npmLink?: string
   appStoreLink?: string
   previewLink?: string
-
+  soundBite?: string
+  thumb?: {
+    src: string
+    imgWidth: string
+    imgHeight: string
+    imgAlt: string
+  }
   images: {
     imgSrc: string
     imgWidth: string
@@ -33,7 +39,130 @@ export const projectsBlurb = "All projects are built with Test-Driven Developmen
 
 export const projectsArr: ProjectDivProps[] = [
   {
+    soundBite: "Elegant and responsive site for a musician, rich with detail.",
+    thumb: {
+      src: "/images/fio-kelly/fk-thumb.png",
+      imgWidth: '650',
+      imgHeight: '650',
+      imgAlt: "Fiona Kelly landing page"
+    },
     id: 0,
+    title: "Fiona Kelly",
+    previewLink: "https://www.fionakellyflute.com/",
+    githubLink: "https://github.com/danmolloy/fio-kelly",
+    images: [
+      {
+        imgSrc: "/images/fio-kelly/hero.gif",
+        imgWidth: "375",
+        imgHeight: "667",
+        imgAlt: "Landing Section"
+      },
+      {
+        imgSrc: "/images/fio-kelly/menu.gif",
+        imgWidth: "375",
+        imgHeight: "667",
+        imgAlt: "Menu"
+      },
+       
+      {
+        imgSrc: "/images/fio-kelly/gallery.gif",
+        imgWidth: "375",
+        imgHeight: "667",
+        imgAlt: "Gallery Section"
+      },
+
+      {
+        imgSrc: "/images/fio-kelly/recordings.gif",
+        imgWidth: "375",
+        imgHeight: "667",
+        imgAlt: "Recordings Section"
+      },
+    ],
+    blurb: "This is a personal website for a classical musician, designed to engage both concert promoters and audience members. Rich in subtle micro-interactions and elegant transitions, the site showcases a detailed biography, a curated photo gallery, embedded audio recordings, and a fully functional contact form. Built with a strong emphasis on UI/UX design, the site delivers a smooth and immersive user experience across devices. Performance is optimised through image lazy loading, local fonts, and efficient bundling. Accessibility is a core priority, adhering to WCAG 2.0 standards and ensuring inclusive access for all users through thoughtful design and rigorous testing practices.",
+    stack: ["NextJS", "TypeScript", "Tailwind CSS", "Formik & Yup", "Sentry"]
+  },
+  {
+    soundBite: "Modern high performance website with Sumup donations, calendar sync and accessible UX.",
+    id: 1,
+    title: "The Big Firkin Band",
+    thumb: {
+      src: "/images/firkin/firkin-thumb.png",
+      imgWidth: '600',
+      imgHeight: '600',
+      imgAlt: "The Big Firkin Band landing page"
+    },
+    previewLink: 'https:/thebigfirkinband.com/',
+    githubLink: 'https://github.com/danmolloy/firkin',
+    images: [
+      {
+      imgSrc: '/images/firkin/opening.gif',
+      imgWidth: "375",
+      imgHeight: "667",
+      imgAlt: "Hero section"
+    },
+    {
+      imgSrc: '/images/firkin/calendar.png',
+      imgWidth: "375",
+      imgHeight: "667",
+      imgAlt: "Calendar section"
+    },
+    {
+      imgSrc: '/images/firkin/gallery.gif',
+      imgWidth: "375",
+      imgHeight: "667",
+      imgAlt: "Gallery section"
+    },
+    {
+      imgSrc: '/images/firkin/menu.png',
+      imgWidth: "375",
+      imgHeight: "667",
+      imgAlt: "Menu section"
+    },
+
+  ],
+    stack: ["NextJS", "Figma", "Jest", "Tailwind CSS", "Formik & Yup", "Twilio", "Mailchimp"],
+      blurb: "A modern, high-performance band website featuring Google Calendar integration and a Stripe-powered checkout for donations. The site boasts an attractive, responsive UI with a robust contact form built using Formik, Yup validation, and Twilio SendGrid, alongside a Mailchimp-powered newsletter signup. Optimized SEO ensures better search rankings, while Next.js performance enhancements—including Server-Side Rendering, lazy-loaded images, and next/font—keep the site fast and efficient. Thoroughly tested with Jest and React Testing Library, it delivers a seamless user experience, with Sentry integrated for real-time error monitoring. Designed to meet WCAG 2.0 accessibility standards, the site ensures inclusivity for all users.",
+  },
+  {
+    soundBite: "Full-stack communications and bookings platform for orchestras.",
+    id: 2,
+    title: "GigFix",
+    previewLink: "https://gig-fix.vercel.app/",
+    githubLink: "https://github.com/danmolloy/fixer",
+    images: [
+      {
+        imgSrc: '/images/gigfix/list.png',
+      imgWidth: "375",
+      imgHeight: "667",
+      imgAlt: "Orchestra list"
+      },
+      {
+        imgSrc: '/images/gigfix/gig-info.png',
+      imgWidth: "375",
+      imgHeight: "667",
+      imgAlt: "Gig Info"
+      },
+      {
+        imgSrc: '/images/gigfix/calendar.png',
+      imgWidth: "375",
+      imgHeight: "667",
+      imgAlt: "Calendar view"
+      },
+    ],
+    stack: ["NextJS", "TypeScript", "Node.js","Tailwind CSS", "Formik & Yup", "Auth.js", "Prisma & PostgresQL", "Twilio SMS & SendGrid", "Stripe", "Jest, React Testing Library & Playwright"],
+      blurb: "GigFix is a purpose-built communication platform designed to streamline orchestral gig management. It enables orchestras to automate musician booking, centralize event information, and deliver real-time updates via email and SMS. Built with NextJS, TypeScript, and a robust PostgresQL backend, it supports team accounts, a musician address book, flexible bookings, and metered billing via Stripe. Features include a responsive event calendar, thorough form validation, efficient data display, and high test coverage with Jest. The platform integrates Twilio and SendGrid for messaging, and supports server-side rendering for performance. This project is not currently under development, however plans are being made to utilise it in a similar project.",
+thumb: {
+      src: "/images/gig-fix-thumb.png",
+      imgWidth: '600',
+      imgHeight: '600',
+      imgAlt: "GigFix landing page"
+    },
+  }
+
+
+  /* {
+    soundBite: "Full-stack communications and bookings platform for orchestras.",
+    id:10,
     title: "GigFix",
     previewLink: "https://gig-fix.vercel.app/",
     githubLink: "https://github.com/danmolloy/fixer",
@@ -155,23 +284,10 @@ export const projectsArr: ProjectDivProps[] = [
     ]
   },
 
-  {
-    id: 1,
-    title: "Band Website",
-    previewLink: 'https:/thebigfirkinband.com/',
-    githubLink: 'https://github.com/danmolloy/firkin',
-    images: [{
-      imgSrc: '/images/firkin.png',
-      imgWidth: '510',
-      imgHeight: '780',
-      imgAlt: "Hero section"
-    }],
-    stack: ["NextJS", "Figma", "Jest", "Tailwind CSS", "Formik & Yup", "Twilio", "Mailchimp"],
-      blurb: "A modern, high-performance band website featuring Google Calendar integration and a Stripe-powered checkout for donations. The site boasts an attractive, responsive UI with a robust contact form built using Formik, Yup validation, and Twilio SendGrid, alongside a Mailchimp-powered newsletter signup. Optimized SEO ensures better search rankings, while Next.js performance enhancements—including Server-Side Rendering, lazy-loaded images, and next/font—keep the site fast and efficient. Thoroughly tested with Jest and React Testing Library, it delivers a seamless user experience, with Sentry integrated for real-time error monitoring. Designed to meet WCAG 2.0 accessibility standards, the site ensures inclusivity for all users.",
-      
-  },
+  
 
   {
+    soundBite: 'Fully featured habit tracker app using React Native and modern UI patterns.',
     id: 2,
     title: "TaskTrek",
     appStoreLink: "https://apps.apple.com/gb/app/tasktrek/id6462425051",
@@ -193,8 +309,8 @@ export const projectsArr: ProjectDivProps[] = [
             imgAlt: "About screen"}
       ],
     stack: ["React Native", "Expo", "TypeScript", "Formik", "Jest"],
-  },
-  {
+  }, */
+  /* {
     id: 3,
     title: "React Diary",
     previewLink: 'https://react-diary-example.vercel.app/',
@@ -212,8 +328,9 @@ export const projectsArr: ProjectDivProps[] = [
     ],
     blurb: "Unable to find a suitable calendar library for Gigfix, I built this component library for NPM. Simplifies scheduling events in calendars on a variety of screen sizes. It's proved to be more popular than expected with over 1600 downloads since it's release in April 2024.",
     stack: [ "Vite", "Storybook", "TypeScript", "Tailwind CSS", "Jest"]
-  },
-  {
+  }, */
+/*   {
+    soundBite: "Personal project: full-stack task manager with C# backend and user auth.",
     id: 4,
     title: "Task Manager",
     //previewLink: "https://taskhandle.azurewebsites.net/",
@@ -228,6 +345,7 @@ export const projectsArr: ProjectDivProps[] = [
     blurb: "A simple task management app developed as a personal learning exercise in C# and ASP.NET. It provides users with a platform to manage their tasks efficiently and securely. Features include user auth and CRUD operations."
   },
   {
+    soundBite: "Blogging CMS built with Django and PostgreSQL, featuring full auth and CRUD.",
     id: 5,
     title: "RESTful|CMS",
     previewLink: 'https://restfulcms-production.up.railway.app/',
@@ -239,5 +357,5 @@ export const projectsArr: ProjectDivProps[] = [
       imgAlt: "Index View"}],
       stack: ["Django", "Python", "CSS", "PostgresQL"],
       blurb: "A basic blogging CMS complete with an API endpoint, authorization and authentication, a variety of views and CRUD operations. Built with Django, PostgresQL and vanilla CSS, this was prodominantly a learning exercise in Django."
-  },
+  }, */
 ]

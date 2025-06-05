@@ -13,17 +13,26 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        "dark": "#171717",
+  "light": "#f4f3ed",
+      },
       fontFamily: {
         sans: [ 'var(--font-quicksand)', ...defaultTheme.fontFamily.sans],
         serif: [ 'var(--font-noto-serif)', ...defaultTheme.fontFamily.serif],
         display: ['var(--font-poppins)',...defaultTheme.fontFamily.sans]
             },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      
     },
+    animation: {
+        'scroll-x': 'scrollX 40s linear infinite',
+      },
+      keyframes: {
+        scrollX: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
   },
   plugins: [
     require('@tailwindcss/typography'),
