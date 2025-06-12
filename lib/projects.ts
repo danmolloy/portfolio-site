@@ -1,6 +1,7 @@
 export type ProjectDivProps = {
   id: number
   title: string
+  filters: string[]
   githubLink: string
   npmLink?: string
   appStoreLink?: string
@@ -39,6 +40,7 @@ export const projectsBlurb = "All projects are built with Test-Driven Developmen
 
 export const projectsArr: ProjectDivProps[] = [
   {
+    filters: ['frontend'],
     soundBite: "Elegant and responsive site for a musician, rich with detail.",
     thumb: {
       src: "/images/fio-kelly/fk-thumb.png",
@@ -82,6 +84,8 @@ export const projectsArr: ProjectDivProps[] = [
     stack: ["NextJS", "TypeScript", "Tailwind CSS", "Formik & Yup", "Sentry"]
   },
   {
+        filters: ['frontend'],
+
     soundBite: "Modern high performance website with Sumup donations, calendar sync and accessible UX.",
     id: 1,
     title: "The Big Firkin Band",
@@ -130,6 +134,8 @@ export const projectsArr: ProjectDivProps[] = [
       blurb: "A modern, high-performance band website featuring Google Calendar integration and a Stripe-powered checkout for donations. The site boasts an attractive, responsive UI with a robust contact form built using Formik, Yup validation, and Twilio SendGrid, alongside a Mailchimp-powered newsletter signup. Optimized SEO ensures better search rankings, while Next.js performance enhancements—including Server-Side Rendering, lazy-loaded images, and next/font—keep the site fast and efficient. Thoroughly tested with Jest and React Testing Library, it delivers a seamless user experience, with Sentry integrated for real-time error monitoring. Designed to meet WCAG 2.0 accessibility standards, the site ensures inclusivity for all users.",
   },
   {
+        filters: ['frontend', 'backend'],
+
     soundBite: "Full-stack communications and bookings platform for orchestras.",
     id: 2,
     title: "GigFix",
