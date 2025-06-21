@@ -1,7 +1,7 @@
 export type ProjectDivProps = {
   id: number
   title: string
-  filters: ("frontend"|"backend"|"mobile")[]
+  filters: string[]
   githubLink: string
   npmLink?: string
   appStoreLink?: string
