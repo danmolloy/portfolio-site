@@ -35,8 +35,8 @@ export default function RootLayout({
               <PathnameWrapper>
 
     <div data-testid="layout" className={` w-full min-h-screen  flex flex-col items-center justify-between font-sans dark:bg-slate-900 dark:text-blue-300`}>
-      <Header />
-      <main className={` flex flex-col items-center`}>
+{/*       <Header />
+ */}      <main className={` flex flex-col items-center`}>
       {children}
       </main>
       <Footer />

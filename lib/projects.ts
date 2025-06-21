@@ -1,7 +1,7 @@
 export type ProjectDivProps = {
   id: number
   title: string
-  filters: string[]
+  filters: ("frontend"|"backend"|"mobile")[]
   githubLink: string
   npmLink?: string
   appStoreLink?: string
@@ -95,7 +95,7 @@ export const projectsArr: ProjectDivProps[] = [
       imgHeight: '600',
       imgAlt: "The Big Firkin Band landing page"
     },
-    previewLink: 'https:/thebigfirkinband.com/',
+    previewLink: 'https://www.thebigfirkinband.com/',
     githubLink: 'https://github.com/danmolloy/firkin',
     images: [
       {
@@ -169,7 +169,23 @@ thumb: {
       imgHeight: '600',
       imgAlt: "GigFix landing page"
     },
-  }
+    
+  },
+  {
+      filters: ['mobile'],
+      id: 3,
+      title: "Tuner",
+      githubLink: "https://github.com/danmolloy/tuner",
+      images: [],
+      stack: ["React Native", "Expo EAS", "Pitchy"],
+      blurb: "A robust, accurate chromatic tuner with a straightforward interface. This app is built for beginners and professional musicians alike.",
+      thumb: {
+      src: "/images/tuner/tuner-icon.png",
+      imgWidth: '600',
+      imgHeight: '600',
+      imgAlt: "Tuner app icon"
+      }
+    }
 
 
   /* {
