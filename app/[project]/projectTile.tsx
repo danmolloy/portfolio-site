@@ -3,7 +3,6 @@ import { ProjectDivProps } from "@/lib/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import TransitionLink from "../pageTransition";
 
 export default function ProjectTile({project, index}: {project: ProjectDivProps, index: number}) {
    const ref = useRef<HTMLDivElement | null>(null);
@@ -33,8 +32,7 @@ export default function ProjectTile({project, index}: {project: ProjectDivProps,
 
 
   return (
-    <TransitionLink bgColor="bg-dark" href={`/${project.id}`}  >
-      <div className="relative w-full flex flex-row justify-center my-2 p-2  transition-all duration-500">
+    <Link href={`/${project.id}`} className="relative w-full flex flex-row justify-center my-2 p-2  transition-all duration-500">
       <div  className={`bg-dark ${visible ? "w-full" : "w-0"} h-[2px] absolute bottom-0 left-0 transition-all duration-1000 delay-75`}/>
           <div className=" bg-dark relative h-[150px] md:h-[300px] aspect-square m-4 overflow-hidden shrink-0">
           <div ref={ref} className={`absolute h-[150px] z-10 md:h-[300px] aspect-square bg-light transition-all delay-750 duration-1000 ${visible ? "translate-y-full" : ""}`}/>
@@ -46,8 +44,8 @@ export default function ProjectTile({project, index}: {project: ProjectDivProps,
             <h2  className="font-medium text-lg">{project.title.toUpperCase()}</h2>
 {/*             <p className="font-normal">{project.soundBite}</p>
  */}          </div> 
-        </div>
-        </div>
-      </TransitionLink>
+ </div>
+        </Link>
+        
   )
 }

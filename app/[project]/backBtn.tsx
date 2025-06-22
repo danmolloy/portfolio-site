@@ -2,7 +2,6 @@
 import { useRouter } from "next/navigation"
 import { useState } from "react"
 import { FaArrowLeft } from "react-icons/fa"
-import TransitionOverlay from "../transitionOverlay"
 
 export default function BackButton() {
   const router = useRouter()
@@ -20,7 +19,6 @@ export default function BackButton() {
     <button className="flex flex-row items-center text-xs mb-2" onClick={() => handleBack()}>
       <FaArrowLeft />
       <p className="ml-1 ">BACK</p>
-      <TransitionOverlay bgColor="bg-light" isActive={isActive} />
     </button>
   )
 }
