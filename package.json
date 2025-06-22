@@ -22,7 +22,7 @@
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "formik": "^2.2.9",
-    "framer-motion": "^12.16.0",
+    "framer-motion": "^12.18.1",
     "gray-matter": "^4.0.3",
     "luxon": "^3.4.4",
     "next": "^15.3.1",

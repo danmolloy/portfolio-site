@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useEffect, useRef } from "react"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
-
+import { motion } from "framer-motion"
 export default function Hero() {
   const firstRef = useRef<HTMLDivElement>(null);
   const secondRef = useRef<HTMLDivElement>(null);
@@ -32,9 +32,15 @@ export default function Hero() {
             <h1 className="text-7xl font-bold self-start -mb-3 ">
               DANIEL
             </h1>
-            <h1 className="text-7xl font-bold self-start -mt-3">
+            <motion.h1
+              key={"daniel"}
+              initial={{ opacity: 0,  }}
+              whileInView={{ opacity: 1, }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.025, delay:   0.5 }}
+              className="text-7xl font-bold self-start -mt-3">
               DANIEL
-            </h1>
+            </motion.h1>
             
               </div>
             </div> 
@@ -44,9 +50,16 @@ export default function Hero() {
             <h1 className="text-7xl font-bold self-start -mb-3">
               MOLLOY
             </h1>
-            <h1 className="text-7xl font-bold self-start -mt-3">
+            <motion.h1
+              key={"molloy"}
+              initial={{ opacity: 0,  }}
+              whileInView={{ opacity: 1, }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.025, delay:   0.5 }}
+              
+             className="text-7xl font-bold self-start -mt-3">
               MOLLOY
-            </h1>
+            </motion.h1>
             </div>
               </div>
             </div> 
@@ -55,30 +68,66 @@ export default function Hero() {
             </h1> */}
             <div className="flex flex-row justify-between w-full">
               <div className="flex flex-row items-end justify-start">
-              <Link className="text-xl md:text-md  hover:text-gray-500 m-1" href={'https://github.com/danmolloy/'}>
+              
+              <motion.a 
+              initial={{ opacity: 0,  }}
+              whileInView={{ opacity: 1, }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.2, delay:   2.5 }}
+              className="text-xl md:text-md  hover:text-gray-500 m-1" href={'https://github.com/danmolloy/'}>
                 <FaGithub />        
-              </Link>
-              <Link className="text-xl md:text-md ml-1 hover:text-gray-500 m-1" href={'https://www.linkedin.com/in/daniel-molloy-8b517032b/'}>
+              </motion.a>
+              <motion.a 
+              initial={{ opacity: 0,  }}
+              whileInView={{ opacity: 1, }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.2, delay:   2.7 }}
+              className="text-xl md:text-md ml-1 hover:text-gray-500 m-1" href={'https://www.linkedin.com/in/daniel-molloy-8b517032b/'}>
                 <FaLinkedin />
-              </Link>
+              </motion.a>
               
             </div>
             <div className="flex flex-col justify-start text-sm text-right self-end mr-2">
-            <p className="">
+            <motion.p 
+            initial={{ opacity: 0,  }}
+              whileInView={{ opacity: 1, }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.05, delay:   1 }}
+            className="">
               frontend development
-            </p>
-            <p className="">
+            </motion.p>
+            <motion.p 
+            initial={{ opacity: 0,  }}
+              whileInView={{ opacity: 1, }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.05, delay:   1.2 }}
+            className="">
               backend services
-            </p>
-            <p className="">
+            </motion.p>
+            <motion.p 
+            initial={{ opacity: 0,  }}
+              whileInView={{ opacity: 1, }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.05, delay:   1.4 }}
+            className="">
               mobile apps
-            </p>
-            <p className="">
+            </motion.p>
+            <motion.p 
+            initial={{ opacity: 0,  }}
+              whileInView={{ opacity: 1, }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.05, delay:   1.6 }}
+            className="">
               full stack engineering
-            </p>
-            <p className="">
+            </motion.p>
+            <motion.p 
+            initial={{ opacity: 0,  }}
+              whileInView={{ opacity: 1, }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.05, delay:   1.8 }}
+            className="">
               ui/ux design
-            </p>
+            </motion.p>
               </div>
 
             </div>

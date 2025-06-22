@@ -19,7 +19,7 @@ export default async function ProjectPage({
     
 
   return (
-    <div className={` w-screen  flex flex-col px-4 `}>
+    <div className={` w-screen  flex flex-col px-4 bg-dark text-light`}>
       <div className="mt-16 ">
         <BackButton />
         <h1 className="font-bold">{selectedProject.title.toLocaleUpperCase()}</h1>
