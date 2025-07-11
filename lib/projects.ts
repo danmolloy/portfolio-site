@@ -176,9 +176,28 @@ thumb: {
       id: 3,
       title: "Tuner",
       githubLink: "https://github.com/danmolloy/tuner",
-      images: [],
+      images: [
+        {
+        imgSrc: '/images/tuner/home.png',
+      imgWidth: "332",
+      imgHeight: "726",
+      imgAlt: "Tuner interface"
+      },
+       {
+        imgSrc: '/images/tuner/about.png',
+      imgWidth: "332",
+      imgHeight: "726",
+      imgAlt: "About page"
+      },
+       {
+        imgSrc: '/images/tuner/settings.png',
+      imgWidth: "332",
+      imgHeight: "726",
+      imgAlt: "Settings page"
+      },
+      ],
       stack: ["React Native", "Expo EAS", "Pitchy"],
-      blurb: "A robust, accurate chromatic tuner with a straightforward interface. This app is built for beginners and professional musicians alike.",
+      blurb: "A robust, accurate chromatic tuner. This app is built for beginners and professional musicians alike.",
       thumb: {
       src: "/images/tuner/tuner-icon.png",
       imgWidth: '600',
