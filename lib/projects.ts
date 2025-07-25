@@ -21,16 +21,6 @@ export type ProjectDivProps = {
   }[]
   blurb: string
   stack: string[]
-  userFeatures?: {
-    id: number
-    key: string
-    value: string
-  }[]
-  techFeatures?: {
-    id: number
-    key: string
-    value: string
-  }[]
 }
 
 
@@ -39,6 +29,23 @@ export const projectsBlurb = "All projects are built with Test-Driven Developmen
 
 
 export const projectsArr: ProjectDivProps[] = [
+  {
+    id: 4,
+    title: "Jam Jar",
+    filters: ['frontend', 'backend'],
+    soundBite: "Music practice tracking SaaS web app.",
+    thumb: {
+      src: "/images/jam-jar/background.png",
+      imgWidth: '650',
+      imgHeight: '650',
+      imgAlt: "Jam Jar landing page"
+    },
+    previewLink: "https://jam-jar-frontend-danmolloys-projects.vercel.app/",
+    githubLink: "https://github.com/danmolloy/jam-jar-frontend",
+    images: [],
+    stack: ["NextJS", "Django", "Postgresql", "AWS S3", "Stripe"],
+    blurb: "A complete practice tracking dashboard for musicians. Rich data display and an array of elements to follow, such as practice notes, journaling and audio recordings."
+  },
   {
     filters: ['frontend'],
     soundBite: "Elegant and responsive site for a musician, rich with detail.",
@@ -176,6 +183,7 @@ thumb: {
       id: 3,
       title: "Tuner",
       githubLink: "https://github.com/danmolloy/tuner",
+      appStoreLink: "https://apps.apple.com/gb/app/tuner/id6746412805",
       images: [
         {
         imgSrc: '/images/tuner/home.png',
