@@ -2,11 +2,14 @@ export type ProjectDivProps = {
   id: number
   title: string
   filters: string[]
-  githubLink: string
-  npmLink?: string
-  appStoreLink?: string
-  previewLink?: string
   soundBite?: string
+  links: {
+    github?: string
+    preview?: string
+    npm?: string
+    appStore?: string
+    website?: string
+  }
   thumb?: {
     src: string
     imgWidth: string
@@ -19,7 +22,7 @@ export type ProjectDivProps = {
     imgHeight: string
     imgAlt: string
   }[]
-  blurb: string
+  blurb: string[]
   stack: string[]
 }
 
@@ -40,11 +43,17 @@ export const projectsArr: ProjectDivProps[] = [
       imgHeight: '650',
       imgAlt: "Jam Jar landing page"
     },
-    previewLink: "https://jam-jar-frontend-danmolloys-projects.vercel.app/",
-    githubLink: "https://github.com/danmolloy/jam-jar-frontend",
+    links: {
+      preview: "https://jam-jar-frontend-danmolloys-projects.vercel.app/",
+      github: "https://github.com/danmolloy/jam-jar-frontend",
+    },
     images: [],
     stack: ["NextJS", "Django", "Postgresql", "AWS S3", "Stripe"],
-    blurb: "A complete practice tracking dashboard for musicians. Rich data display and an array of elements to follow, such as practice notes, journaling and audio recordings."
+    blurb: [
+      `Jam Jar is a SaaS platform designed to help musicians structure and track their practice sessions, bringing the rigor of sports analytics to music education.`,
+      `The app provides a complete practice management ecosystem where users can log sessions with descriptions and duration, set personalized goals, maintain practice diaries, and record audio to monitor progress over time. Advanced filtering with hashtags and activity types makes it easy to organize data, while interactive visualizations—including heat maps, bar charts, and rings—offer clear insights into practice habits.`,
+      `Technically, Jam Jar combines Next.js 15 for the frontend with a robust Django REST Framework backend. It integrates Stripe for subscription billing, AWS S3 for secure audio storage, and PostgreSQL for relational data management. Authentication and authorization are handled via Auth.js with JWT tokens, while Tailwind CSS and Recharts ensure a responsive and visually appealing interface. Comprehensive testing spans Django, Jest, and React Testing Library, ensuring reliability across the stack.`
+    ]
   },
   {
     filters: ['frontend'],
@@ -57,8 +66,10 @@ export const projectsArr: ProjectDivProps[] = [
     },
     id: 0,
     title: "Fiona Kelly",
-    previewLink: "https://www.fionakellyflute.com/",
-    githubLink: "https://github.com/danmolloy/fio-kelly",
+    links: {
+      preview: "https://www.fionakellyflute.com/",
+      github: "https://github.com/danmolloy/fio-kelly",
+    },
     images: [
       {
         imgSrc: "/images/fio-kelly/fk-hero.png",
@@ -87,7 +98,11 @@ export const projectsArr: ProjectDivProps[] = [
         imgAlt: "Recordings Section"
       },
     ],
-    blurb: "This is a personal website for a classical musician, designed to engage both concert promoters and audience members. Rich in subtle micro-interactions and elegant transitions, the site showcases a detailed biography, a curated photo gallery, embedded audio recordings, and a fully functional contact form. Built with a strong emphasis on UI/UX design, the site delivers a smooth and immersive user experience across devices. Performance is optimised through image lazy loading, local fonts, and efficient bundling. Accessibility is a core priority, adhering to WCAG 2.0 standards and ensuring inclusive access for all users through thoughtful design and rigorous testing practices.",
+    blurb: [
+      `Fiona Kelly is a responsive, high-performance website built for a freelance musician, showcasing how thoughtful frontend design can elevate a personal brand. More than just a static portfolio, the site is designed to engage visitors through micro-interactions and smooth motion transitions, creating a browsing experience that feels dynamic and memorable.`,
+      `The project is powered by Next.js 15, TypeScript, and Tailwind CSS, combining modern development practices with a maintainable stack. A robust contact form was implemented using Formik with Yup validation, ensuring reliability before messages are sent via AWS SES. Performance and accessibility were top priorities: the site leverages Next.js Image optimization and next/font for efficient rendering, achieving a 100 Lighthouse score while conforming to WCAG 2.0 accessibility standards. Features such as semantic HTML, keyboard navigation, proper alt text, and color contrast testing ensure inclusivity for all users.`,
+      `In addition, the site is continuously monitored with Sentry, allowing errors to be tracked and addressed quickly.`
+    ],
     stack: ["NextJS", "TypeScript", "Tailwind CSS", "Formik & Yup", "Sentry"]
   },
   {
@@ -102,8 +117,10 @@ export const projectsArr: ProjectDivProps[] = [
       imgHeight: '600',
       imgAlt: "The Big Firkin Band landing page"
     },
-    previewLink: 'https://www.thebigfirkinband.com/',
-    githubLink: 'https://github.com/danmolloy/firkin',
+    links: {
+      preview: 'https://www.thebigfirkinband.com/',
+      github: 'https://github.com/danmolloy/firkin',
+    },
     images: [
       {
       imgSrc: '/images/firkin/firkin.png',
@@ -138,16 +155,22 @@ export const projectsArr: ProjectDivProps[] = [
 
   ],
     stack: ["NextJS", "Figma", "Jest", "Tailwind CSS", "Formik & Yup", "Twilio", "Mailchimp"],
-      blurb: "A modern, high-performance band website featuring Google Calendar integration and a Stripe-powered checkout for donations. The site boasts an attractive, responsive UI with a robust contact form built using Formik, Yup validation, and Twilio SendGrid, alongside a Mailchimp-powered newsletter signup. Optimized SEO ensures better search rankings, while Next.js performance enhancements—including Server-Side Rendering, lazy-loaded images, and next/font—keep the site fast and efficient. Thoroughly tested with Jest and React Testing Library, it delivers a seamless user experience, with Sentry integrated for real-time error monitoring. Designed to meet WCAG 2.0 accessibility standards, the site ensures inclusivity for all users.",
-  },
+      blurb: [
+        `Firkin is a modern website built for a professional jazz big band, designed to capture the group’s playful character while providing promoters and audiences with clear, up-to-date information. At the heart of the site is a dynamic events calendar, which fetches scheduling data directly from a public Google Calendar using Next.js Server Components. This ensures the latest event details are always displayed, with built-in error handling for missing or malformed data.`,
+        `The site also features a robust contact form powered by Formik with Yup validation, delivering reliable submissions via AWS SES. Every interaction is designed to feel engaging, with thoughtful transitions and micro-interactions that keep users connected to the brand identity.`,
+        `Technically, Firkin is built with Next.js 15, TypeScript, and Tailwind CSS, forming a lightweight and maintainable stack. It prioritizes performance through Next.js Image optimization and next/font, and achieves a 100 Lighthouse score while meeting WCAG 2.0 accessibility standards with semantic HTML, keyboard navigation, alt text, and color contrast. The site is actively monitored with Sentry to ensure smooth operation.`
+      ]
+    },
   {
         filters: ['frontend', 'backend'],
 
     soundBite: "Full-stack communications and bookings platform for orchestras.",
     id: 2,
     title: "GigFix",
-    previewLink: "https://gig-fix.vercel.app/",
-    githubLink: "https://github.com/danmolloy/fixer",
+    links: {
+      preview: "https://gig-fix.vercel.app/",
+      github: "https://github.com/danmolloy/fixer",
+    },
     images: [
       {
         imgSrc: '/images/gigfix/list.png',
@@ -169,8 +192,13 @@ export const projectsArr: ProjectDivProps[] = [
       },
     ],
     stack: ["NextJS", "TypeScript", "Node.js","Tailwind CSS", "Formik & Yup", "Auth.js", "Prisma & PostgresQL", "Twilio SMS & SendGrid", "Stripe", "Jest, React Testing Library & Playwright"],
-      blurb: "GigFix is a purpose-built communication platform designed to streamline orchestral gig management. It enables orchestras to automate musician booking, centralize event information, and deliver real-time updates via email and SMS. Built with NextJS, TypeScript, and a robust PostgresQL backend, it supports team accounts, a musician address book, flexible bookings, and metered billing via Stripe. Features include a responsive event calendar, thorough form validation, efficient data display, and high test coverage with Jest. The platform integrates Twilio and SendGrid for messaging, and supports server-side rendering for performance. This project is not currently under development, however plans are being made to utilise it in a similar project.",
-thumb: {
+      blurb: [
+        `GigFix is a specialized communications platform designed to streamline orchestra management by centralizing bookings, event details, and communication with musicians. Traditionally, organizing players for rehearsals and performances involves a fragmented process of calls, spreadsheets, and messages. GigFix simplifies this workflow by giving management teams the ability to create events, assign musicians, and instantly relay updates through automated email and SMS notifications.`,
+        `The platform supports team accounts with role-based access, a musician address book, detailed gig pages, and an integrated calendar with week, month, and year views. Its flexible booking system allows managers to check availability, assign varying numbers of players to rehearsals, and send personalized messages directly to musicians—ensuring everyone stays aligned.`,
+        `Technically, GigFix is built with a lean, modern stack: Next.js, TypeScript, Tailwind CSS, Prisma, and PostgreSQL, with authentication and billing powered by Auth.js and Stripe. Communication tools are integrated via Twilio SMS and SendGrid. The app is rigorously tested with Jest, React Testing Library, and Playwright, and adheres to WCAG 2.0 accessibility standards.`,
+        `This project has been archived for the foreseeable future and is not currently maintained.`
+      ],
+      thumb: {
       src: "/images/gigfix/gig-fix-thumb.png",
       imgWidth: '600',
       imgHeight: '600',
@@ -182,8 +210,10 @@ thumb: {
       filters: ['mobile'],
       id: 3,
       title: "Tuner",
-      githubLink: "https://github.com/danmolloy/tuner",
-      appStoreLink: "https://apps.apple.com/gb/app/tuner/id6746412805",
+      links: {
+        github: "https://github.com/danmolloy/tuner",
+        appStore: "https://apps.apple.com/gb/app/tuner/id6746412805",
+      },
       images: [
         {
         imgSrc: '/images/tuner/home.png',
@@ -205,7 +235,12 @@ thumb: {
       },
       ],
       stack: ["React Native", "Expo EAS", "Pitchy"],
-      blurb: "A robust, accurate chromatic tuner. This app is built for beginners and professional musicians alike.",
+      blurb: [
+        `Chromatic Tuner is a professional-grade mobile app that delivers studio-quality tuning in an interface designed for musicians of all levels. Built for precision and accessibility, it uses real-time audio processing with the Pitchy library to provide accurate frequency detection, supporting both fully chromatic tuning and instrument-specific modes for guitar and bass. Musicians can tailor their experience by selecting different meter displays, adjusting calibration, and exploring temperament options ranging from equal temperament and just intonation to a variety of historical tunings. Beyond pitch detection, the app includes a built-in ToneJS drone generator, offering reference tones from C1 to C8 for ear training and practice.`,
+        `Developed with React Native, Expo EAS, and TypeScript, Chromatic Tuner demonstrates modern mobile development practices with cross-platform deployment in mind. The app’s interface emphasizes both functionality and aesthetics, standing out from typical tuner designs with a distinctive styled look that proves professional tools can also be visually engaging.`
+
+
+      ],
       thumb: {
       src: "/images/tuner/tuner-icon.png",
       imgWidth: '600',

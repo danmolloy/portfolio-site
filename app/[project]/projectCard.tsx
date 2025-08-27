@@ -4,7 +4,7 @@ import { ProjectDivProps } from "@/lib/projects"
 
 import Image from "next/image"
 import Link from "next/link"
-import { FaGithub, FaLink } from "react-icons/fa"
+import { FaApple, FaGithub, FaGlobe, FaLink } from "react-icons/fa"
 
 export default function ProjectCard({project}: {project: ProjectDivProps}) {
   return (
@@ -23,11 +23,18 @@ export default function ProjectCard({project}: {project: ProjectDivProps}) {
             </div>
             <div className="">
               <h2 className="text-sm font-semibold mb-4">LINKS</h2>
-{project.previewLink && <Link  href={project.previewLink} className="flex flex-row hover:text-blue-300 hover:underline   w-32 items-center justify-start">
+{project.links.preview && <Link  href={project.links.preview} className="flex flex-row hover:text-blue-300 hover:underline   w-32 items-center justify-start">
             <FaLink /><p className="mx-1 text-xs">Visit site</p>
           </Link>}
-          <Link href={project.githubLink} className="flex flex-row hover:text-blue-300 hover:underline   w-32 items-center justify-start">
+          {project.links.github && <Link href={project.links.github} target="_blank" className="flex flex-row hover:text-blue-300 hover:underline   w-32 items-center justify-start">
           <FaGithub /><p className="mx-1 text-xs">Github repo</p></Link>
+          }
+          {project.links.appStore && <Link href={project.links.appStore} target="_blank" className="flex flex-row hover:text-blue-300 hover:underline   w-32 items-center justify-start">
+          <FaApple /><p className="mx-1 text-xs">App Store</p></Link>
+          }
+          {project.links.website && <Link href={project.links.website} target="_blank" className="flex flex-row hover:text-blue-300 hover:underline   w-32 items-center justify-start">
+          <FaGlobe /><p className="mx-1 text-xs">Website</p></Link>
+          }
     </div>           
           </div>
 
@@ -40,7 +47,9 @@ export default function ProjectCard({project}: {project: ProjectDivProps}) {
           </div>
           <div className="mt-12 pb-[50vh] text-sm font-light md:mx-24">
            
-            <p>{project.blurb}</p>
+            {project.blurb.map((i, index) => (
+              <p key={index} className="mb-4">{i}</p>
+            ))}
           </div>
         </div>
   )
