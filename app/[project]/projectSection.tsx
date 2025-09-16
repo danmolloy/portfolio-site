@@ -38,7 +38,7 @@ export default function ProjectSection() {
       {showProject !== null && <ProjectTab closeTab={() => setShowProject(null)} project={projectsArr.find(i => i.id === showProject) || projectsArr[0]} />}
         </AnimatePresence>
       <div className="relative w-full flex flex-row justify-between ">
-        <div ref={ref} className={`h-[2px] absolute ${visible ? "w-full" : "w-0"} left-0 transition-all duration-1000 delay-100 bg-black bottom-0`} />
+        <div ref={ref} className={`h-[2px] absolute ${visible ? "w-full" : "w-full"} left-0 transition-all duration-1000 delay-100 bg-black bottom-0`} />
       <h1 className="font-medium text-lg">SELECTED WORK</h1>
       <select onChange={(e) => {
         e.target.value === "" 

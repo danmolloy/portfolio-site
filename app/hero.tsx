@@ -9,13 +9,13 @@ export default function Hero() {
 
   return (
     <section data-testid="hero-section" className="pt-36 pb-24 px-2 flex flex-col items-start justify-between h-screen  w-screen">
-             <div className=" flex flex-row flex-wrap w-screen justify-start items-start">
+             <div className=" flex flex-row flex-wrap w-full justify-start items-start ">
              <div className=" h-[60px]  overflow-hidden relative  w-[280px] " >
               <motion.div 
                 style={{
                   y: useTransform(scrollYProgress, [0, 0.1], [0, 64])
                 }}
-                className="absolute -top-[64px]"
+                className="absolute -top-[64px] "
               >
 
             <h1 className="text-7xl font-bold self-start -mb-3 ">
@@ -23,6 +23,8 @@ export default function Hero() {
             </h1>
             <motion.h1
               key={"daniel"}
+                          initial={{ opacity: 0,  }}
+
               whileInView={{ opacity: 1, }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.025, delay:   0.25 }}
@@ -44,10 +46,12 @@ export default function Hero() {
               MOLLOY
             </h1>
             <motion.h1
+                        initial={{ opacity: 0,  }}
+
               key={"molloy"}
               whileInView={{ opacity: 1, }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.025, delay:   0.25 }}
+              transition={{ duration: 0.025, delay:   0.5 }}
               
              className="text-7xl font-bold self-start -mt-3">
               MOLLOY
@@ -62,16 +66,20 @@ export default function Hero() {
               <div className="flex flex-row items-end justify-start">
               
               <motion.a 
+                          initial={{ opacity: 0,  }}
+
               whileInView={{ opacity: 1, }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.2, delay:   .05 }}
+              transition={{ duration: 0.2, delay:   1 }}
               className="text-xl md:text-md  hover:text-gray-500 m-1" href={'https://github.com/danmolloy/'}>
                 <FaGithub />        
               </motion.a>
               <motion.a 
+                          initial={{ opacity: 0,  }}
+
               whileInView={{ opacity: 1, }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.2, delay:   .05 }}
+              transition={{ duration: 0.2, delay:   1 }}
               className="text-xl md:text-md ml-1 hover:text-gray-500 m-1" href={'https://www.linkedin.com/in/daniel-molloy-8b517032b/'}>
                 <FaLinkedin />
               </motion.a>
@@ -82,7 +90,7 @@ export default function Hero() {
             initial={{ opacity: 0,  }}
               whileInView={{ opacity: 1, }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.05, delay:   .1 }}
+              transition={{ duration: 0.05, delay:   2.1 - .5 }}
             className="">
               frontend development
             </motion.p>
@@ -90,7 +98,7 @@ export default function Hero() {
             initial={{ opacity: 0,  }}
               whileInView={{ opacity: 1, }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.05, delay:   .25 }}
+              transition={{ duration: 0.05, delay:   2.25 - .5 }}
             className="">
               backend services
             </motion.p>
@@ -98,7 +106,7 @@ export default function Hero() {
             initial={{ opacity: 0,  }}
               whileInView={{ opacity: 1, }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.05, delay:   .4 }}
+              transition={{ duration: 0.05, delay:   2.4 - .5 }}
             className="">
               mobile apps
             </motion.p>
@@ -106,7 +114,7 @@ export default function Hero() {
             initial={{ opacity: 0,  }}
               whileInView={{ opacity: 1, }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.05, delay:   .55 }}
+              transition={{ duration: 0.05, delay:   2.55 - .5 }}
             className="">
               full stack engineering
             </motion.p>
@@ -114,7 +122,7 @@ export default function Hero() {
             initial={{ opacity: 0,  }}
               whileInView={{ opacity: 1, }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.05, delay:   .7 }}
+              transition={{ duration: 0.05, delay:   2.7 - .5 }}
             className="">
               ui/ux design
             </motion.p>

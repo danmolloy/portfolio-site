@@ -2,6 +2,7 @@ export type ProjectDivProps = {
   id: number
   title: string
   filters: string[]
+  status: "Archived"|"Live"|"In Progress"
   soundBite?: string
   links: {
     github?: string
@@ -35,6 +36,7 @@ export const projectsArr: ProjectDivProps[] = [
   {
     id: 4,
     title: "Jam Jar",
+    status: "Live",
     filters: ['frontend', 'backend'],
     soundBite: "Music practice tracking SaaS web app.",
     thumb: {
@@ -44,19 +46,40 @@ export const projectsArr: ProjectDivProps[] = [
       imgAlt: "Jam Jar landing page"
     },
     links: {
-      preview: "https://jam-jar-frontend-danmolloys-projects.vercel.app/",
+      website: "https://www.jamjar.site/",
       github: "https://github.com/danmolloy/jam-jar-frontend",
     },
-    images: [],
-    stack: ["NextJS", "Django", "Postgresql", "AWS S3", "Stripe"],
+    images: [
+      {
+        imgSrc: "/images/jam-jar/landing.png",
+        imgWidth: "747",
+        imgHeight: "1080",
+        imgAlt: "Landing Section"
+      },
+       {
+        imgSrc: "/images/jam-jar/dashboard.png",
+        imgWidth: "747",
+        imgHeight: "1080",
+        imgAlt: "Dashboard"
+      },
+       {
+        imgSrc: "/images/jam-jar/charts.png",
+        imgWidth: "747",
+        imgHeight: "1080",
+        imgAlt: "Charts Section"
+      },
+    ],
+    stack: ["NextJS", "Django", "Postgresql", "AWS S3 & SES", "Stripe"],
     blurb: [
       `Jam Jar is a SaaS platform designed to help musicians structure and track their practice sessions, bringing the rigor of sports analytics to music education.`,
       `The app provides a complete practice management ecosystem where users can log sessions with descriptions and duration, set personalized goals, maintain practice diaries, and record audio to monitor progress over time. Advanced filtering with hashtags and activity types makes it easy to organize data, while interactive visualizations—including heat maps, bar charts, and rings—offer clear insights into practice habits.`,
-      `Technically, Jam Jar combines Next.js 15 for the frontend with a robust Django REST Framework backend. It integrates Stripe for subscription billing, AWS S3 for secure audio storage, and PostgreSQL for relational data management. Authentication and authorization are handled via Auth.js with JWT tokens, while Tailwind CSS and Recharts ensure a responsive and visually appealing interface. Comprehensive testing spans Django, Jest, and React Testing Library, ensuring reliability across the stack.`
+      `Jam Jar combines Next.js 15 for the frontend with a robust Django REST Framework backend. It integrates Stripe for subscription billing, AWS S3 for secure audio storage, and PostgreSQL for relational data management. Authentication and authorization are handled via Auth.js with JWT tokens, while Tailwind CSS and Recharts ensure a responsive and visually appealing interface. Comprehensive testing spans Django, Jest, and React Testing Library, ensuring reliability across the stack.`
     ]
   },
   {
     filters: ['frontend'],
+        status: "Live",
+
     soundBite: "Elegant and responsive site for a musician, rich with detail.",
     thumb: {
       src: "/images/fio-kelly/fk-thumb.png",
@@ -107,6 +130,7 @@ export const projectsArr: ProjectDivProps[] = [
   },
   {
         filters: ['frontend'],
+    status: "Live",
 
     soundBite: "Modern high performance website with Sumup donations, calendar sync and accessible UX.",
     id: 1,
@@ -163,6 +187,7 @@ export const projectsArr: ProjectDivProps[] = [
     },
   {
         filters: ['frontend', 'backend'],
+    status: "Archived",
 
     soundBite: "Full-stack communications and bookings platform for orchestras.",
     id: 2,
@@ -208,6 +233,7 @@ export const projectsArr: ProjectDivProps[] = [
   },
   {
       filters: ['mobile'],
+          status: "Live",
       id: 3,
       title: "Tuner",
       links: {

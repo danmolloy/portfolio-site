@@ -9,8 +9,11 @@ import { FaApple, FaGithub, FaGlobe, FaLink } from "react-icons/fa"
 export default function ProjectCard({project}: {project: ProjectDivProps}) {
   return (
     <div >
-          
-          <div className="relative flex flex-row justify-between my-12 text-sm">
+      <div className="flex flex-row items-start">
+
+            <p className="text-x  mt-2 font-base">STATUS: {project.status.toUpperCase()}</p>
+      </div>
+          <div className="relative flex flex-row justify-between my-8 text-sm">
             <div>
             <h2 className="text-sm font-semibold mb-4">STACK</h2>
              <div>
@@ -22,6 +25,7 @@ export default function ProjectCard({project}: {project: ProjectDivProps}) {
         </div>
             </div>
             <div className="">
+
               <h2 className="text-sm font-semibold mb-4">LINKS</h2>
 {project.links.preview && <Link  href={project.links.preview} className="flex flex-row hover:text-blue-300 hover:underline   w-32 items-center justify-start">
             <FaLink /><p className="mx-1 text-xs">Visit site</p>
