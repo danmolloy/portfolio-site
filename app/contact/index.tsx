@@ -9,17 +9,17 @@ import axios from "axios";
 export default function Section() {
   const [sendStatus, setSendStatus] = useState<"success"|"sending"|"err"|null>(null)
 
-  const sendFail = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please try again or <a href='mailto:danielmolloy_6@icloud.com' className='text-blue-500'>send an email</a>.</p></div>)
+  const sendFail = (<div><h2 className="">Message failed to send.</h2> <p>Please try again or <a href='mailto:danielmolloy_6@icloud.com' className='text-blue-500'>send an email</a>.</p></div>)
 
-  const sendSuccess = (<div><h2 className="text-2xl">Message recieved!</h2><p>I will get back to you as soon as possible.</p></div>)
+  const sendSuccess = (<div><h2 className="">Message recieved!</h2><p>I will get back to you as soon as possible.</p></div>)
 
-  const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
+  const sendingMsg = (<div><h2 className="">Message sending...</h2></div>)
 
   return (
-    <section className="flex flex-col w-screen justify-between p-2 py-8 text-sm">
+    <section className="flex flex-col mt-16 justify-between p-2 py-8 text-sm bg-dark text-light rounded-lg w-full mx-8 md:w-3/4">
             <div className="w-full  border-black">
 
-      <h1 className='self-center font-medium text-lg'>CONTACT</h1>
+      <h1 className='self-center ml-2 font-medium text-lg'>CONTACT</h1>
       </div>
     <Formik    
     initialValues={{
@@ -58,13 +58,13 @@ export default function Section() {
         })
       }}> 
       {(props) => (
-      <Form data-testid="contact-form" className="z-10  flex flex-col w-[95vw] self-center lg:w-1/2 ">
+      <Form data-testid="contact-form" className="z-10  flex flex-col  self-center w-full ">
 
           <div className="flex flex-col m-2">
           <label htmlFor='name-input' className="form-label dark:text-zinc-400 text-sm">Name</label>
           <Field 
             id="name-input" 
-            className=" text-dark border-b border-dark bg-light  w-full p-1 dark:bg-zinc-300"
+            className=" text-dark border   bg-light  w-full p-1 dark:bg-zinc-300"
             type="text"
             name="name"/>
             <div className="h-6">
@@ -105,7 +105,7 @@ export default function Section() {
           </ErrorMessage>
           </div>
           </div>
-        <button disabled={props.isSubmitting || (sendStatus === "sending")} id="submit-button" type='submit' className=" disabled:opacity-30 hover:bg-gray-50 shadow-sm   border border-black m-2 p-1 w-20 rounded-sm self-end  text-sm">SUBMIT</button>
+        <button disabled={props.isSubmitting || (sendStatus === "sending")} id="submit-button" type='submit' className=" disabled:opacity-30 hover:underline shadow-sm   border border-light m-2 p-1 w-20 rounded-sm self-end  text-sm">SUBMIT</button>
         <div>
         {sendStatus === "sending" 
         ? sendingMsg
