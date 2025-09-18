@@ -9,8 +9,8 @@ export default function Hero() {
 
   return (
     <section data-testid="hero-section" className="pt-36 pb-24 px-2 flex flex-col items-start justify-between h-screen  w-screen">
-             <div className=" flex flex-row flex-wrap w-full justify-start items-start ">
-             <div className=" h-[60px]  overflow-hidden relative  w-[280px] " >
+             <div className="flex flex-row flex-wrap w-full justify-start items-start  md:h-full md:items-end md:justify-end">
+             <div className="md:hidden h-[60px] overflow-hidden relative  w-[280px] " >
               <motion.div 
                 style={{
                   y: useTransform(scrollYProgress, [0, 0.1], [0, 64])
@@ -59,11 +59,33 @@ export default function Hero() {
             </motion.div>
               </div>
             </div> 
-            {/* <h1 className="text-7xl font-bold self-start ">
-              DANIEL MOLLOY
-            </h1> */}
-            <div className="flex flex-row justify-between w-full">
-              <div className="flex flex-row items-end justify-start">
+            
+            <div className="flex flex-row justify-between w-full  md:h-[50vh]">
+              <div className="hidden md:flex h-[60px] self-end overflow-hidden relative  w-[280px] " >
+              <motion.div 
+                style={{
+                  y: useTransform(scrollYProgress, [0, 0.1], [0, 64])
+                }}
+                className="absolute -top-[64px] "
+              >
+
+            <h1 className="text-7xl font-bold self-start -mb-3 ">
+              DANIEL
+            </h1>
+            <motion.h1
+              key={"daniel"}
+                          initial={{ opacity: 0,  }}
+
+              whileInView={{ opacity: 1, }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.025, delay:   0.25 }}
+              className="text-7xl font-bold self-start -mt-3">
+              DANIEL
+            </motion.h1>
+            
+              </motion.div>
+            </div> 
+              <div className=" flex flex-row items-end justify-start">
               
               <motion.a 
                           initial={{ opacity: 0,  }}
@@ -85,7 +107,7 @@ export default function Hero() {
               </motion.a>
               
             </div>
-            <div className="flex flex-col justify-start text-sm text-right self-end mr-2">
+            <div className="flex flex-col md:border-2 md:shadow border-dark  w-1/2 md:h-[50vh] justify-start text-sm md:text-base md:text-left md:p-2 rounded text-right self-end mr-2">
             <motion.p 
             initial={{ opacity: 0,  }}
               whileInView={{ opacity: 1, }}
